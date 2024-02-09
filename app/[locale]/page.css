@@ -51,6 +51,11 @@
     transform: rotate(-90deg);
 }
 
+.swiper-pagination-bullet-active {
+    opacity: 0.9;
+    background: white;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
     margin: 80px auto;
     height: 100px;
@@ -127,6 +132,9 @@
     top: 0;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
 
 
 
