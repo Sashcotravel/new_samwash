@@ -190,6 +190,7 @@ export default function Home() {
     const setStageNext = () => {
 
         const type = document.getElementById('type')
+        const radioPrevi = document.getElementById('radioPrevi')
         const construction = document.getElementById('construction')
         const col = document.getElementById('col')
 
@@ -200,41 +201,50 @@ export default function Home() {
 
             setStage(prev => { return { ...prev, second: true } })
             setStage(prev => { return { ...prev, first: false } })
+
+            radioPrevi.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.typeAutowash === '' && formData.construction === '' && formData.colPosition === 0){
             type.style.border = '2px solid red'
             construction.style.border = '2px solid red'
             col.style.border = '2px solid red'
+            type.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.typeAutowash === '' && formData.construction === ''){
             type.style.border = '2px solid red'
             construction.style.border = '2px solid red'
             col.style.border = '1px solid #ccc'
+            type.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.typeAutowash === '' && formData.colPosition === 0){
             type.style.border = '2px solid red'
             construction.style.border = '1px solid #ccc'
             col.style.border = '2px solid red'
+            type.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.construction === '' && formData.colPosition === 0){
             type.style.border = '1px solid #ccc'
             construction.style.border = '2px solid red'
             col.style.border = '2px solid red'
+            col.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.construction === ''){
             type.style.border = '1px solid #ccc'
             construction.style.border = '2px solid red'
             col.style.border = '1px solid #ccc'
+            construction.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.colPosition === 0){
             type.style.border = '1px solid #ccc'
             construction.style.border = '1px solid #ccc'
             col.style.border = '2px solid red'
+            col.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.typeAutowash === ''){
             type.style.border = '2px solid red'
             construction.style.border = '1px solid #ccc'
             col.style.border = '1px solid #ccc'
+            type.scrollIntoView({block: "center", behavior: 'smooth'});
         }
     }
 
@@ -256,16 +266,19 @@ export default function Home() {
             radio1.style.border = '2px solid red'
             radio2.style.border = '2px solid red'
             city.style.border = '2px solid red'
+            radio1.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.land === null){
             radio1.style.border = '2px solid red'
             radio2.style.border = '2px solid red'
             city.style.border = '1px solid #ccc'
+            radio1.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.city === ''){
             radio1.style.border = '1px solid #ccc'
             radio2.style.border = '1px solid #ccc'
             city.style.border = '2px solid red'
+            city.scrollIntoView({block: "center", behavior: 'smooth'});
         }
     }
 
@@ -536,7 +549,7 @@ export default function Home() {
                             </div>
                             <div className={s.half_colum}>
                                 <form id="config-form" onSubmit={handleSubmit} className={s.formMain}>
-                                    <div className={s.select_wrapper + ' ' + s.select_wrapperPage}>
+                                    <div className={s.select_wrapper + ' ' + s.select_wrapperPage} id='typePrevi'>
                                         <lable>
                                             <span>1</span>
                                             <font>{t("main13")}</font>
@@ -603,7 +616,7 @@ export default function Home() {
                             <form id="config-form" className={s.formMain}>
                                 <div className={s.half_colum}>
                                     <div className={s.inline_item_user_data}>
-                                        <div className={s.inline_description}>
+                                        <div className={s.inline_description} id='radioPrevi'>
                                             <span>5</span>
                                             <span>{t("main21")} </span>
                                             <span> *</span>
