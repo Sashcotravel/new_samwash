@@ -1,7 +1,8 @@
 @import "fonts/stylesheet.css";
 
 :root {
-
+  --swiper-pagination-bullet-horizontal-gap: 0;
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
 }
 
 

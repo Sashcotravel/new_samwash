@@ -66,6 +66,7 @@
 }
 .swiper-pagination-bullet{
     opacity: 0.9;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity);;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
@@ -133,7 +134,8 @@
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
+
 }
 
 
