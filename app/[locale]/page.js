@@ -202,7 +202,9 @@ export default function Home() {
             setStage(prev => { return { ...prev, second: true } })
             setStage(prev => { return { ...prev, first: false } })
 
-            radioPrevi.scrollIntoView({block: "center", behavior: 'smooth'});
+            setTimeout(() => {
+                radioPrevi.scrollIntoView({block: "center", behavior: 'smooth'});
+            }, 500)
         }
         else if(formData.typeAutowash === '' && formData.construction === '' && formData.colPosition === 0){
             type.style.border = '2px solid red'
@@ -253,6 +255,7 @@ export default function Home() {
         const radio1 = document.getElementById('radio1')
         const radio2 = document.getElementById('radio2')
         const city = document.getElementById('city')
+        const name = document.getElementById('name')
 
         if(formData.land !== null && formData.city !== ''){
             radio1.style.border = '1px solid #ccc'
@@ -261,6 +264,10 @@ export default function Home() {
 
             setStage(prev => { return { ...prev, second: false } })
             setStage(prev => { return { ...prev, third: true } })
+
+            setTimeout(() => {
+                name.scrollIntoView({block: "center", behavior: 'smooth'});
+            }, 500)
         }
         else if(formData.land === null && formData.city === ''){
             radio1.style.border = '2px solid red'
@@ -336,66 +343,77 @@ export default function Home() {
             phone.style.border = '2px solid red'
             name.style.border = '2px solid red'
             polit2.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(testEmail === false && testPhone === false && !polit.checked){
             email.style.border = '2px solid red'
             phone.style.border = '2px solid red'
             polit2.style.border = '2px solid red'
             name.style.border = '1px solid #ccc'
+            email.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(testEmail === false && testPhone === false){
             email.style.border = '2px solid red'
             phone.style.border = '2px solid red'
             polit2.style.border = '1px solid #ccc'
             name.style.border = '1px solid #ccc'
+            email.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testPhone === false && !polit.checked){
             email.style.border = '1px solid #ccc'
             phone.style.border = '2px solid red'
             polit2.style.border = '2px solid red'
             name.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testPhone === false){
             email.style.border = '1px solid #ccc'
             phone.style.border = '2px solid red'
             name.style.border = '2px solid red'
             polit2.style.border = '1px solid #ccc'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testEmail === false && !polit.checked){
             phone.style.border = '1px solid #ccc'
             email.style.border = '2px solid red'
             name.style.border = '2px solid red'
             polit2.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testEmail === false){
             phone.style.border = '1px solid #ccc'
             email.style.border = '2px solid red'
             name.style.border = '2px solid red'
             polit2.style.border = '1px solid #ccc'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (formData.name.length < 2) {
             name.style.border = '2px solid red'
             email.style.border = '1px solid #ccc'
             phone.style.border = '1px solid #ccc'
             polit2.style.border = '1px solid #ccc'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (testEmail === false) {
             email.style.border = '2px solid red'
             name.style.border = '1px solid #ccc'
             phone.style.border = '1px solid #ccc'
             polit2.style.border = '1px solid #ccc'
+            email.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (testPhone === false) {
             phone.style.border = '2px solid red'
             email.style.border = '1px solid #ccc'
             name.style.border = '1px solid #ccc'
             polit2.style.border = '1px solid #ccc'
+            phone.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (!polit.checked) {
             phone.style.border = '1px solid #ccc'
             email.style.border = '1px solid #ccc'
             name.style.border = '1px solid #ccc'
             polit2.style.border = '2px solid red'
+            polit2.scrollIntoView({block: "center", behavior: 'smooth'});
         }
     }
 
