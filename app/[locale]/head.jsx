@@ -39,14 +39,10 @@ export default function Head(){
             {/*<meta name="twitter:description" content={t("mainDesc")} />*/}
             {/*<meta name="twitter:image" content='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75' />*/}
 
-            {router === '/' && <link rel="apple-touch-icon"
-                   href='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75'/>}
-            {router === `/${locale}` && <link rel="apple-touch-icon"
-                   href='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75'/>}
-            {router === '/' && <meta property="og:image"
-                   content='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75'/>}
-            {router === `/${locale}` && <meta property="og:image"
-                   content='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75'/>}
+            {router === '/' && <link rel="apple-touch-icon" href='/logo144.png'/>}
+            {router === `/${locale}` && <link rel="apple-touch-icon" href=''/>}
+            {router === '/' && <meta property="og:image" content=''/>}
+            {router === `/${locale}` && <meta property="og:image" content=''/>}
 
             <meta property="og:url" content={`https://samwash.ua${router}`} />
             <link rel="canonical" href={`https://samwash.ua${router}`} />
