@@ -105,7 +105,7 @@
     background-color: red;
     position: relative;
     top: -20px;
-    animation: fillAnimation 21s linear forwards infinite;
+    animation: fillAnimation 6.4s linear forwards infinite;
     z-index: 10;
 }
 
@@ -115,22 +115,23 @@
     background-color: red;
     position: relative;
     top: -20px;
-    animation: fillAnimation 21s linear forwards infinite;
+    animation: fillAnimation 6.2s linear forwards infinite;
     z-index: 10;
 }
 
 @keyframes fillAnimation {
-    30%{
-        width: 100%;
+    0%{
+        width: 0%;
     }
     100% {
-        width: 0%;
+        width: 100%;
     }
 }
 
 .swiper-slide img {
     position: absolute;
-    top: 0;
+    top: -15px;
+    height: 103%;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {

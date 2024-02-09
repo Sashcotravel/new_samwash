@@ -439,7 +439,7 @@ export default function Home() {
                     spaceBetween={30}
                     centeredSlides={true}
                     loop={true}
-                    autoplay={{delay: 6100, disableOnInteraction: false}}
+                    autoplay={{delay: 6000, disableOnInteraction: false}}
                     pagination={{clickable: true}}
                     modules={[Autoplay, Pagination]}
                     // modules={[Pagination]}
