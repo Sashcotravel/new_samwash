@@ -78,36 +78,43 @@ function Contact() {
             email.style.border = '2px solid red'
             phone.style.border = '2px solid red'
             name.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(testEmail === false && testPhone === false){
             email.style.border = '2px solid red'
             phone.style.border = '2px solid red'
             name.style.border = '1px solid #ccc'
+            email.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testPhone === false){
             email.style.border = '1px solid #ccc'
             phone.style.border = '2px solid red'
             name.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if(formData.name.length < 2 && testEmail === false){
             phone.style.border = '1px solid #ccc'
             email.style.border = '2px solid red'
             name.style.border = '2px solid red'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (formData.name.length < 2) {
             name.style.border = '2px solid red'
             email.style.border = '1px solid #ccc'
             phone.style.border = '1px solid #ccc'
+            name.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (testEmail === false) {
             email.style.border = '2px solid red'
             name.style.border = '1px solid #ccc'
             phone.style.border = '1px solid #ccc'
+            email.scrollIntoView({block: "center", behavior: 'smooth'});
         }
         else if (testPhone === false) {
             phone.style.border = '2px solid red'
             email.style.border = '1px solid #ccc'
             name.style.border = '1px solid #ccc'
+            phone.scrollIntoView({block: "center", behavior: 'smooth'});
         }
     }
 
