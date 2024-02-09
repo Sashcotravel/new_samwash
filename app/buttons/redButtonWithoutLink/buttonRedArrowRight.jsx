@@ -2,14 +2,18 @@ import React from 'react';
 import Link from "next-intl/link";
 import s from "./style.module.css";
 import Image from "next/image";
+import {useTranslations} from "next-intl";
 
-function ButtonRedArrowRight({link, text, clas}) {
+function ButtonRedWithoutLink({text, clas}) {
+
+    const t = useTranslations();
+
     return (
-        <Link href={link} className={`${s.formBtn} ${clas}`}>
-            { text }
+        <p className={`${s.formBtn} ${clas}`}>
+            {t(`${text}`)}
             <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
-        </Link>
+        </p>
     );
 }
 
-export default ButtonRedArrowRight;
+export default ButtonRedWithoutLink;

@@ -7,66 +7,11 @@ import Script from "next/script";
 
 
 export default function Head(){
-    const t = useTranslations();
+
+    const t = useTranslations("main");
     const locale = useLocale();
     const router = usePathname()
 
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://samwash.ua/",
-        "logo": "https://samwash.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=256&q=75"
-    }
-
-    const schema2 = {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": "https://samwash.ua/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://samwash.ua/search?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
-    }
-
-    const schema3 = {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Title of a News Article",
-        "image": [
-            "https://example.com/photos/1x1/photo.jpg",
-            "https://example.com/photos/4x3/photo.jpg",
-            "https://example.com/photos/16x9/photo.jpg"
-        ],
-        "datePublished": "2015-02-05T08:00:00+08:00",
-        "dateModified": "2015-02-05T09:20:00+08:00",
-        "author": [{
-            "@type": "Person",
-            "name": "Jane Doe",
-            "url": "https://example.com/profile/janedoe123"
-        },{
-            "@type": "Person",
-            "name": "John Doe",
-            "url": "https://example.com/profile/johndoe123"
-        }]
-    }
-
-    // useEffect(() => {
-    //     if ('serviceWorker' in navigator) {
-    //         navigator.serviceWorker
-    //             .register('/service-worker.js')
-    //             .then((registration) => {
-    //                 console.log('Service Worker зареєстровано з успіхом:', registration);
-    //             })
-    //             .catch((error) => {
-    //                 console.error('Помилка реєстрації Service Worker:', error);
-    //             });
-    //     }
-    // }, []);
 
     return (
         <React.Fragment>
@@ -76,27 +21,23 @@ export default function Head(){
             <meta name="theme-color" content="#000000"/>
             <link rel='manifest' href='/manifest.json' />
             <meta name="robots" content="index,follow" />
-            {router === `/${locale}` && <title>{t("mainTit")}</title>}
-            {router === '/' && <title>{t("mainTit")}</title>}
+            {router === `/${locale}` && <title>{t("metaTitle")}</title>}
+            {router === '/' && <title>{t("metaTitle")}</title>}
 
-            {router === `/${locale}` && <meta name="description" content={t("mainDesc")}/>}
-            {router === '/' && <meta name="description" content={t("mainDesc")}/>}
+            {router === `/${locale}` && <meta name="description" content={t("main2")}/>}
+            {router === '/' && <meta name="description" content={t("main2")}/>}
 
-            {router === '/' && <meta property="og:title" content={t("mainTit")}/>}
-            {router === `/${locale}` && <meta property="og:title" content={t("mainTit")}/>}
+            {router === '/' && <meta property="og:title" content={t("metaTitle")}/>}
+            {router === `/${locale}` && <meta property="og:title" content={t("metaTitle")}/>}
 
-            {router === '/' && <meta property="og:description" content={t("mainDesc")}/>}
-            {router === `/${locale}` && <meta property="og:description" content={t("mainDesc")}/>}
+            {router === '/' && <meta property="og:description" content={t("main2")}/>}
+            {router === `/${locale}` && <meta property="og:description" content={t("main2")}/>}
 
             {/*<meta name="twitter:card" content="summary" />*/}
             {/*<meta name="twitter:site" content="SamWash" />*/}
             {/*<meta name="twitter:title" content={t("mainTit")} />*/}
             {/*<meta name="twitter:description" content={t("mainDesc")} />*/}
             {/*<meta name="twitter:image" content='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75' />*/}
-
-            {/*<Script type="application/ld+json" id='1' dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />*/}
-            {/*<Script type="application/ld+json" id='3' dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }} />*/}
-            {/*<Script type="application/ld+json" id='4' dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }} />*/}
 
             {router === '/' && <link rel="apple-touch-icon"
                    href='https://dev.samwash.ua/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo144.5d64867a.png&w=384&q=75'/>}
