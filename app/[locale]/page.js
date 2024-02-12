@@ -16,7 +16,11 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 import ButtonWhiteArrowRight from "@/app/buttons/whiteButton/buttonRedArrowRight";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
+import dynamic from "next/dynamic";
 
+
+const LazyLoadComponent = dynamic(() =>
+    import("react-lazy-load-image-component").then((mod) => mod.LazyLoadComponent))
 
 export default function Home() {
 
@@ -561,7 +565,7 @@ export default function Home() {
                             <div className={s.half_colum}>
                                 <div className={s.washer_image}>
                                     <Image alt='Choose your washes'
-                                        src={`/mainPage/mainCalc/autowash/${imageUrl}${imageUrlModel}${imageUrlNum}${imageUrlOutside}.jpg`}
+                                           src={`/mainPage/mainCalc/autowash/${imageUrl}${imageUrlModel}${imageUrlNum}${imageUrlOutside}.jpg`}
                                            width={500} height={500}/>
                                 </div>
                             </div>
@@ -591,7 +595,8 @@ export default function Home() {
                                             <span>2</span>
                                             <font>{t("main14")}</font>
                                         </lable>
-                                        <select onChange={select2} disabled={formData.typeAutowash === ''} id='construction'
+                                        <select onChange={select2} disabled={formData.typeAutowash === ''}
+                                                id='construction'
                                                 style={formData.typeAutowash === '' ? {backgroundColor: '#ccc'} : undefined}>
                                             <option disabled selected>{t("main18")}</option>
                                             <option value='Lumi'>Lumi</option>
@@ -615,7 +620,7 @@ export default function Home() {
                                         </select>
                                     </div>
                                     <div className={s.input_wrapper}>
-                                        {formData.colPosition > 2 &&  <lable className={s.container}>
+                                        {formData.colPosition > 2 && <lable className={s.container}>
                                             <span>4</span>
                                             <font>{t("main17")}</font>
                                             <input type='checkbox' ref={ref}
@@ -644,9 +649,9 @@ export default function Home() {
                                                 <font>{t("main22")}</font>
                                                 <input type='radio' name='name'
                                                        onChange={prev =>
-                                                    setFormData(prev => {
-                                                        return {...prev, land: true}
-                                                    })} />
+                                                           setFormData(prev => {
+                                                               return {...prev, land: true}
+                                                           })}/>
                                                 <span className={s.checkmark} id='radio1'></span>
                                             </label>
                                             <label className={s.container}>
@@ -654,8 +659,8 @@ export default function Home() {
                                                 <input type='radio' name='name'
                                                        onChange={prev =>
                                                            setFormData(prev => {
-                                                    return {...prev, land: false}
-                                                })} />
+                                                               return {...prev, land: false}
+                                                           })}/>
                                                 <span className={s.checkmark} id='radio2'></span>
                                             </label>
                                         </div>
@@ -725,21 +730,21 @@ export default function Home() {
                                             <span>{t("main37")} </span>
                                             <span> *</span>
                                             <input type='text' placeholder={t("main38")} value={formData.name}
-                                                   onChange={handleChange} name='name' id='name' />
+                                                   onChange={handleChange} name='name' id='name'/>
                                         </li>
                                         <li>
                                             <span>9</span>
                                             <span>{t("main39")} </span>
                                             <span> *</span>
                                             <input type='text' placeholder={t("main40")} value={formData.email}
-                                                   onChange={handleChange} name='email' id='email' />
+                                                   onChange={handleChange} name='email' id='email'/>
                                         </li>
                                         <li>
                                             <span>10</span>
                                             <span>{t("main41")} </span>
                                             <span> *</span>
                                             <input type='text' placeholder="+380975794930" value={formData.phone}
-                                                   onChange={handleChange} name='phone' id='phone' />
+                                                   onChange={handleChange} name='phone' id='phone'/>
                                         </li>
                                     </ul>
                                 </div>
@@ -749,11 +754,12 @@ export default function Home() {
                                             <span style={{color: "#ed1c24"}}>*</span>
                                             <p>
                                                 {t("main42")}
-                                                <Link href='/' className={s.form_group_link}> {t("main43")} Samwash </Link>
+                                                <Link href='/'
+                                                      className={s.form_group_link}> {t("main43")} Samwash </Link>
                                                 {t("main44")}
                                             </p>
                                             <input type="checkbox" className={s.checkbox + ' ' + s.checkmark}
-                                                   ref={ref2} id='polit' />
+                                                   ref={ref2} id='polit'/>
                                             <span className={s.checkmark} onClick={check2} id='polit2'></span>
                                         </lable>
                                     </div>
@@ -817,460 +823,481 @@ export default function Home() {
             </section>
 
             <section className={s.box2}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}>{t("main49")}</p>
-                            <p className={s.section_headerH1P2}>{t("main50")} Samwash</p>
-                        </h2>
-                        <p className={s.section_headerP}>{t("main51")} <b>{t("main52")}</b>, {t("main53")}
-                            <b> {t("main54")}</b> , {t("main55")} <b>{t("main56")}</b>, {t("main57")}</p>
-                    </div>
-                    <div className={s.list_box_v2}>
-                        <Link href='/' className={s.features_box_select_item}>
-                            <div className={s.box}>
-                                <p>{t("main58")}</p>
-                                <h4>{t("main59")}</h4>
-                            </div>
-                            <Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}
-                                   height={300}
-                                   className={s.boxImage}/>
-                        </Link>
-                        <Link href='/' className={s.features_box_select_item}>
-                            <div className={s.box}>
-                                <p>{t("main60")}</p>
-                                <h4>{t("main61")}</h4>
-                            </div>
-                            <Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}
-                                   height={300}
-                                   className={s.boxImage}/>
-                        </Link>
-                        <Link href='/' className={s.features_box_select_item}>
-                            <div className={s.box}>
-                                <p>{t("main62")}</p>
-                                <h4>{t("main63")}</h4>
-                            </div>
-                            <Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}
-                                   height={300}
-                                   className={s.boxImage}/>
-                        </Link>
-                        <Link href='/' className={s.features_box_select_item}>
-                            <div className={s.box}>
-                                <p>{t("main64")}</p>
-                                <h4>{t("main65")}</h4>
-                            </div>
-                            <Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}
-                                   height={300}
-                                   className={s.boxImage}/>
-                        </Link>
-                        <Link href='/' className={s.features_box_select_item}>
-                            <div className={s.box}>
-                                <p>{t("main66")}</p>
-                                <h4>{t("main67")}</h4>
-                            </div>
-                            <Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}
-                                   height={300}
-                                   className={s.boxImage}/>
-                        </Link>
-                    </div>
-                </div>
-            </section>
-
-            <section className={s.dark_gray_background}>
-                <div className={s.main_container + ' ' + s.styleFlex}>
-                    <div className={s.text_block}>
-                        <h2>{t("main68")} Samwash</h2>
-                        <p>{t("main69")}</p>
-                        <p>{t("main70")}</p>
-                        <Link href='/' className={s.formBtn2}>
-                            {t("main71")}
-                            <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
-                        </Link>
-                    </div>
-                    <div className={s.video_block}>
-                        <a data-fancybox="gallery" className={s.bg_image}
-                           href={'/video/mainVideo.mp4'}>
-                            <video src={'/video/mainVideo.mp4'} poster={'/video/mainVideo.mp4'} controls={true}
-                                   title='' preload="yes" autoPlay='no' playsInline muted loop/>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section className={s.box2}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}>{t("main72")}</p>
-                            <p className={s.section_headerH1P2}>{t("main73")} Samwash</p>
-                        </h2>
-                        <p className={s.section_headerP}>{t("main74")}</p>
-                        <h3 className={s.section_headerH3}>{t("main75")}</h3>
-                    </div>
-                    <div className={s.box_wrapper}>
-                        <div className={s.four_panels_box}>
-                            <div className={s.panel_box + ' ' + s.first_of_type} onClick={() => setActive(1)}
-                                 style={active === 1 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box4/ico-gray-інвестор.svg' alt={t("main76")}
-                                       width={50} height={50}/>
-                                <span>{t("main76")}</span>
-                            </div>
-                            <div className={s.divPanelBox} style={active === 1 && mobile ? activeStyle2 : undefined}>
-                                <h3>{t("main76")}</h3>
-                                <p>{t("main81")}</p>
-                            </div>
-                            <div className={s.panel_box + ' ' + s.second_of_type} onClick={() => setActive(2)}
-                                 style={active === 2 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box4/ico-gray-basket.svg' alt={t("main77")}
-                                       width={50} height={50}/>
-                                <span>{t("main77")}</span>
-                            </div>
-                            <div className={s.divPanelBox} style={active === 2 && mobile ? activeStyle2 : undefined}>
-                                <h3>{t("main77")}</h3>
-                                <p>{t("main82")}</p>
-                            </div>
-                            <div className={s.panel_box + ' ' + s.third_of_type} onClick={() => setActive(3)}
-                                 style={active === 3 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box4/АЗС.svg' alt={t("main78")}
-                                       width={50} height={50}/>
-                                <span>{t("main78")}</span>
-                            </div>
-                            <div className={s.divPanelBox} style={active === 3 && mobile ? activeStyle2 : undefined}>
-                                <h3>{t("main78")}</h3>
-                                <p>{t("main83")}</p>
-                            </div>
-                            <div className={s.panel_box + ' ' + s.fourth_of_type} onClick={() => setActive(4)}
-                                 style={active === 4 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box4/ico-gray-service.svg' alt={t("main79")}
-                                       width={50} height={50}/>
-                                <span>{t("main79")}</span>
-                            </div>
-                            <div className={s.divPanelBox} style={active === 4 && mobile ? activeStyle2 : undefined}>
-                                <h3>{t("main80")}</h3>
-                                <p>{t("main84")}</p>
-                            </div>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}>{t("main49")}</p>
+                                <p className={s.section_headerH1P2}>{t("main50")} Samwash</p>
+                            </h2>
+                            <p className={s.section_headerP}>{t("main51")} <b>{t("main52")}</b>, {t("main53")}
+                                <b> {t("main54")}</b> , {t("main55")} <b>{t("main56")}</b>, {t("main57")}</p>
                         </div>
-                        <div className={s.panel_box2}>
-                            <h3>
-                                {
-                                    active === 1 ? t("main76") : active === 2 ? t("main77") :
-                                        active === 3 ? t("main78") : t("main80")
-                                }
-                            </h3>
-                            <p>
-                                {
-                                    active === 1 ? t("main81") : active === 2 ? t("main82")
-                                        : active === 3 ? t("main83") : t("main84")
-                                }
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className={s.box5}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_header2H1}>
-                            <p className={s.section_header2H1P1}>{t("main85")}</p>
-                            <p className={s.section_header2H1P2}>{t("main86")}</p>
-                        </h2>
-                    </div>
-                    <div className={s.box_wrapper2}>
-                        <div className={s.box_wrapper2Box1}>
-                            <div className={s.box5_1 + ' ' + s.first_of_typeBox5} onClick={() => setActive2(1)}
-                                 style={active2 === 1 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box5/ico-gray-beloyal-min.svg' alt='BE LOYAL'
-                                       width={50} height={50}/>
-                                <span>BE LOYAL - {t("main87")}</span>
-                            </div>
-                            <div className={s.box5_2} style={active2 === 1 && mobile ? activeStyle3 : undefined}>
-                                <div className={s.image_block}>
-                                    <Image src={`/mainPage/box5/box5_1.jpg`} alt='Індивідуальні інвестори'
-                                           width={300} height={300}/>
+                        <div className={s.list_box_v2}>
+                            <Link href='/' className={s.features_box_select_item}>
+                                <div className={s.box}>
+                                    <p>{t("main58")}</p>
+                                    <h4>{t("main59")}</h4>
                                 </div>
-                                <div className={s.text_block_image}>
-                                    <h3>{t("main88")}</h3>
-                                    <p>{t("main95")}</p>
-                                    <Link href='/' className={s.formBtn + ' ' + s.add}>
-                                        BE LOYAL
-                                        <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
-                                    </Link>
+                                <Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}
+                                       height={300}
+                                       className={s.boxImage}/>
+                            </Link>
+                            <Link href='/' className={s.features_box_select_item}>
+                                <div className={s.box}>
+                                    <p>{t("main60")}</p>
+                                    <h4>{t("main61")}</h4>
                                 </div>
-                            </div>
-                            <div className={s.box5_1 + ' ' + s.second_of_typeBox5} onClick={() => setActive2(2)}
-                                 style={active2 === 2 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box5/ico-gray-carwash-manager.svg' alt='BE LOYAL'
-                                       width={50} height={50}/>
-                                <span>{t("main89")}</span>
-                            </div>
-                            <div className={s.box5_2} style={active2 === 2 && mobile ? activeStyle3 : undefined}>
-                                <div className={s.image_block}>
-                                    <Image src={`/mainPage/box5/box5_2.jpg`} alt='Індивідуальні інвестори'
-                                           width={300} height={300}/>
+                                <Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}
+                                       height={300}
+                                       className={s.boxImage}/>
+                            </Link>
+                            <Link href='/' className={s.features_box_select_item}>
+                                <div className={s.box}>
+                                    <p>{t("main62")}</p>
+                                    <h4>{t("main63")}</h4>
                                 </div>
-                                <div className={s.text_block_image}>
-                                    <h3>{t("main90")}</h3>
-                                    <p>{t("main96")}</p>
-                                    <Link href='/' className={s.formBtn + ' ' + s.add}
-                                          style={{padding: '22px 10px 20px'}}>
-                                        {t("main91")}
-                                        <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
-                                    </Link>
+                                <Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}
+                                       height={300}
+                                       className={s.boxImage}/>
+                            </Link>
+                            <Link href='/' className={s.features_box_select_item}>
+                                <div className={s.box}>
+                                    <p>{t("main64")}</p>
+                                    <h4>{t("main65")}</h4>
                                 </div>
-                            </div>
-                            <div className={s.box5_1 + ' ' + s.third_of_typeBox5} onClick={() => setActive2(3)}
-                                 style={active2 === 3 ? activeStyle : undefined}>
-                                <Image src='/mainPage/box5/ico-gray-change machine-min.svg' alt='BE LOYAL'
-                                       width={50} height={50}/>
-                                <span>{t("main92")}</span>
-                            </div>
-                            <div className={s.box5_2} style={active2 === 3 && mobile ? activeStyle3 : undefined}>
-                                <div className={s.image_block}>
-                                    <Image src={`/mainPage/box5/box5_3.jpg`} alt='Індивідуальні інвестори'
-                                           width={300} height={300}/>
+                                <Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}
+                                       height={300}
+                                       className={s.boxImage}/>
+                            </Link>
+                            <Link href='/' className={s.features_box_select_item}>
+                                <div className={s.box}>
+                                    <p>{t("main66")}</p>
+                                    <h4>{t("main67")}</h4>
                                 </div>
-                                <div className={s.text_block_image}>
-                                    <h3>{t("main93")}</h3>
-                                    <p>{t("main97")}</p>
-                                    <Link href='/' className={s.formBtn + ' ' + s.add}>
-                                        {t("main94")} Samwash
-                                        <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.box_wrapper2Box2}>
-                            <Image src={`/mainPage/box5/${active2 === 1 ? 'box5_1.jpg'
-                                : active2 === 2 ? 'box5_2.jpg' : 'box5_3.jpg'}`}
-                                   alt='Індивідуальні інвестори' width={300} height={300}/>
-                        </div>
-                        <div className={s.box_wrapper2Box3}>
-                            <h3>{ active2 === 1 ? t("main88") : active2 === 2 ? t("main90") : t("main93") }</h3>
-                            <p>{ active2 === 1 ? t("main95") : active2 === 2 ? t("main96") : t("main97") }</p>
-                            <Link href={active2 === 1 ? '/' : active2 === 2 ? '/' : '/'}
-                                  className={s.formBtn + ' ' + s.add}>
-                                {
-                                    active2 === 1 ? 'BE LOYAL' : active2 === 2 ?
-                                        <>
-                                            <span className={s.noneFont}>{t("main98")}</span> {t("main99")}
-                                        </>
-                                        : `${t("main88")} Samwash`
-                                }
-                                <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
+                                <Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}
+                                       height={300}
+                                       className={s.boxImage}/>
                             </Link>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className={s.box1}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}>{t("main100")}</p>
-                            <p className={s.section_headerH1P2}>{t("main101")}</p>
-                        </h2>
-                    </div>
-                    <div className={s.showreel_wrapper}>
-                        <div className={`${s.showreel} ${s.item_a}`}>
-                            <div className={s.showreel_left_img_right_text}>
-                                <div className={s.image_wrapper}>
-                                    <Image src='/mainPage/box6/image1.jpg' alt='' width={200} height={400}/>
-                                </div>
-                                <div className={s.text_wrapper}>
-                                    <h3>Kiekrz/Rokietnica</h3>
-                                    <p></p>
-                                    <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
-                                </div>
-                            </div>
+            <LazyLoadComponent>
+                <section className={s.dark_gray_background}>
+                    <div className={s.main_container + ' ' + s.styleFlex}>
+                        <div className={s.text_block}>
+                            <h2>{t("main68")} Samwash</h2>
+                            <p>{t("main69")}</p>
+                            <p>{t("main70")}</p>
+                            <Link href='/' className={s.formBtn2}>
+                                {t("main71")}
+                                <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
+                            </Link>
                         </div>
-                        <div className={`${s.showreel} ${s.item_b}`}>
-                            <div className={s.showreel_left_img_right_text}>
-                                <div className={s.image_wrapper}>
-                                    <Image src='/mainPage/box6/image2.jpg' alt='' width={200} height={600}/>
-                                </div>
-                                <div className={s.text_wrapper}>
-                                    <h3>ЩЕЦИН, 10ТКА</h3>
-                                    <p></p>
-                                    <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${s.showreel} ${s.item_c}`}>
-                            <div className={s.showreel_left_img_right_text}>
-                                <div className={s.image_wrapper}>
-                                    <Image src='/mainPage/box6/image3.jpg' alt='' width={200} height={600}/>
-                                </div>
-                                <div className={s.text_wrapper}>
-                                    <h3>{t("main103")}</h3>
-                                    <p></p>
-                                    <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${s.showreel} ${s.item_d}`}>
-                            <div className={s.showreel_top_img_bottom_text}>
-                                <div className={s.image_wrapper_text}>
-                                    <Image src='/mainPage/box6/image4.jpg' alt='' width={200} height={600}/>
-                                </div>
-                                <div className={s.text_wrapper_item}>
-                                    <h3>нова сіль</h3>
-                                    <p>Історія успіху - 15 років співпраці з BKF</p>
-                                    <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
-                                </div>
-                            </div>
+                        <div className={s.video_block}>
+                            <a data-fancybox="gallery" className={s.bg_image}
+                               href={'/video/mainVideo.mp4'}>
+                                <video src={'/video/mainVideo.mp4'} poster={'/video/mainVideo.mp4'} controls={true}
+                                       title='' preload="yes" autoPlay='no' playsInline muted loop/>
+                            </a>
                         </div>
                     </div>
-                    <div className='center-btn'>
-                        <ButtonRedArrowRight link={'/'} text={'main104'}/>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </LazyLoadComponent>
 
-            <section className={s.box7}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}>{t("main105")}</p>
-                            <p className={s.section_headerH1P2} style={{fontFamily: 'Ubuntu Light, sans-serif'}}>
-                                {t("main106")}</p>
-                        </h2>
+            <LazyLoadComponent>
+                <section className={s.box2}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}>{t("main72")}</p>
+                                <p className={s.section_headerH1P2}>{t("main73")} Samwash</p>
+                            </h2>
+                            <p className={s.section_headerP}>{t("main74")}</p>
+                            <h3 className={s.section_headerH3}>{t("main75")}</h3>
+                        </div>
+                        <div className={s.box_wrapper}>
+                            <div className={s.four_panels_box}>
+                                <div className={s.panel_box + ' ' + s.first_of_type} onClick={() => setActive(1)}
+                                     style={active === 1 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box4/ico-gray-інвестор.svg' alt={t("main76")}
+                                           width={50} height={50}/>
+                                    <span>{t("main76")}</span>
+                                </div>
+                                <div className={s.divPanelBox}
+                                     style={active === 1 && mobile ? activeStyle2 : undefined}>
+                                    <h3>{t("main76")}</h3>
+                                    <p>{t("main81")}</p>
+                                </div>
+                                <div className={s.panel_box + ' ' + s.second_of_type} onClick={() => setActive(2)}
+                                     style={active === 2 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box4/ico-gray-basket.svg' alt={t("main77")}
+                                           width={50} height={50}/>
+                                    <span>{t("main77")}</span>
+                                </div>
+                                <div className={s.divPanelBox}
+                                     style={active === 2 && mobile ? activeStyle2 : undefined}>
+                                    <h3>{t("main77")}</h3>
+                                    <p>{t("main82")}</p>
+                                </div>
+                                <div className={s.panel_box + ' ' + s.third_of_type} onClick={() => setActive(3)}
+                                     style={active === 3 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box4/АЗС.svg' alt={t("main78")}
+                                           width={50} height={50}/>
+                                    <span>{t("main78")}</span>
+                                </div>
+                                <div className={s.divPanelBox}
+                                     style={active === 3 && mobile ? activeStyle2 : undefined}>
+                                    <h3>{t("main78")}</h3>
+                                    <p>{t("main83")}</p>
+                                </div>
+                                <div className={s.panel_box + ' ' + s.fourth_of_type} onClick={() => setActive(4)}
+                                     style={active === 4 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box4/ico-gray-service.svg' alt={t("main79")}
+                                           width={50} height={50}/>
+                                    <span>{t("main79")}</span>
+                                </div>
+                                <div className={s.divPanelBox}
+                                     style={active === 4 && mobile ? activeStyle2 : undefined}>
+                                    <h3>{t("main80")}</h3>
+                                    <p>{t("main84")}</p>
+                                </div>
+                            </div>
+                            <div className={s.panel_box2}>
+                                <h3>
+                                    {
+                                        active === 1 ? t("main76") : active === 2 ? t("main77") :
+                                            active === 3 ? t("main78") : t("main80")
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        active === 1 ? t("main81") : active === 2 ? t("main82")
+                                            : active === 3 ? t("main83") : t("main84")
+                                    }
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className={s.divSlider}>
-                        <Swiper
-                            slidesPerView={itemsSlide}
-                            spaceBetween={50}
-                            loop={true}
-                            freeMode={true}
-                            pagination={{clickable: true}}
-                            autoplay={{delay: 6100, disableOnInteraction: false}}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={s.divLogoImage}>
-                                    <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </LazyLoadComponent>
 
-            <section className={s.box1}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}>{t("main107")} Samwash</p>
-                            <p className={s.section_headerH1P2}>{t("main108")}</p>
-                        </h2>
-                    </div>
-                    <div className={s.blog_features_wrapper}>
-                        {
-                            blog.map(item => {
-                                return (
-                                    <div className={s.blog_features_item}>
-                                        <h3>
-                                            <small>{item.data}</small>
-                                            <Link href={item.link}><strong>{item.title}</strong></Link>
-                                        </h3>
-                                        <div className={s.image_wrapper_blog}>
-                                            <Link href={item.link}>
-                                                <Image src={item.img} alt={item.title} width={200} height={100}/>
-                                            </Link>
-                                        </div>
-                                        <p>{item.desc}</p>
-                                        <div className='center-btn'>
-                                            <Link href={item.link} className={`${s.red_text_btn} btn`}
-                                                  style={{padding: '20px', transform: 'translateX(0)'}}>
-                                                {t("main109")}
-                                            </Link>
-                                        </div>
+            <LazyLoadComponent>
+                <section className={s.box5}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_header2H1}>
+                                <p className={s.section_header2H1P1}>{t("main85")}</p>
+                                <p className={s.section_header2H1P2}>{t("main86")}</p>
+                            </h2>
+                        </div>
+                        <div className={s.box_wrapper2}>
+                            <div className={s.box_wrapper2Box1}>
+                                <div className={s.box5_1 + ' ' + s.first_of_typeBox5} onClick={() => setActive2(1)}
+                                     style={active2 === 1 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box5/ico-gray-beloyal-min.svg' alt='BE LOYAL'
+                                           width={50} height={50}/>
+                                    <span>BE LOYAL - {t("main87")}</span>
+                                </div>
+                                <div className={s.box5_2} style={active2 === 1 && mobile ? activeStyle3 : undefined}>
+                                    <div className={s.image_block}>
+                                        <Image src={`/mainPage/box5/box5_1.jpg`} alt='Індивідуальні інвестори'
+                                               width={300} height={300}/>
                                     </div>
-                                )
-                            })
-                        }
+                                    <div className={s.text_block_image}>
+                                        <h3>{t("main88")}</h3>
+                                        <p>{t("main95")}</p>
+                                        <Link href='/' className={s.formBtn + ' ' + s.add}>
+                                            BE LOYAL
+                                            <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
+                                                   height={5}/>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className={s.box5_1 + ' ' + s.second_of_typeBox5} onClick={() => setActive2(2)}
+                                     style={active2 === 2 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box5/ico-gray-carwash-manager.svg' alt='BE LOYAL'
+                                           width={50} height={50}/>
+                                    <span>{t("main89")}</span>
+                                </div>
+                                <div className={s.box5_2} style={active2 === 2 && mobile ? activeStyle3 : undefined}>
+                                    <div className={s.image_block}>
+                                        <Image src={`/mainPage/box5/box5_2.jpg`} alt='Індивідуальні інвестори'
+                                               width={300} height={300}/>
+                                    </div>
+                                    <div className={s.text_block_image}>
+                                        <h3>{t("main90")}</h3>
+                                        <p>{t("main96")}</p>
+                                        <Link href='/' className={s.formBtn + ' ' + s.add}
+                                              style={{padding: '22px 10px 20px'}}>
+                                            {t("main91")}
+                                            <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
+                                                   height={5}/>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className={s.box5_1 + ' ' + s.third_of_typeBox5} onClick={() => setActive2(3)}
+                                     style={active2 === 3 ? activeStyle : undefined}>
+                                    <Image src='/mainPage/box5/ico-gray-change machine-min.svg' alt='BE LOYAL'
+                                           width={50} height={50}/>
+                                    <span>{t("main92")}</span>
+                                </div>
+                                <div className={s.box5_2} style={active2 === 3 && mobile ? activeStyle3 : undefined}>
+                                    <div className={s.image_block}>
+                                        <Image src={`/mainPage/box5/box5_3.jpg`} alt='Індивідуальні інвестори'
+                                               width={300} height={300}/>
+                                    </div>
+                                    <div className={s.text_block_image}>
+                                        <h3>{t("main93")}</h3>
+                                        <p>{t("main97")}</p>
+                                        <Link href='/' className={s.formBtn + ' ' + s.add}>
+                                            {t("main94")} Samwash
+                                            <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
+                                                   height={5}/>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={s.box_wrapper2Box2}>
+                                <Image src={`/mainPage/box5/${active2 === 1 ? 'box5_1.jpg'
+                                    : active2 === 2 ? 'box5_2.jpg' : 'box5_3.jpg'}`}
+                                       alt='Індивідуальні інвестори' width={300} height={300}/>
+                            </div>
+                            <div className={s.box_wrapper2Box3}>
+                                <h3>{active2 === 1 ? t("main88") : active2 === 2 ? t("main90") : t("main93")}</h3>
+                                <p>{active2 === 1 ? t("main95") : active2 === 2 ? t("main96") : t("main97")}</p>
+                                <Link href={active2 === 1 ? '/' : active2 === 2 ? '/' : '/'}
+                                      className={s.formBtn + ' ' + s.add}>
+                                    {
+                                        active2 === 1 ? 'BE LOYAL' : active2 === 2 ?
+                                            <>
+                                                <span className={s.noneFont}>{t("main98")}</span> {t("main99")}
+                                            </>
+                                            : `${t("main88")} Samwash`
+                                    }
+                                    <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                    <div className='center-btn'>
-                        <ButtonWhiteArrowRight link={'/'} text={'mainBlog'}/>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </LazyLoadComponent>
 
-            <section className={s.box2}>
-                <div className={s.main_container}>
-                    <div className={s.section_header}>
-                        <h2 className={s.section_headerH1}>
-                            <p className={s.section_headerH1P1}></p>
-                            <p className={s.section_headerH1P2}></p>
-                        </h2>
+            <LazyLoadComponent>
+                <section className={s.box1}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}>{t("main100")}</p>
+                                <p className={s.section_headerH1P2}>{t("main101")}</p>
+                            </h2>
+                        </div>
+                        <div className={s.showreel_wrapper}>
+                            <div className={`${s.showreel} ${s.item_a}`}>
+                                <div className={s.showreel_left_img_right_text}>
+                                    <div className={s.image_wrapper}>
+                                        <Image src='/mainPage/box6/image1.jpg' alt='' width={200} height={400}/>
+                                    </div>
+                                    <div className={s.text_wrapper}>
+                                        <h3>Kiekrz/Rokietnica</h3>
+                                        <p></p>
+                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`${s.showreel} ${s.item_b}`}>
+                                <div className={s.showreel_left_img_right_text}>
+                                    <div className={s.image_wrapper}>
+                                        <Image src='/mainPage/box6/image2.jpg' alt='' width={200} height={600}/>
+                                    </div>
+                                    <div className={s.text_wrapper}>
+                                        <h3>ЩЕЦИН, 10ТКА</h3>
+                                        <p></p>
+                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`${s.showreel} ${s.item_c}`}>
+                                <div className={s.showreel_left_img_right_text}>
+                                    <div className={s.image_wrapper}>
+                                        <Image src='/mainPage/box6/image3.jpg' alt='' width={200} height={600}/>
+                                    </div>
+                                    <div className={s.text_wrapper}>
+                                        <h3>{t("main103")}</h3>
+                                        <p></p>
+                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`${s.showreel} ${s.item_d}`}>
+                                <div className={s.showreel_top_img_bottom_text}>
+                                    <div className={s.image_wrapper_text}>
+                                        <Image src='/mainPage/box6/image4.jpg' alt='' width={200} height={600}/>
+                                    </div>
+                                    <div className={s.text_wrapper_item}>
+                                        <h3>нова сіль</h3>
+                                        <p>Історія успіху - 15 років співпраці з BKF</p>
+                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='center-btn'>
+                            <ButtonRedArrowRight link={'/'} text={'main104'}/>
+                        </div>
                     </div>
-                    <div className={s.boxFinale}>
-                        <h2>{t("main110")}</h2>
-                        <p>{t("main111")} Samwash <b>{t("main112")}</b>, {t("main113")}</p>
-                        <p>{t("main114")}</p>
-                        <h2>{t("main115")}</h2>
-                        <p>{t("main116")}</p>
-                        <p>{t("main117")} <b>{t("main118")}</b> {t("main119")}</p>
+                </section>
+            </LazyLoadComponent>
+
+            <LazyLoadComponent>
+                <section className={s.box7}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}>{t("main105")}</p>
+                                <p className={s.section_headerH1P2} style={{fontFamily: 'Ubuntu Light, sans-serif'}}>
+                                    {t("main106")}</p>
+                            </h2>
+                        </div>
+                        <div className={s.divSlider}>
+                            <Swiper
+                                slidesPerView={itemsSlide}
+                                spaceBetween={50}
+                                loop={true}
+                                freeMode={true}
+                                pagination={{clickable: true}}
+                                autoplay={{delay: 6100, disableOnInteraction: false}}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </LazyLoadComponent>
+
+            <LazyLoadComponent>
+                <section className={s.box1}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}>{t("main107")} Samwash</p>
+                                <p className={s.section_headerH1P2}>{t("main108")}</p>
+                            </h2>
+                        </div>
+                        <div className={s.blog_features_wrapper}>
+                            {
+                                blog.map(item => {
+                                    return (
+                                        <div className={s.blog_features_item}>
+                                            <h3>
+                                                <small>{item.data}</small>
+                                                <Link href={item.link}><strong>{item.title}</strong></Link>
+                                            </h3>
+                                            <div className={s.image_wrapper_blog}>
+                                                <Link href={item.link}>
+                                                    <Image src={item.img} alt={item.title} width={200} height={100}/>
+                                                </Link>
+                                            </div>
+                                            <p>{item.desc}</p>
+                                            <div className='center-btn'>
+                                                <Link href={item.link} className={`${s.red_text_btn} btn`}
+                                                      style={{padding: '20px', transform: 'translateX(0)'}}>
+                                                    {t("main109")}
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className='center-btn'>
+                            <ButtonWhiteArrowRight link={'/'} text={'mainBlog'}/>
+                        </div>
+                    </div>
+                </section>
+            </LazyLoadComponent>
+
+            <LazyLoadComponent>
+                <section className={s.box2}>
+                    <div className={s.main_container}>
+                        <div className={s.section_header}>
+                            <h2 className={s.section_headerH1}>
+                                <p className={s.section_headerH1P1}></p>
+                                <p className={s.section_headerH1P2}></p>
+                            </h2>
+                        </div>
+                        <div className={s.boxFinale}>
+                            <h2>{t("main110")}</h2>
+                            <p>{t("main111")} Samwash <b>{t("main112")}</b>, {t("main113")}</p>
+                            <p>{t("main114")}</p>
+                            <h2>{t("main115")}</h2>
+                            <p>{t("main116")}</p>
+                            <p>{t("main117")} <b>{t("main118")}</b> {t("main119")}</p>
+                        </div>
+                    </div>
+                </section>
+            </LazyLoadComponent>
 
         </div>
     );

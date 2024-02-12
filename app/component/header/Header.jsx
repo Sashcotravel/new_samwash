@@ -58,6 +58,7 @@ function Header() {
         }
     }
 
+
     return (
         <header>
             <div className={`${s.laptop} ${fixHeader ? s.laptop2 : ''}`}>
@@ -207,7 +208,7 @@ function Header() {
                                 </div>
                             </div>
                             <div className={s.dropdown2}>
-                                <Link href='/'>{t("header32")}</Link>
+                                <Link href='/blog'>{t("header32")}</Link>
                             </div>
                             <div className={s.dropdown2}>
                                 <Link href='/'>{t("header33")}</Link>
