@@ -461,8 +461,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}
-                            priority/>
+                            <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -476,8 +475,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo2.svg' alt='' width={1000} height={1000}
-                            priority/>
+                            <Image src='/mainPage/mainSlider/slider_promo2.svg' alt='' width={1000} height={1000}/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -491,8 +489,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo3.svg' alt='' width={1000} height={1000}
-                            priority/>
+                            <Image src='/mainPage/mainSlider/slider_promo3.svg' alt='' width={1000} height={1000}/>
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
