@@ -1,6 +1,6 @@
 "use client"
 
-import s from './blog.module.css'
+import s from '../blog.module.css'
 import {useLocale, useTranslations} from "next-intl";
 import Image from "next/image";
 import Link from "next-intl/link";
@@ -17,7 +17,13 @@ const getData = ((locale, articleAll, setArticleAll, setResTrue) => {
             .get(`https://cb.samwash.ua/api/v1/blog/${locale === 'en' ? 'en' : locale === 'ru' ? 'ru' : 'ua'}?perPage=10000`)
             .then(res => {
                 const data = res.data.data.data
-                setArticleAll(data)
+                let f = []
+                data.forEach(item => {
+                        if(item.type === 'news'){
+                            f.push(item)
+                        }
+                    })
+                setArticleAll(f)
                 setResTrue(true)
             })
     }
@@ -27,7 +33,7 @@ const getData = ((locale, articleAll, setArticleAll, setResTrue) => {
 })
 
 
-function Blog() {
+function News() {
 
     const t = useTranslations("blog");
 
@@ -35,7 +41,7 @@ function Blog() {
     const [resTrue, setResTrue] = useState(false)
     const [click1, setClick1] = useState(false)
     const [click2, setClick2] = useState(false)
-    const [cat, setCat] = useState('')
+    const [cat, setCat] = useState('Новини')
     const [cat2, setCat2] = useState('')
     const router = useRouter()
     const pathname = usePathname()
@@ -143,8 +149,8 @@ function Blog() {
         setClick1(prevState => !prevState)
         if(e.target.title === 'Статті'){
             router.push('/blog/articles')
-        } else if(e.target.title === 'Новини'){
-            router.push('/blog/news')
+        } else if(e.target.title === ''){
+            router.push('/blog')
         }
     }
 
@@ -211,7 +217,7 @@ function Blog() {
                                     <span className={`caret ${click2 ? "caret2" : ''}`}></span>
                                 </button>
                                 <ul className={`dropdown-menu ${s.menu} ${click2 ? s.block : ''}`}>
-                                <li title='' className={cat2 === '' ? 'selected' : ''}
+                                    <li title='' className={cat2 === '' ? 'selected' : ''}
                                         onClick={(e) => category2(e)}>Всі
                                     </li>
                                     <li title='2023' className={cat2 === '2023' ? 'selected' : ''}
@@ -272,4 +278,4 @@ function Blog() {
     );
 }
 
-export default Blog
+export default News

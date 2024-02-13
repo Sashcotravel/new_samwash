@@ -462,7 +462,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}
-                                   loading='lazy' />
+                                   loading='eager' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
