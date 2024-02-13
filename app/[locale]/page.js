@@ -854,91 +854,90 @@ export default function Home() {
                                     <p>{t("main58")}</p>
                                     <h4>{t("main59")}</h4>
                                 </div>
-                                {/*<Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}*/}
-                                {/*       height={300} className={s.boxImage}/>*/}
+                                <Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}
+                                       height={300} className={s.boxImage}/>
 
-                                <picture>
+                                {/*<picture>*/}
 
-                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>
+                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>
+                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
 
-                                    <img srcset='/mainPage/box2/box2_1Main.jpg' className={s.boxImage} />
+                                {/*    <img srcset='/mainPage/box2/box2_1Main.jpg' className={s.boxImage} />*/}
 
-                                </picture>
+                                {/*</picture>*/}
                         </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main60")}</p>
                                     <h4>{t("main61")}</h4>
                                 </div>
-                                {/*<Image src='/mainPage/box2/box2_2Main.svg' alt={t("main60")} width={100}*/}
-                                {/*       height={300}*/}
-                                {/*       className={s.boxImage}/>*/}
+                                <Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}
+                                       height={300} className={s.boxImage}/>
 
-                                <picture>
+                                {/*<picture>*/}
 
-                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_2.jpg'/>*/}
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}/>
+                                {/*    <img srcSet='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}/>*/}
 
-                                </picture>
+                                {/*</picture>*/}
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main62")}</p>
                                     <h4>{t("main63")}</h4>
                                 </div>
-                                {/*<Image src='/mainPage/box2/box2_3Main.svg' alt={t("main62")} width={100}*/}
-                                {/*       height={300} className={s.boxImage}/>*/}
+                                <Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}
+                                       height={300} className={s.boxImage}/>
 
-                                <picture>
+                                {/*<picture>*/}
 
-                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_3.jpg'/>
+                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_3.jpg'/>*/}
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>
+                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}/>
+                                {/*    <img srcSet='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}/>*/}
 
-                                </picture>
+                                {/*</picture>*/}
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main64")}</p>
                                     <h4>{t("main65")}</h4>
                                 </div>
-                                {/*<Image src='/mainPage/box2/box2_4Main.svg' alt={t("main64")} width={100}*/}
-                                {/*       height={300} className={s.boxImage}/>*/}
+                                <Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}
+                                       height={300} className={s.boxImage}/>
 
-                                <picture>
+                                {/*<picture>*/}
 
-                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_4.jpg'/>
+                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_4.jpg'/>*/}
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>
+                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}/>
+                                {/*    <img srcSet='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}/>*/}
 
-                                </picture>
+                                {/*</picture>*/}
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main66")}</p>
                                     <h4>{t("main67")}</h4>
                                 </div>
-                                {/*<Image src='/mainPage/box2/box2_5Main.svg' alt={t("main66")} width={100}*/}
-                                {/*       height={300} className={s.boxImage}/>*/}
+                                <Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}
+                                       height={300} className={s.boxImage}/>
 
-                                <picture>
+                                {/*<picture>*/}
 
-                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_5.jpg'/>
+                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_5.jpg'/>*/}
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>
+                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}/>
+                                {/*    <img srcSet='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}/>*/}
 
-                                </picture>
+                                {/*</picture>*/}
                             </Link>
                         </div>
                     </div>
