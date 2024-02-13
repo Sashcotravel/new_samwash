@@ -123,7 +123,7 @@ function Contact() {
         <div>
 
             <section className={s.head_image}>
-                <Image src='/contact/imageContact1.jpg' alt='' width={1900} height={300}/>
+                <Image src='/contact/imageContact1.jpg' alt='' width={1900} height={300} priority />
                 <div className={s.main_container}>
                     <ul className='bread-crumbs'>
                         <li>
