@@ -18,7 +18,6 @@ import ButtonWhiteArrowRight from "@/app/buttons/whiteButton/buttonRedArrowRight
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import dynamic from "next/dynamic";
 
-
 const LazyLoadComponent = dynamic(() =>
     import("react-lazy-load-image-component").then((mod) => mod.LazyLoadComponent))
 
@@ -461,8 +460,19 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo1.png' alt='' width={1000} height={1000}
-                                   loading='eager' />
+                            {/*<Image src='/mainPage/mainSlider/slider_promo1.png' alt='' width={1000} height={1000}*/}
+                            {/*       loading='eager' />*/}
+
+                            <picture>
+
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo1Plan.png'/>
+
+                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+
+                                <img srcSet='/mainPage/mainSlider/slider_promo1.png' className={s.boxImage}
+                                     loading='lazy'/>
+
+                            </picture>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -476,8 +486,19 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo2.png' alt='' width={1000} height={1000}
-                                   loading='lazy' />
+                            {/*<Image src='/mainPage/mainSlider/slider_promo2.png' alt='' width={1000} height={1000}*/}
+                            {/*       loading='lazy' />*/}
+
+                            <picture>
+
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo2Plan.png'/>
+
+                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+
+                                <img srcSet='/mainPage/mainSlider/slider_promo2.png' className={s.boxImage}
+                                     loading='lazy'/>
+
+                            </picture>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -491,8 +512,18 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo3.png' alt='' width={1000} height={1000}
-                                   loading='lazy' />
+                            {/*<Image src='/mainPage/mainSlider/slider_promo3.png' alt='' width={1000} height={1000}*/}
+                            {/*       loading='lazy'/>*/}
+
+                            <picture>
+
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo3Plan.png'/>
+
+                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+
+                                <img srcSet='/mainPage/mainSlider/slider_promo3.png' className={s.boxImage} loading='lazy' />
+
+                            </picture>
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
@@ -854,90 +885,90 @@ export default function Home() {
                                     <p>{t("main58")}</p>
                                     <h4>{t("main59")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}
-                                       height={300} className={s.boxImage}/>
+                                {/*<Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}*/}
+                                {/*       height={300} className={s.boxImage}/>*/}
 
-                                {/*<picture>*/}
+                                <picture>
 
-                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
+                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>
 
-                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
+                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>
 
-                                {/*    <img srcset='/mainPage/box2/box2_1Main.jpg' className={s.boxImage} />*/}
+                                    <img srcset='/mainPage/box2/box2_1Main.jpg' className={s.boxImage} />
 
-                                {/*</picture>*/}
+                                </picture>
                         </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main60")}</p>
                                     <h4>{t("main61")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}
-                                       height={300} className={s.boxImage}/>
+                                {/*<Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}*/}
+                                {/*       height={300} className={s.boxImage}/>*/}
 
-                                {/*<picture>*/}
+                                <picture>
 
-                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_2.jpg'/>*/}
+                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_2.jpg'/>
 
-                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>*/}
+                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
 
-                                {/*    <img srcSet='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}/>*/}
+                                    <img srcSet='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}/>
 
-                                {/*</picture>*/}
+                                </picture>
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main62")}</p>
                                     <h4>{t("main63")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}
-                                       height={300} className={s.boxImage}/>
+                                {/*<Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}*/}
+                                {/*       height={300} className={s.boxImage}/>*/}
 
-                                {/*<picture>*/}
+                                <picture>
 
-                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_3.jpg'/>*/}
+                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_3.jpg'/>
 
-                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>*/}
+                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>
 
-                                {/*    <img srcSet='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}/>*/}
+                                    <img srcSet='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}/>
 
-                                {/*</picture>*/}
+                                </picture>
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main64")}</p>
                                     <h4>{t("main65")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}
-                                       height={300} className={s.boxImage}/>
+                                {/*<Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}*/}
+                                {/*       height={300} className={s.boxImage}/>*/}
 
-                                {/*<picture>*/}
+                                <picture>
 
-                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_4.jpg'/>*/}
+                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_4.jpg'/>
 
-                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>*/}
+                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>
 
-                                {/*    <img srcSet='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}/>*/}
+                                    <img srcSet='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}/>
 
-                                {/*</picture>*/}
+                                </picture>
                             </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main66")}</p>
                                     <h4>{t("main67")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}
-                                       height={300} className={s.boxImage}/>
+                                {/*<Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}*/}
+                                {/*       height={300} className={s.boxImage}/>*/}
 
-                                {/*<picture>*/}
+                                <picture>
 
-                                {/*    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_5.jpg'/>*/}
+                                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_5.jpg'/>
 
-                                {/*    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>*/}
+                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>
 
-                                {/*    <img srcSet='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}/>*/}
+                                    <img srcSet='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}/>
 
-                                {/*</picture>*/}
+                                </picture>
                             </Link>
                         </div>
                     </div>
