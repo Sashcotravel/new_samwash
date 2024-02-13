@@ -45,6 +45,16 @@
 
 
 
+@media screen and (max-width: 1560px){
+    .formBtn{
+        width: 150px;
+        padding: 10px 20px;
+    }
+    .formBtn img{
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width: 1280px){
     .formBtn{
         font-size: 10px;

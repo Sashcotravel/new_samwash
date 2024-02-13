@@ -103,6 +103,7 @@
     transition: border-color .5s ease-in-out;
     padding: 15px 20px;
     background-color: #fff;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -246,6 +247,33 @@
 
 
 
+
+@media screen and (max-width: 1560px){
+    .blog_container{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .blog_container li{
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+    }
+    .blog_container li:nth-child(3n+3) {
+        margin-right: 30px;
+    }
+    .box_ctg span{
+        padding: 0 15px;
+    }
+    .blog_container li a h2{
+        font-size: 32px;
+    }
+    .first_item_search{
+        width: 50%;
+        margin-top: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 
 @media screen and (min-width: 992px){
     .container_blog{

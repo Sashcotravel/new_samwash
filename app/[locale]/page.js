@@ -461,7 +461,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}
+                            <Image src='/mainPage/mainSlider/slider_promo1.png' alt='' width={1000} height={1000}
                                    loading='eager' />
                         </div>
                     </SwiperSlide>
@@ -476,7 +476,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo2.svg' alt='' width={1000} height={1000}
+                            <Image src='/mainPage/mainSlider/slider_promo2.png' alt='' width={1000} height={1000}
                                    loading='lazy' />
                         </div>
                     </SwiperSlide>
@@ -491,7 +491,7 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo3.svg' alt='' width={1000} height={1000}
+                            <Image src='/mainPage/mainSlider/slider_promo3.png' alt='' width={1000} height={1000}
                                    loading='lazy' />
                         </div>
                     </SwiperSlide>

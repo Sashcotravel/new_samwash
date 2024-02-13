@@ -223,6 +223,50 @@ function Blog() {
                                 </ul>
                             </div>
                         </div>
+                        <div className={s.first_item_search}>
+                            <div className='hi-dropdown'>
+                                <button className={s.blog_searchbox}
+                                        onClick={() => setClick2(prevState => !prevState)}
+                                >
+                                    <span className='title'>ФІЛЬТРУВАТИ ЗА ДАТИ</span>
+                                    <span className='value'>{cat2 === '' ? "Всі записи" : cat2}</span>
+                                    <span className={`caret ${click2 ? "caret2" : ''}`}></span>
+                                </button>
+                                <ul className={`dropdown-menu ${s.menu} ${click2 ? s.block : ''}`}>
+                                <li title='' className={cat2 === '' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>Всі
+                                    </li>
+                                    <li title='2023' className={cat2 === '2023' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>2023
+                                    </li>
+                                    <li title='2022' className={cat2 === '2022' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>2022
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={s.first_item_search}>
+                            <div className='hi-dropdown'>
+                                <button className={s.blog_searchbox}
+                                        onClick={() => setClick2(prevState => !prevState)}
+                                >
+                                    <span className='title'>ФІЛЬТРУВАТИ ЗА ДАТИ</span>
+                                    <span className='value'>{cat2 === '' ? "Всі записи" : cat2}</span>
+                                    <span className={`caret ${click2 ? "caret2" : ''}`}></span>
+                                </button>
+                                <ul className={`dropdown-menu ${s.menu} ${click2 ? s.block : ''}`}>
+                                <li title='' className={cat2 === '' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>Всі
+                                    </li>
+                                    <li title='2023' className={cat2 === '2023' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>2023
+                                    </li>
+                                    <li title='2022' className={cat2 === '2022' ? 'selected' : ''}
+                                        onClick={(e) => category2(e)}>2022
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
