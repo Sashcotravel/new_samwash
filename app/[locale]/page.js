@@ -467,7 +467,7 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo1Plan.png'/>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo1.png' />
 
                                 <img srcSet='/mainPage/mainSlider/slider_promo1.png' className={s.boxImage}
                                      loading='lazy'/>
@@ -491,9 +491,9 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo2Plan.png'/>
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo2Plan.png' />
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo2.png' />
 
                                 <img srcSet='/mainPage/mainSlider/slider_promo2.png' className={s.boxImage}
                                      loading='lazy'/>
@@ -519,7 +519,7 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo3Plan.png'/>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo3.png' />
 
                                 <img srcSet='/mainPage/mainSlider/slider_promo3.png' className={s.boxImage} loading='lazy' />
 
