@@ -462,7 +462,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}
-                                   priority/>
+                                   loading='lazy' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -477,7 +477,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Image src='/mainPage/mainSlider/slider_promo2.svg' alt='' width={1000} height={1000}
-                                   priority/>
+                                   loading='lazy' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -492,7 +492,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Image src='/mainPage/mainSlider/slider_promo3.svg' alt='' width={1000} height={1000}
-                                   priority/>
+                                   loading='lazy' />
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
