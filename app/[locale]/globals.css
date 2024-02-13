@@ -263,6 +263,104 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   text-align: center;
 }
 
+.hi-dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.hi-dropdown .title{
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #a1a1a1;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.hi-dropdown .value{
+  display: block;
+  position: relative;
+  float: left;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3d3d3d;
+  border-width: 0;
+  outline-width: 0;
+  line-height: 1.25;
+  padding: 10px 0 0 0;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+}
+
+.caret{
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: 12px;
+}
+
+.caret2{
+  transform: translateY(-1px) scaleY(-1);
+}
+
+.dropdown-menu li.selected {
+  pointer-events: none;
+  opacity: .5;
+}
+
+.hi-dropdown .dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.hi-dropdown .dropdown-menu li {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.hi-dropdown .dropdown-menu li:hover {
+  background-color: #d9d9d9;
+}
+
+.addBut{
+  position: absolute!important;
+  bottom: 0;
+  margin-bottom: 60px;
+}
+
+
 
 
 

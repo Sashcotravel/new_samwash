@@ -5,6 +5,7 @@
   "mainButMain": "to the main page",
   "main104": "all projects",
   "mainBlog": "see all posts",
+  "readMore": "read more",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -82,8 +83,8 @@
     "main23": "NO",
     "main24": "In which city do you plan to implement the investment?",
     "main25": "Name of the city",
-    "main26": "How do you want to finance your investment?",
-    "main27": "car wash costs a minimum",
+    "main26": "How do you want to invest in your future car wash?",
+    "main27": "the cost of a car wash is minimal",
     "main28": "UAH net",
     "main29": "Select",
     "main30": "Own funds",

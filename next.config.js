@@ -15,6 +15,9 @@ const nextConfig = {
         });
         return config;
     },
+    images: {
+        domains:["cb.samwash.ua"]
+    }
 };
 
 const withNextIntl = require('next-intl/plugin')(

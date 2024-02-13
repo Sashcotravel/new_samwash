@@ -132,17 +132,16 @@ export default function Home() {
     const select2 = (e) => {
         let value = e.target.value
         setImageUrlModel(value)
-        if(value === 'без-конструкцій'){
-            setImageUrlNum('')
+        if(value === 'без-накриття'){
             setImageUrOutside('')
-            ref.current.checked = !ref.current.checked
+            setImageUrlNum('')
+            ref.current.checked = false
             setFormData(prev => {
                 return { ...prev, outsidePosition: false }
             })
             setFormData(prev => {
                 return { ...prev, colPosition: 0 }
             })
-            document.getElementById('col').value = '2'
         }
         setFormData(prev => {
             return { ...prev, construction: value }
@@ -462,7 +461,8 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo1.jpg' alt='' width={1000} height={1000}/>
+                            <Image src='/mainPage/mainSlider/slider_promo1.svg' alt='' width={1000} height={1000}
+                            priority/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -476,7 +476,8 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo2.png' alt='' width={1000} height={1000}/>
+                            <Image src='/mainPage/mainSlider/slider_promo2.svg' alt='' width={1000} height={1000}
+                            priority/>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -490,7 +491,8 @@ export default function Home() {
                                     <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={20} height={20}/>
                                 </div>
                             </Link>
-                            <Image src='/mainPage/mainSlider/slider_promo3.png' alt='' width={1000} height={1000}/>
+                            <Image src='/mainPage/mainSlider/slider_promo3.svg' alt='' width={1000} height={1000}
+                            priority/>
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
@@ -565,7 +567,7 @@ export default function Home() {
                             <div className={s.half_colum}>
                                 <div className={s.washer_image}>
                                     <Image alt='Choose your washes'
-                                           src={`/mainPage/mainCalc/autowash/${imageUrl}${imageUrlModel}${imageUrlNum}${imageUrlOutside}.jpg`}
+                                           src={`/mainPage/mainCalc/autowash/${imageUrl}${imageUrlModel}${imageUrlNum}${imageUrlOutside}.svg`}
                                            width={500} height={500}/>
                                 </div>
                             </div>
@@ -578,16 +580,12 @@ export default function Home() {
                                         </lable>
                                         <select onChange={select1} id='type'>
                                             <option disabled selected>{t("main17")}</option>
-                                            <option value='безконтактні-модульні'>безконтактні -
-                                                модульні
+                                            <option value='мийка-самообслуговування'>
+                                                мийка - самообслуговування
                                             </option>
-                                            <option value='безконтактний-контейнер'>безконтактний -
-                                                контейнер
-                                            </option>
-                                            <option value='автомат-щітка'>автомат - щітка</option>
-                                            <option value='автомат-безконтактний'>автомат -
-                                                безконтактний
-                                            </option>
+                                            <option value='мийка-фур'>мийка - фур</option>
+                                            <option value='робот-мийка'>робот - мийка</option>
+                                            <option value='модульна-мийка'>модульна - мийка</option>
                                         </select>
                                     </div>
                                     <div className={s.select_wrapper + ' ' + s.select_wrapperPage}>
@@ -599,11 +597,11 @@ export default function Home() {
                                                 id='construction'
                                                 style={formData.typeAutowash === '' ? {backgroundColor: '#ccc'} : undefined}>
                                             <option disabled selected>{t("main18")}</option>
-                                            <option value='Lumi'>Lumi</option>
-                                            <option value='Nexo'>Nexo</option>
-                                            <option value='Premium'>Premium</option>
-                                            <option value='Basic'>Basic</option>
-                                            <option value='без-конструкцій'>без конструкцій</option>
+                                            <option value='Smart'>Smart</option>
+                                            <option value='Pixel'>Pixel</option>
+                                            <option value='MARCO'>MARCO</option>
+                                            <option value='MARCELLO'>MARCELLO</option>
+                                            <option value='без-накриття'>без-накриття</option>
                                         </select>
                                     </div>
                                     <div className={s.select_wrapper + ' ' + s.select_wrapperPage}>
@@ -614,19 +612,37 @@ export default function Home() {
                                         <select onChange={select3} disabled={formData.construction === ''} id='col'
                                                 style={formData.construction === '' ? {backgroundColor: '#ccc'} : undefined}>
                                             <option disabled selected>{t("main19")}</option>
+                                            {formData.typeAutowash !== 'мийка-самообслуговування'
+                                                && <option value='1'>1</option>}
                                             <option value='2'>2</option>
                                             <option value='3'>3</option>
                                             <option value='4'>4</option>
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='5'>5</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='6'>6</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='7'>7</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='8'>8</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='9'>9</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='10'>10</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='11'>11</option>}
+                                            {formData.typeAutowash === 'мийка-самообслуговування'
+                                                && <option value='12'>12</option>}
                                         </select>
                                     </div>
                                     <div className={s.input_wrapper}>
-                                        {formData.colPosition > 2 && <lable className={s.container}>
+                                        {formData.colPosition ? <lable className={s.container}>
                                             <span>4</span>
                                             <font>{t("main17")}</font>
                                             <input type='checkbox' ref={ref}
                                                    className={s.checkmark + ' ' + s.checkbox}/>
                                             <span className={s.checkmark} onClick={check}></span>
-                                        </lable>}
+                                        </lable> : ''}
                                     </div>
                                     <div onClick={setStageNext} className={s.redDivFirst}>
                                         <ButtonRedWithoutLink text={'mainButNext'}/>
@@ -687,7 +703,7 @@ export default function Home() {
                                     <div className={s.inline_item_user_data}>
                                         <div className={s.inline_description}>
                                             <span>7</span>
-                                            <span>{t("main26")} ( {t("main27")} <b>250 000 {t("main28")}</b> ) </span>
+                                            <span>{t("main26")} ( {t("main27")} <b>1 100 000 {t("main28")}</b> ) </span>
                                             <span> </span>
                                         </div>
                                         <div className={s.inline_inputs}>
@@ -838,7 +854,7 @@ export default function Home() {
                                     <p>{t("main58")}</p>
                                     <h4>{t("main59")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_1.jpg' alt={t("main58")} width={100}
+                                <Image src='/mainPage/box2/box2_1.svg' alt={t("main58")} width={100}
                                        height={300}
                                        className={s.boxImage}/>
                             </Link>
@@ -847,7 +863,7 @@ export default function Home() {
                                     <p>{t("main60")}</p>
                                     <h4>{t("main61")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_2.jpg' alt={t("main60")} width={100}
+                                <Image src='/mainPage/box2/box2_2.svg' alt={t("main60")} width={100}
                                        height={300}
                                        className={s.boxImage}/>
                             </Link>
@@ -856,7 +872,7 @@ export default function Home() {
                                     <p>{t("main62")}</p>
                                     <h4>{t("main63")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_3.jpg' alt={t("main62")} width={100}
+                                <Image src='/mainPage/box2/box2_3.svg' alt={t("main62")} width={100}
                                        height={300}
                                        className={s.boxImage}/>
                             </Link>
@@ -865,7 +881,7 @@ export default function Home() {
                                     <p>{t("main64")}</p>
                                     <h4>{t("main65")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_4.jpg' alt={t("main64")} width={100}
+                                <Image src='/mainPage/box2/box2_4.svg' alt={t("main64")} width={100}
                                        height={300}
                                        className={s.boxImage}/>
                             </Link>
@@ -874,7 +890,7 @@ export default function Home() {
                                     <p>{t("main66")}</p>
                                     <h4>{t("main67")}</h4>
                                 </div>
-                                <Image src='/mainPage/box2/box2_5.jpg' alt={t("main66")} width={100}
+                                <Image src='/mainPage/box2/box2_5.svg' alt={t("main66")} width={100}
                                        height={300}
                                        className={s.boxImage}/>
                             </Link>
@@ -1249,7 +1265,7 @@ export default function Home() {
                             {
                                 blog.map(item => {
                                     return (
-                                        <div className={s.blog_features_item}>
+                                        <div className={s.blog_features_item} key={item.data}>
                                             <h3>
                                                 <small>{item.data}</small>
                                                 <Link href={item.link}><strong>{item.title}</strong></Link>

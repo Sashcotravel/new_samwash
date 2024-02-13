@@ -128,7 +128,7 @@ function Header() {
                     <div className={s.bottomLine}>
                         <div className={s.logoWrapper}>
                             <Link href='/' className={s.brand} onClick={scroll}>
-                                <Image src='/new_logo.svg' alt='samwash' className={s.logo} fill/>
+                                <Image src='/new_logo.svg' alt='samwash' className={s.logo} width={200} height={200} />
                             </Link>
                         </div>
                         <div className={s.menu_icon} id='button' onClick={showMobileMenu}>
