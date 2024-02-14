@@ -8,6 +8,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import WhiteWithoutHover from "@/app/buttons/whiteWithoutHover/WhiteWithoutHover";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
+import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 
 
 
@@ -144,7 +145,7 @@ function Blog() {
         setCat(e.target.title)
         setClick1(prevState => !prevState)
         if(e.target.title === 'Статті'){
-            router.push('/blog/articles')
+            router.push('/blog/article')
         } else if(e.target.title === 'Новини'){
             router.push('/blog/news')
         }
@@ -160,6 +161,9 @@ function Blog() {
         setClick3(prevState => !prevState)
     }
 
+    const handleSubmit = (e) => {
+
+    }
 
 
     return (
@@ -169,7 +173,7 @@ function Blog() {
                 <Image src='/blog/blogMain.png' alt='' width={1900} height={300}/>
                 <div className={s.main_container}>
                     <ul className='bread-crumbs'>
-                        <li>
+                        <li style={{marginLeft: '0'}}>
                             <Link href='/'>{t("blog1")}</Link>
                         </li>
                         <li>
@@ -252,7 +256,7 @@ function Blog() {
                                 </ul>
                             </div>
                         </div>
-                        <form>
+                        <form onSubmit={handleSubmit} className={s.form}>
                             <div className={s.four_item_search}>
                                 <div className='hi-searchbar'>
                                     <span className='title'>Пошукова система</span>
@@ -260,7 +264,9 @@ function Blog() {
                                     <Image src='/blog/search.svg' alt='' width={16} height={16} className={s.fa_search} />
                                 </div>
                             </div>
-                            <div className={s.col_lg_2}></div>
+                            <div className={s.col_lg_2}>
+                                <ButtonRedWithoutLink text={'search'} clas={'addBut1'} />
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -286,14 +292,14 @@ function Blog() {
                                                     : <span style={{backgroundColor: "#e2001a"}}>Стаття</span>
                                             }
                                         </div>
-                                        <Link href={'/blog/' + item.slug}>
+                                        <Link href={`/blog/${item.type}/${item.slug}`}>
                                             <h2>{
                                             item?.content[0]?.title.length > 40
                                                 ? item?.content[0]?.title.slice(0, 30) + '...'
                                                 : item?.content[0]?.title
                                             }</h2>
                                         </Link>
-                                        <WhiteWithoutHover text={'readMore'} link={'/blog/' + item.slug}
+                                        <WhiteWithoutHover text={'readMore'} link={`/blog/${item.type}/${item.slug}`}
                                                            clas={'addBut'} />
                                     </li>
                                 )

@@ -398,6 +398,11 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   margin-bottom: 60px;
 }
 
+.addBut1{
+  margin-left: 0!important;
+  margin-top: 8px!important;
+}
+
 
 
 @media screen and (max-width: 1560px){
@@ -497,6 +502,33 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   .thanks-message-service-form .message p {
     font-size: 14px;
   }
+  .hi-dropdown .title{
+    font-size: 9px;
+    line-height: 1;
+  }
+  .hi-dropdown .value{
+    font-size: 11px;
+    padding: 5px 0;
+  }
+  .hi-searchbar .title{
+    font-size: 9px;
+    line-height: 1;
+  }
+  .hi-searchbar .value{
+    font-size: 11px;
+    padding: 5px 0;
+  }
+  .hi-searchbar{
+    height: 50px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+  }
+  .dropdown-menu{
+    margin-top: -22px!important;
+  }
+  .dropdown-menu li{
+    font-size: 11px!important;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -529,6 +561,10 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   }
   .thanks-message-service-form {
     height: auto;
+  }
+  .hi-searchbar{
+    padding: 10px;
+    margin-bottom: 20px;
   }
 }
 

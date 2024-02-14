@@ -271,6 +271,10 @@
     vertical-align: -0.125em;
 }
 
+.form{
+    display: flex;
+}
+
 
 
 @media screen and (max-width: 1560px){
@@ -292,14 +296,108 @@
     .blog_container li a h2{
         font-size: 32px;
     }
-    .first_item_search{
+    .first_item_search, .four_item_search{
         width: 50%;
         margin-top: 20px;
         padding-right: 15px;
         padding-left: 15px;
     }
+    .four_item_search{
+        width: 100%;
+        float: left;
+    }
     .row{
         flex-wrap: wrap;
+    }
+    .form{
+        display: block;
+        width: 50%;
+    }
+    .col_lg_2{
+        margin-right: 25px;
+        float: right;
+        text-align: right;
+        width: 50%;
+        margin-top: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .main_container{
+        height: 200px;
+    }
+    .main_container h1{
+        font-size: 32px;
+        margin-bottom: 75px;
+        padding: 0 0 0 30px;
+    }
+    .blog_container li a h2{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .sectionBlog{
+        padding: 20px 0;
+    }
+    .blog_searchbox{
+        height: 50px;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+    .fa_search{
+        margin-top: 0;
+    }
+    .col_lg_2{
+        margin-top: 0;
+    }
+    .blog_container li{
+        margin-bottom: 20px;
+    }
+    .box_ctg{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main_container h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding: 0 0 0 10px;
+    }
+    .form{
+        width: 100%;
+    }
+    .first_item_search, .four_item_search{
+        width: 100%;
+        margin-top: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .col_lg_2{
+        width: 100%;
+        margin-right: 0;
+    }
+    .blog_searchbox{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .blog_container li{
+        margin-bottom: 20px;
+        min-height: inherit;
+        margin-right: 0;
+    }
+    .blog_container li:nth-child(3n+3) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container_blog{
+        width: 750px;
     }
 }
 

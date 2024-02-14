@@ -510,6 +510,9 @@
         font-size: 14px;
         padding: 10px 0;
     }
+    .logo{
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 770px){

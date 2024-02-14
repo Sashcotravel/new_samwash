@@ -8,6 +8,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import WhiteWithoutHover from "@/app/buttons/whiteWithoutHover/WhiteWithoutHover";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
+import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 
 
 
@@ -41,8 +42,10 @@ function Article() {
     const [resTrue, setResTrue] = useState(false)
     const [click1, setClick1] = useState(false)
     const [click2, setClick2] = useState(false)
+    const [click3, setClick3] = useState(false)
     const [cat, setCat] = useState('Статті')
     const [cat2, setCat2] = useState('')
+    const [cat3, setCat3] = useState('')
     const router = useRouter()
     const pathname = usePathname()
     const searchParams = useSearchParams()
@@ -159,6 +162,15 @@ function Article() {
         setClick2(prevState => !prevState)
     }
 
+    const category3 = (e) => {
+        setCat3(e.target.title)
+        setClick3(prevState => !prevState)
+    }
+
+    const handleSubmit = (e) => {
+
+    }
+
 
 
     return (
@@ -229,13 +241,48 @@ function Article() {
                                 </ul>
                             </div>
                         </div>
+                        <div className={s.first_item_search}>
+                            <div className='hi-dropdown'>
+                                <button className={s.blog_searchbox}
+                                        onClick={() => setClick3(prevState => !prevState)}>
+                                    <span className='title'>ФІЛЬТРУВАТИ ЗА ЗАПИС</span>
+                                    <span className='value'>{cat3 === '' ? "Всі записи" : cat3}</span>
+                                    <span className={`caret ${click3 ? "caret2" : ''}`}></span>
+                                </button>
+                                <ul className={`dropdown-menu ${s.menu} ${click3 ? s.block : ''}`}>
+                                    <li title='' className={cat3 === '' ? 'selected' : ''}
+                                        onClick={(e) => category3(e)}>Останній
+                                    </li>
+                                    <li title='найбільш популярний'
+                                        className={cat3 === 'найбільш популярний' ? 'selected' : ''}
+                                        onClick={(e) => category3(e)}>найбільш популярний
+                                    </li>
+                                    <li title='рекомендований' className={cat3 === 'рекомендований' ? 'selected' : ''}
+                                        onClick={(e) => category3(e)}>рекомендований
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form onSubmit={handleSubmit} className={s.form}>
+                            <div className={s.four_item_search}>
+                                <div className='hi-searchbar'>
+                                    <span className='title'>Пошукова система</span>
+                                    <input type="search" placeholder='Введіть ключове слово' className='value'/>
+                                    <Image src='/blog/search.svg' alt='' width={16} height={16}
+                                           className={s.fa_search}/>
+                                </div>
+                            </div>
+                            <div className={s.col_lg_2}>
+                                <ButtonRedWithoutLink text={'search'} clas={'addBut1'}/>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
 
             <section>
                 <div className={s.container_blog}>
-                    <ul className={s.blog_container+' '+ s.blog_container_C}>
+                    <ul className={s.blog_container + ' ' + s.blog_container_C}>
                         {
                             articleAll?.map(item => {
                                 // console.log(item)
@@ -245,7 +292,7 @@ function Article() {
                                         <Image src={'https://cb.samwash.ua/storage/image/'
                                             + item.id + '/' + item.images[0]?.path}
                                                alt={item?.content[0]?.title}
-                                               width={400} height={400} />
+                                               width={400} height={400}/>
                                         <span>{item?.start_date_time.replace(/-/g, ".").slice(0, 10)}</span>
                                         <div className={s.box_ctg}>
                                             {
@@ -255,12 +302,15 @@ function Article() {
 
                                             }
                                         </div>
-                                        <Link href={'/blog/' + item.slug}><h2>{
-                                            item?.content[0]?.title.length > 40
-                                                ? item?.content[0]?.title.slice(0, 30) + '...'
-                                                : item?.content[0]?.title
-                                        }</h2></Link>
-                                        <WhiteWithoutHover text={'readMore'} link={'/blog/' + item.slug} clas={'addBut'} />
+                                        <Link href={`/blog/${item.type}/${item.slug}`}>
+                                            <h2>{
+                                                item?.content[0]?.title.length > 40
+                                                    ? item?.content[0]?.title.slice(0, 30) + '...'
+                                                    : item?.content[0]?.title
+                                            }</h2>
+                                        </Link>
+                                        <WhiteWithoutHover text={'readMore'} link={`/blog/${item.type}/${item.slug}`}
+                                                           clas={'addBut'}/>
                                     </li>
                                 )
                             })
