@@ -82,11 +82,13 @@
 }
 
 .divisions ul li:first-child {
-    background: #42a5f5 !important;
+    /*background: #42a5f5 !important;*/
+    background: #E30613 !important;
 }
 
 .divisions ul li:nth-child(2) {
-    background: #e2001a !important;
+    /*background: #e2001a !important;*/
+    background: #1B9DF0  !important;
 }
 
 .divisions ul li:nth-child(3) {
