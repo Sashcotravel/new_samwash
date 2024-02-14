@@ -606,11 +606,11 @@ export default function Home() {
                             <div className={s.half_colum}>
                                 <form id="config-form" onSubmit={handleSubmit} className={s.formMain}>
                                     <div className={s.select_wrapper + ' ' + s.select_wrapperPage} id='typePrevi'>
-                                        <lable>
+                                        <lable for='type'>
                                             <span>1</span>
                                             <font>{t("main13")}</font>
                                         </lable>
-                                        <select onChange={select1} id='type'>
+                                        <select onChange={select1} id='type' aria-label="type">
                                             <option disabled selected>{t("main17")}</option>
                                             <option value='мийка-самообслуговування'>
                                                 мийка - самообслуговування
@@ -621,12 +621,12 @@ export default function Home() {
                                         </select>
                                     </div>
                                     <div className={s.select_wrapper + ' ' + s.select_wrapperPage}>
-                                        <lable>
+                                        <lable for='construction'>
                                             <span>2</span>
                                             <font>{t("main14")}</font>
                                         </lable>
                                         <select onChange={select2} disabled={formData.typeAutowash === ''}
-                                                id='construction'
+                                                id='construction' aria-label="construction"
                                                 style={formData.typeAutowash === '' ? {backgroundColor: '#ccc'} : undefined}>
                                             <option disabled selected>{t("main18")}</option>
                                             <option value='Smart'>Smart</option>
@@ -637,11 +637,11 @@ export default function Home() {
                                         </select>
                                     </div>
                                     <div className={s.select_wrapper + ' ' + s.select_wrapperPage}>
-                                        <lable>
+                                        <lable for='col'>
                                             <span>3</span>
                                             <font>{t("main15")}</font>
                                         </lable>
-                                        <select onChange={select3} disabled={formData.construction === ''} id='col'
+                                        <select onChange={select3} disabled={formData.construction === ''} id='col' aria-label="col"
                                                 style={formData.construction === '' ? {backgroundColor: '#ccc'} : undefined}>
                                             <option disabled selected>{t("main19")}</option>
                                             {formData.typeAutowash !== 'мийка-самообслуговування'
