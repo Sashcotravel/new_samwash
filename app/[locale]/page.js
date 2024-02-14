@@ -891,11 +891,12 @@ export default function Home() {
 
                                 <picture>
 
+                                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
+
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>
-
-                                    <img srcset='/mainPage/box2/box2_1Main.jpg' className={s.boxImage} />
+                                    <Image src='/mainPage/box2/box2_1Main.jpg' className={s.boxImage}
+                                           width={500} height={500} alt='' />
 
                                 </picture>
                         </Link>
@@ -911,9 +912,10 @@ export default function Home() {
 
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_2.jpg'/>
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>
+                                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_2.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}/>
+                                    <Image src='/mainPage/box2/box2_2Main.jpg' className={s.boxImage}
+                                         width={500} height={500} alt='' />
 
                                 </picture>
                             </Link>
@@ -929,9 +931,10 @@ export default function Home() {
 
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_3.jpg'/>
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>
+                                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_3.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}/>
+                                    <Image src='/mainPage/box2/box2_3Main.jpg' className={s.boxImage}
+                                         width={500} height={500} alt='' />
 
                                 </picture>
                             </Link>
@@ -947,9 +950,10 @@ export default function Home() {
 
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_4.jpg'/>
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>
+                                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_4.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}/>
+                                    <Image src='/mainPage/box2/box2_4Main.jpg' className={s.boxImage}
+                                         width={500} height={500} alt='' />
 
                                 </picture>
                             </Link>
@@ -965,9 +969,10 @@ export default function Home() {
 
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_5.jpg'/>
 
-                                    <source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>
+                                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_5.jpg'/>*/}
 
-                                    <img srcSet='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}/>
+                                    <Image src='/mainPage/box2/box2_5Main.jpg' className={s.boxImage}
+                                         width={500} height={500} alt='' />
 
                                 </picture>
                             </Link>
