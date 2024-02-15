@@ -811,7 +811,7 @@ export default function Home() {
                                             <span style={{color: "#ed1c24"}}>*</span>
                                             <p>
                                                 {t("main42")}
-                                                <Link href='/'
+                                                <Link href='/privacy-policy'
                                                       className={s.form_group_link}> {t("main43")} Samwash </Link>
                                                 {t("main44")}
                                             </p>
