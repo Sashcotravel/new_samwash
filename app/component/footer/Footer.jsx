@@ -25,10 +25,10 @@ function Footer() {
                         <Link href='/'>{t("footer4")}</Link>
                     </li>
                     <li>
-                        <Link href='/'>{t("footer5")}</Link>
+                        <Link href='/privacy-policy'>{t("footer5")}</Link>
                     </li>
                     <li>
-                        <Link href='/'>{t("footer6")}</Link>
+                        <Link href='/legal-disclaimers'>{t("footer6")}</Link>
                     </li>
                 </ul>
             </div>

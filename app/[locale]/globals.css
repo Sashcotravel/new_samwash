@@ -403,6 +403,80 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   margin-top: 8px!important;
 }
 
+.head-image{
+  position: relative;
+
+}
+
+.head-image::after{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-color: #000;
+  opacity: .2;
+  z-index: -1;
+  content: "";
+}
+
+.head-image img{
+  width: 100%;
+  aspect-ratio: auto 1900 / 300;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main-container{
+  max-width: 1590px;
+  margin: 0 auto;
+  height: 290px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-container h1{
+  font-family: Ubuntu Light,sans-serif;
+  padding: 10px 0 0 45px;
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 75px;
+  color: #fff;
+  align-self: baseline;
+  width: 100%;
+  margin-top: auto;
+}
+
+.main-container ul li{
+  position: relative;
+  margin: 15px 0 15px -20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+
+.main-container ul li a{
+  padding-right: 20px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.main-container ul li a:hover{
+  color: #fff;
+}
+
+
 
 
 @media screen and (max-width: 1560px){
@@ -467,6 +541,25 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   }
   .thanks-message-service-form .message p {
     font-size: 14px;
+  }
+  .main-container{
+    height: 200px;
+    padding: 0;
+  }
+  .head-image h1 {
+    font-size: 32px;
+    margin-bottom: 75px;
+    padding: 0 0 0 30px;
+  }
+  .main-container>ul li {
+    padding-left: 20px;
+    position: relative;
+    margin: 15px 0;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 300;
+    color: #a1a1a1;
+    font-size: 12px;
+    margin-left: -20px;
   }
 }
 
@@ -565,6 +658,11 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   .hi-searchbar{
     padding: 10px;
     margin-bottom: 20px;
+  }
+  .head-image h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 0 0 0 10px;
   }
 }
 
