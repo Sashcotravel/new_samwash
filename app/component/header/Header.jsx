@@ -32,6 +32,15 @@ function Header() {
             if (e.target.id !== 'lang') {
                 setToggleLang(false)
             }
+
+            if (e.target.id !== 'button' && e.target.id !== 'button9') {
+                let but = document.getElementById('button')
+                let but2 = document.getElementById('boxManu')
+                but.children[0].classList.remove(s['first_child'])
+                but.children[2].classList.remove(s['last_child'])
+                but.children[1].classList.remove(s['nth_child'])
+                but2.classList.remove(s['boxMenuWrapper2'])
+            }
         })
 
         window.addEventListener('scroll', handleScroll)
@@ -132,9 +141,9 @@ function Header() {
                             </Link>
                         </div>
                         <div className={s.menu_icon} id='button' onClick={showMobileMenu}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <div id='button9'></div>
+                            <div id='button9'></div>
+                            <div id='button9'></div>
                         </div>
                         <div className={s.boxMenuWrapper} id='boxManu'>
                             <div className={s.dropdown}>
