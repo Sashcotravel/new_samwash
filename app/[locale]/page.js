@@ -469,11 +469,11 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo7.jpg'/>
 
-                                {/*<Image src='/mainPage/mainSlider/slider_promo7.jpg' className={s.boxImage}*/}
-                                {/*       width={500} height={500} alt='' loading='eager' />*/}
+                                <Image src='/mainPage/mainSlider/slider_promo7.jpg' className={s.boxImage}
+                                       width={500} height={500} alt='' loading='eager' />
 
-                                <img src='/mainPage/mainSlider/slider_promo7.jpg' className={s.boxImage}
-                                       alt='' loading='eager' />
+                                {/*<img src='/mainPage/mainSlider/slider_promo7.jpg' className={s.boxImage}*/}
+                                {/*       alt='' loading='eager' />*/}
 
                             </picture>
                         </div>
@@ -498,11 +498,11 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo8.jpg'/>
 
-                                {/*<Image src='/mainPage/mainSlider/slider_promo8.jpg' className={s.boxImage}*/}
-                                {/*     width={500} height={500} alt='' />*/}
+                                <Image src='/mainPage/mainSlider/slider_promo8.jpg' className={s.boxImage}
+                                     width={500} height={500} alt='' />
 
-                                <img src='/mainPage/mainSlider/slider_promo8.jpg' className={s.boxImage}
-                                     alt='' loading='eager'/>
+                                {/*<img src='/mainPage/mainSlider/slider_promo8.jpg' className={s.boxImage}*/}
+                                {/*     alt='' loading='eager'/>*/}
 
                             </picture>
                         </div>
@@ -527,11 +527,11 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo9.jpg'/>
 
-                                {/*<Image src='/mainPage/mainSlider/slider_promo9.jpg' className={s.boxImage}*/}
-                                {/*       width={500} height={500} alt='' />*/}
+                                <Image src='/mainPage/mainSlider/slider_promo9.jpg' className={s.boxImage}
+                                       width={500} height={500} alt='' />
 
-                                <img src='/mainPage/mainSlider/slider_promo9.jpg' className={s.boxImage}
-                                     alt='' loading='eager'/>
+                                {/*<img src='/mainPage/mainSlider/slider_promo9.jpg' className={s.boxImage}*/}
+                                {/*     alt='' loading='eager'/>*/}
 
                             </picture>
                         </div>
