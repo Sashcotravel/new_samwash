@@ -469,8 +469,11 @@ export default function Home() {
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo4.jpg'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo4.jpg' className={s.boxImage}
-                                       width={500} height={500} alt='' loading='eager' />
+                                {/*<Image src='/mainPage/mainSlider/slider_promo4.jpg' className={s.boxImage}*/}
+                                {/*       width={500} height={500} alt='' loading='eager' />*/}
+
+                                <img src='/mainPage/mainSlider/slider_promo4.jpg' className={s.boxImage}
+                                       alt='' loading='eager' />
 
                             </picture>
                         </div>
@@ -491,12 +494,15 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg'/>
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg' />
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo5.jpg' className={s.boxImage}
-                                     width={500} height={500} alt='' />
+                                {/*<Image src='/mainPage/mainSlider/slider_promo5.jpg' className={s.boxImage}*/}
+                                {/*     width={500} height={500} alt='' />*/}
+
+                                <img src='/mainPage/mainSlider/slider_promo5.jpg' className={s.boxImage}
+                                     alt='' loading='eager'/>
 
                             </picture>
                         </div>
@@ -517,18 +523,21 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo6.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo6.jpg'/>
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo6.jpg'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo6.jpg' className={s.boxImage}
-                                       width={500} height={500} alt='' />
+                                {/*<Image src='/mainPage/mainSlider/slider_promo6.jpg' className={s.boxImage}*/}
+                                {/*       width={500} height={500} alt='' />*/}
+
+                                <img src='/mainPage/mainSlider/slider_promo6.jpg' className={s.boxImage}
+                                     alt='' loading='eager'/>
 
                             </picture>
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
-                        <div className='divAnimP'>
+                    <div className='divAnimP'>
                             <p className={indexSlide === 0 ? 'lineAnimation' : null}></p>
                             <p className={s.titleSlider2}>{t("main5")}</p>
                             <p className={s.titleSlider1}>{t("main6")}</p>
