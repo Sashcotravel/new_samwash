@@ -32,7 +32,7 @@ const getData = ((id, locale, article, setArticleOne, setTreeBlock) => {
     }
 })
 
-function NewsOnePage() {
+function ArticleOnePage() {
 
     const t = useTranslations("blog");
     const locale = useLocale();
@@ -46,7 +46,7 @@ function NewsOnePage() {
 
     useEffect(() => {
         getData(id, locale, article, setArticleOne, setTreeBlock)
-        console.log(article)
+        // console.log(article)
     }, [article]);
 
 
@@ -128,9 +128,10 @@ function NewsOnePage() {
 
                         <div className={s.gallery_reel_wrapper}>
                             {
-                                article.images.map(item => {
+                                article.images.map((item) => {
+
                                     return (
-                                        <div className={s.gallery_reel_item}>
+                                        <div className={`${s.gallery_reel_item}`} key={item.id}>
                                             <a data-fancybox="gallery" href={'https://cb.samwash.ua/storage/image/'
                                                 + article.id + '/' + item.path}>
                                                 <Image src={'https://cb.samwash.ua/storage/image/'
@@ -150,4 +151,4 @@ function NewsOnePage() {
     );
 }
 
-export default NewsOnePage;
+export default ArticleOnePage;

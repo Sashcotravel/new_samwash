@@ -198,10 +198,6 @@
 }
 
 .gallery_reel_item{
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-column-end: span 1;
-    grid-row-end: span 1;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -295,10 +291,7 @@
         padding: 0 5px;
     }
     .gallery_reel_item{
-        grid-column-start: 1;
         grid-column-end: span 2;
-        grid-row-end: span 2;
-        grid-row-start: 3;
     }
 }
 

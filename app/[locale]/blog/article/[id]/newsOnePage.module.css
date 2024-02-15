@@ -127,6 +127,7 @@
     width: 360px;
     height: 360px;
     margin: 0 15px 30px;
+    z-index: 1;
 }
 
 .post img{
@@ -182,6 +183,7 @@
 .section_margin_bottom_small{
     padding: 50px 0 50px;
     width: 100%;
+    background: #f2f2f2;
 }
 
 .gallery_reel_wrapper{
@@ -196,10 +198,6 @@
 }
 
 .gallery_reel_item{
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-column-end: span 1;
-    grid-row-end: span 1;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -244,6 +242,56 @@
     }
     .type_wrapper p{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .date_box{
+        width: 100% !important;
+        margin: 30px 0 10px;
+    }
+    .sectionBread{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .date_box{
+        display: block;
+        width: 120px!important;
+        padding: 0 15px;
+        height: 42px!important;
+        margin: 10px 0!important;
+    }
+    .date_day{
+        float: left;
+        padding: 10px 0;
+        font-size: 28px!important;
+    }
+    .data_month_n_year{
+        float: left;
+        padding: 12px 0 12px 10px;
+        margin-left: 5px;
+        font-size: 11px!important;
+        width: auto!important;
+    }
+    .blog_post{
+        padding: 10px 10px 15px;
+    }
+    .section_margin_bottom_small{
+        padding: 10px;
+    }
+    .gallery_reel_wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        padding: 0 5px;
+    }
+    .gallery_reel_item{
+        grid-column-end: span 2;
     }
 }
 
