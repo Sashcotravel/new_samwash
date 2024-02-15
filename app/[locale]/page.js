@@ -465,7 +465,7 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo7.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo1.jpg' />
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo7.jpg'/>
 
@@ -494,7 +494,7 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo8.jpg'/>
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo2.jpg'/>
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo8.jpg'/>
 
@@ -523,7 +523,7 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo9.jpg'/>
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo3.jpg'/>
 
                                 <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo9.jpg'/>
 
