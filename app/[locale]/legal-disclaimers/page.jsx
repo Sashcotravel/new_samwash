@@ -27,7 +27,7 @@ function LegalDisclaimer() {
             <section className={s.mainSection}>
                 <div className='main-container' style={{height: 'auto'}}>
                     <div className={s.text_box}>
-                        <h2 className={s.addClassH2}>{t("h2")}</h2>
+                        <h1 className={s.addClassH2}>{t("h2")}</h1>
                         <p className={s.p}>{t("p")}</p>
                     </div>
                 </div>

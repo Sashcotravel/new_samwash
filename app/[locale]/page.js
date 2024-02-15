@@ -465,11 +465,11 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo1.png' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/автомойка-4.avif' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo1Plan.png'/>
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/автомойка-4.avif'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo1.png' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/автомойка-4.avif' className={s.boxImage}
                                        width={500} height={500} alt='' loading='eager' />
 
                             </picture>
@@ -491,11 +491,11 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo2.png' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/автомойка-3.avif' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo2Plan.png' />
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/автомойка-3.avif' />
 
-                                <Image src='/mainPage/mainSlider/slider_promo2.png' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/автомойка-3.avif' className={s.boxImage}
                                      width={500} height={500} alt='' />
 
                             </picture>
@@ -517,11 +517,11 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo3.png' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/автомойка-2.avif' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo3Plan.png'/>
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/автомойка-2.avif'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo3.png' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/автомойка-2.avif' className={s.boxImage}
                                        width={500} height={500} alt='' />
 
                             </picture>
