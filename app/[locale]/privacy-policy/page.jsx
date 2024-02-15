@@ -13,7 +13,7 @@ function PrivacyPolicy() {
 
             <section className='head-image'>
                 <Image src='/other/confident.jpg' alt='' width={1900} height={300} priority/>
-                <div className='main-container'>
+                <div className={s.main_container}>
                     <ul className='bread-crumbs'>
                         <li>
                             <Link href='/'>{t("home")}</Link>

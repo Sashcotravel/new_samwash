@@ -465,11 +465,11 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo1.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo4.jpg' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo1.jpg'/>
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo4.jpg'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo1.jpg' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/slider_promo4.jpg' className={s.boxImage}
                                        width={500} height={500} alt='' loading='eager' />
 
                             </picture>
@@ -491,11 +491,11 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo2.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo2.jpg' />
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo5.jpg' />
 
-                                <Image src='/mainPage/mainSlider/slider_promo2.jpg' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/slider_promo5.jpg' className={s.boxImage}
                                      width={500} height={500} alt='' />
 
                             </picture>
@@ -517,18 +517,18 @@ export default function Home() {
 
                             <picture>
 
-                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo3.jpg' />
+                                <source media="(max-width: 450px)" srcSet='/mainPage/mainSlider/slider_promo6.jpg' />
 
-                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo3.jpg'/>
+                                <source media="(max-width: 1440px)" srcSet='/mainPage/mainSlider/slider_promo6.jpg'/>
 
-                                <Image src='/mainPage/mainSlider/slider_promo3.jpg' className={s.boxImage}
+                                <Image src='/mainPage/mainSlider/slider_promo6.jpg' className={s.boxImage}
                                        width={500} height={500} alt='' />
 
                             </picture>
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
-                    <div className='divAnimP'>
+                        <div className='divAnimP'>
                             <p className={indexSlide === 0 ? 'lineAnimation' : null}></p>
                             <p className={s.titleSlider2}>{t("main5")}</p>
                             <p className={s.titleSlider1}>{t("main6")}</p>

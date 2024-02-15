@@ -12,7 +12,7 @@ function LegalDisclaimer() {
         <div>
 
             <section className={s.sectionBread}>
-                <div className='main-container' style={{height: 'auto'}}>
+                <div className={s.main_container} style={{height: 'auto'}}>
                     <ul className={`bread-crumbs ${s.crambs} ${s.addClass}`}>
                         <li style={{marginLeft: '0'}} className={s.addClass}>
                             <Link href='/'>{t("home")}</Link>
