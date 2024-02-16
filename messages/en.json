@@ -7,6 +7,8 @@
   "mainBlog": "see all posts",
   "readMore": "read more",
   "search": "search",
+  "program": "more about the car wash manager",
+  "program2": "Learn more about BE LOYAL",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -305,6 +307,16 @@
     "legal": "LEGAL DISCLAIMER",
     "h2": "Legal disclaimer",
     "p": "The content of the samwash.ua website, including text, graphic elements and page layout, is the property of Samwash with a legal address: Ukraine, Lviv, st. Kulparkivska 108, and is protected by law, in particular by the Law of February 4, 1994 on copyright and related rights. Everyone using this website is responsible for complying with copyright law. Copying is permitted only for personal use and only to the extent justified by such use. Samwash is not responsible for any errors or out-of-date information or materials, nor is it responsible for any damages caused by making decisions based on the above information. Samwash is not responsible for the use of the website, any damage caused by such use is the sole responsibility of the user viewing the website. All non-Samwash company names, trademarks, product names, spare parts and accessories used on this website are for informational purposes only and are reserved and legally protected by their respective owners."
+  },
+  "carwash-manager": {
+    "home": "Main",
+    "manager1": "Car wash manager",
+    "manager2": ""
+  },
+  "program-for-wash": {
+    "home": "Main",
+    "manager1": "Programs",
+    "manager2": ""
   },
   "": ""
 }

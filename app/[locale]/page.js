@@ -428,6 +428,16 @@ export default function Home() {
         }));
     };
 
+    useEffect(() => {
+        let loc = localStorage.getItem("configWash");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('washConf')
+            wash.scrollIntoView({block: "center", behavior: 'smooth'});
+            localStorage.removeItem("configWash");
+        }
+    }, [localStorage.getItem("configWash")]);
+
     // useEffect(() => {
     //     console.log(`/mainPage/mainCalc/autowash/${imageUrl}${imageUrlModel}${imageUrlNum}${imageUrlOutside}.jpg`)
     // }, [imageUrl, imageUrlModel, imageUrlNum, imageUrlOutside]);
@@ -603,7 +613,7 @@ export default function Home() {
                             </li>
                         </ul>
                     </div>
-                    <div className={s.top_arrow}>
+                    <div className={s.top_arrow} id='washConf'>
                         <div style={!stage.first ? {display: 'none'} : undefined} className={s.configurator_body}>
                             <div className={s.half_colum}>
                                 <div className={s.washer_image}>

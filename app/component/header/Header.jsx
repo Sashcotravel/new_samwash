@@ -67,6 +67,17 @@ function Header() {
         }
     }
 
+    const configWash = () => {
+        if(router === '/' || router === '/ru' || router === '/en'){
+            setTimeout(() => {
+                const wash = document.getElementById('washConf')
+                wash.scrollIntoView({block: "center", behavior: 'smooth'});
+            }, 300)
+        } else {
+            localStorage.setItem("configWash", "true");
+        }
+    }
+
 
     return (
         <header>
@@ -171,7 +182,7 @@ function Header() {
                                     <Link href="/">{t("header11")}</Link>
                                     <Link href="/">{t("header12")}</Link>
                                     <Link href="/">BE LOYAL</Link>
-                                    <Link href="/">{t("header13")}</Link>
+                                    <Link href="/carwash-manager">{t("header13")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -226,7 +237,7 @@ function Header() {
                                 <Link href='/contact'>{t("header34")}</Link>
                             </div>
                             <div className={s.dropdown3}>
-                                <Link href='/'>{t("header35")}</Link>
+                                <Link href='/' onClick={configWash}>{t("header35")}</Link>
                             </div>
                             <ul className={s.navbar_nav}>
                                 <li>
