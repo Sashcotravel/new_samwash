@@ -12,7 +12,6 @@ export default function Head(){
     const locale = useLocale();
     const router = usePathname()
 
-
     return (
         <React.Fragment>
             <link rel="icon" href="/app/favicon.ico"/>

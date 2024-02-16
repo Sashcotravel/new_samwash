@@ -20,6 +20,7 @@ export default function ContactsLayout({children}){
             })
     }
 
+
     return (
         <React.Fragment>
             <title>{article.length !== 0 ? article?.content[0]?.title?.slice(0, 60) : ''}</title>

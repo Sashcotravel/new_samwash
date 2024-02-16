@@ -72,7 +72,8 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
     width: 33%;
     height: 100%;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: transparent;
     border-radius: 0;
     padding: 0;
     margin: 0;
@@ -92,11 +93,14 @@
     align-items: center;
     padding: 0 5%;
     position: absolute;
-    bottom: 108px;
+    bottom: 90px;
+    z-index: 1;
 }
 
 .divAnimP{
     width: 33%;
+    height: 100%;
+    background-color: #f0f0f0;
 }
 
 .lineAnimation{
@@ -104,7 +108,7 @@
     width: 0;
     background-color: red;
     position: relative;
-    top: -20px;
+    top: 0;
     animation: fillAnimation 6.4s linear forwards infinite;
     z-index: 10;
 }
@@ -136,7 +140,7 @@
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
-
+    z-index: 0;
 }
 
 
@@ -162,9 +166,9 @@
         position: absolute;
         bottom: 68px;
     }
-    .lineAnimation{
-        top: -17px;
-    }
+    /*.lineAnimation{*/
+    /*    top: -17px;*/
+    /*}*/
 }
 
 @media screen and (max-width: 990px){
@@ -175,9 +179,9 @@
         height: 50px;
         bottom: 68px;
     }
-    .lineAnimation{
-        top: -15px;
-    }
+    /*.lineAnimation{*/
+    /*    top: -15px;*/
+    /*}*/
 }
 
 @media screen and (max-width: 770px){

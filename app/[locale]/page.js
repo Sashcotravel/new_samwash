@@ -537,24 +537,24 @@ export default function Home() {
                         </div>
                     </SwiperSlide>
                     <div className='divAnimate'>
-                    <div className='divAnimP'>
+                        <div className='divAnimP' style={indexSlide === 0 ? {backgroundColor: 'white'} : null}>
                             <p className={indexSlide === 0 ? 'lineAnimation' : null}></p>
                             <p className={s.titleSlider2}>{t("main5")}</p>
                             <p className={s.titleSlider1}>{t("main6")}</p>
                         </div>
-                        <div className='divAnimP'>
+                        <div className='divAnimP' style={indexSlide === 1 ? {backgroundColor: 'white'} : null}>
                             <p className={indexSlide === 1 ? 'lineAnimation' : null}></p>
                             <p className={s.titleSlider2}>{t("main7")}</p>
                             <p className={s.titleSlider1}>{t("main8")}</p>
                         </div>
-                        <div className='divAnimP'>
+                        <div className='divAnimP' style={indexSlide === 2 ? {backgroundColor: 'white'} : null}>
                             <p className={indexSlide === 2 ? 'lineAnimation' : null}></p>
                             <p className={s.titleSlider2}>{t("main9")}</p>
                             <p className={s.titleSlider1}>{t("main10")}</p>
                         </div>
                     </div>
                     <div className="autoplay-progress" slot="container-end">
-                        <svg viewBox="0 0 48 48" ref={progressCircle}>
+                    <svg viewBox="0 0 48 48" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>
                         </svg>
                         <span ref={progressContent}></span>

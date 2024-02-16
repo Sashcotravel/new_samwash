@@ -80,7 +80,7 @@
     position: relative;
     z-index: 10;
     left: 30px;
-    top: 5px;
+    top: 25px;
     line-height: 20px;
     color: #000;
     font-size: 18px;
@@ -92,7 +92,7 @@
 .titleSlider2{
     position: relative;
     z-index: 10;
-    top: -5px;
+    top: 15px;
     left: 30px;
     color: #525252;
     font-size: 11px;
@@ -1643,11 +1643,12 @@
     .linkRedBlock {
         padding: 10px 30px 10px 23px;
     }
-    .titleSlider2{
-        top: -10px;
-    }
+    /*.titleSlider2{*/
+    /*    top: -10px;*/
+    /*}*/
     .titleSlider1{
-        top: -3px;
+        /*top: -3px;*/
+        top: 20px;
         font-size: 13px;
         line-height: 15px;
     }
@@ -1932,7 +1933,7 @@
         display: none;
     }
     .titleSlider2{
-        top: 1px;
+        /*top: 1px;*/
         text-transform: uppercase;
     }
     .h2Slider p{
