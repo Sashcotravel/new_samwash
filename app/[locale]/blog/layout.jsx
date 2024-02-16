@@ -8,9 +8,9 @@ export default function ContactsLayout({children}){
     return (
         <React.Fragment>
             <title>{t("blog")}</title>
-            <meta name="description" content={t("contact3")}/>
+            <meta name="description" content={t("blog")}/>
             <meta property="og:title" content={t("blog")}/>
-            <meta property="og:description" content={t("contact3")}/>
+            <meta property="og:description" content={t("blog")}/>
             <link hrefLang="en-UA" href="https://samwash.ua/en/blog" rel="alternate"/>
             <link hrefLang="ru-UA" href="https://samwash.ua/ru/blog" rel="alternate"/>
             <link hrefLang="uk-UA" href="https://samwash.ua/blog" rel="alternate"/>
