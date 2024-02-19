@@ -9,6 +9,7 @@
   "search": "search",
   "program": "more about the car wash manager",
   "program2": "Learn more about BE LOYAL",
+  "manager": "Car wash manager",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -315,8 +316,13 @@
   },
   "program-for-wash": {
     "home": "Main",
-    "manager1": "Programs",
-    "manager2": ""
+    "program1": "Programs",
+    "program2": ""
+  },
+  "remote-control": {
+    "home": "Main",
+    "control1": "Remote control",
+    "control2": ""
   },
   "": ""
 }

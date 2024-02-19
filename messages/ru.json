@@ -9,6 +9,7 @@
   "search": "искать",
   "program": "подробнее о менеджере автомойки",
   "program2": "Подробнее о BE LOYAL",
+  "manager": "Менеджер автомойки",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -315,7 +316,12 @@
   },
   "program-for-wash": {
     "home": "Главная",
-    "manager1": "Праграми",
+    "program1": "Праграми",
+    "program2": ""
+  },
+  "remote-control": {
+    "home": "Главная",
+    "manager1": "Пульт",
     "manager2": ""
   },
   "": ""

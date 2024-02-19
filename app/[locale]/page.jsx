@@ -957,7 +957,7 @@ export default function Home() {
 
                                 </picture>
                             </Link>
-                            <Link href='/' className={s.features_box_select_item}>
+                            <Link href='/program-for-wash' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main64")}</p>
                                     <h4>{t("main65")}</h4>

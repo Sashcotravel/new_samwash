@@ -238,6 +238,7 @@
     }
     .text_block ul li{
         font-size: 13px;
+        line-height: 145%;
     }
 }
 
@@ -291,14 +292,19 @@
     .section_header h2{
         font-size: 42px;
     }
+    .section_header h2 small{
+        font-size: 11px;
+    }
     .section_header h2 strong{
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
     .play_icon_wrapper{
-        justify-content: center;
+        height: 250px;
         padding-right: 0;
-        padding-left: 0;
+    }
+    .text_wrapper{
+        width: 100%;
     }
     .text_block{
         padding: 20px 10px;
