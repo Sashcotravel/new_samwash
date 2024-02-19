@@ -114,6 +114,64 @@ function RemoteControl() {
                 </div>
             </section>
 
+            <section className={s.section_video}>
+
+            </section>
+
+            <section className={s.section_bg_img}>
+                <div className="main-container">
+                    <div className={s.gif_wrapper}></div>
+                    <div className={s.section_header}>
+                        <h2>
+                            <small>ВСЯ МИЙКА АВТОМОБІЛЯ У ВАШОМУ ТЕЛЕФОНІ</small>
+                            <strong>Комфортно та безпечно - управління автомийкою Samwash</strong>
+                        </h2>
+                    </div>
+                    <div className={s.play_icon_wrapper}>
+                            <video src={'/video/animation.mp4'} poster={'/video/mainVideo.mp4'} title='' preload="yes"
+                                   className={s.hover_video} autoPlay='no' playsInline muted loop/>
+
+                    </div>
+                    <div className={s.text_wrapper}>
+                        <div className={s.text_block}>
+                            <h2>Менеджер автомийки</h2>
+                            <p>Керувати автомийкою та реагувати на різні види аварій ще ніколи не було так просто. За
+                                допомогою телефону або комп'ютера з будь-якого місця і в зручний для вас час ви
+                                отримаєте необхідну інформацію про вашу автомийку. Ви дізнаєтеся, скільки заробила ваша
+                                мийка, чи справно працюють окремі технічні елементи, яка витрата хімії. Зручно і швидко,
+                                коли вам це потрібно.</p>
+                            <ul>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Дані про товарообіг автомийки або окремих станцій.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Контроль робочого часу та кількості використання індивідуальних програм.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Діагностика технічного стану.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Управління карткою лояльності.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Небажані ситуації на автомийці.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Витрата хімікатів і рівні.
+                                </li>
+                            </ul>
+                            <ButtonRedArrowRight link={'/'} text={'program'} clas={'programBut'}/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     );
 }

@@ -2,7 +2,7 @@
 
 import s from './main.module.css'
 import Link from "next-intl/link";
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 import Image from "next/image";
 import React, {useEffect, useRef, useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react'
@@ -17,14 +17,17 @@ import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 import ButtonWhiteArrowRight from "@/app/buttons/whiteButton/buttonRedArrowRight";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import dynamic from "next/dynamic";
+import axios from "axios";
 
 const LazyLoadComponent = dynamic(() =>
     import("react-lazy-load-image-component").then((mod) => mod.LazyLoadComponent))
 
+let blogArr = []
+
 export default function Home() {
 
     const t = useTranslations("main");
-
+    const locale = useLocale();
     const [stage, setStage] = useState({
         first: true, second: false, false: false, four: false
     })
@@ -75,31 +78,7 @@ export default function Home() {
     }
 
     useEffect(() => {
-        setBlog([
-            {
-                title: 'Підбір деталей і аксесуарів',
-                link: '/',
-                data: '17 СЕРПНЯ 2023 Р',
-                img: '/mainPage/blog/blog1.jpg',
-                desc: 'Власники автомийок добре знають, що швидкий і легкий доступ до ключових запчастин для автомийки дуже важливий. чому Тому що здатність швидко виконувати роботу є важливим аспектом забезпечення безперервності...\n',
-            },
-            {
-                title: 'Безпечні пензлики',
-                link: '/',
-                data: '3 СЕРПНЯ 2023 Р',
-                img: '/mainPage/blog/blog2.jpg',
-                desc: 'Власники автомийок добре знають, що швидкий і легкий доступ до ключових запчастин для автомийки дуже важливий. чому Тому що здатність швидко виконувати роботу є важливим аспектом забезпечення безперервності...\n',
-            },
-            {
-                title: 'Чистка автомобіля на автомийці',
-                link: '/',
-                data: '1 СЕРПНЯ 2023 Р',
-                img: '/mainPage/blog/blog3.png',
-                desc: 'Власники автомийок добре знають, що швидкий і легкий доступ до ключових запчастин для автомийки дуже важливий. чому Тому що здатність швидко виконувати роботу є важливим аспектом забезпечення безперервності...\n',
-            },
-        ])
-
-        if (window.innerWidth < 990) {
+       if (window.innerWidth < 990) {
             setMobile(true)
         } else {
             setMobile(false)
@@ -111,6 +90,28 @@ export default function Home() {
         if (window.innerWidth < 640) {
             setItemsSlide(1)
         }
+    }, []);
+
+    useEffect(() => {
+        axios
+            .get(`https://cb.samwash.ua/api/v1/blog/${locale === "en" ? "en" : locale === "ru" ? "ru" : "ua"}/truck-washer-21181311`)
+            .then(res => {
+                const data = res.data.data
+                blogArr.push(data)
+                axios
+                    .get(`https://cb.samwash.ua/api/v1/blog/${locale === "en" ? "en" : locale === "ru" ? "ru" : "ua"}/state-lending-5-7-9-14040948`)
+                    .then(res => {
+                        const data = res.data.data
+                        blogArr.push(data)
+                        axios
+                            .get(`https://cb.samwash.ua/api/v1/blog/${locale === "en" ? "en" : locale === "ru" ? "ru" : "ua"}/modular-or-container-self-service-sink-check-which-one-is-the-best-23052957`)
+                            .then(res => {
+                                const data = res.data.data
+                                blogArr.push(data)
+                                setBlog(blogArr)
+                            })
+                    })
+            })
     }, []);
 
     const check2 = () => {
@@ -1366,19 +1367,23 @@ export default function Home() {
                             {
                                 blog.map(item => {
                                     return (
-                                        <div className={s.blog_features_item} key={item.data}>
+                                        <div className={s.blog_features_item} key={item.id}>
                                             <h3>
-                                                <small>{item.data}</small>
-                                                <Link href={item.link}><strong>{item.title}</strong></Link>
+                                                <small>{item?.start_date_time.slice(8, 10)}.
+                                                    {item?.start_date_time.slice(5, 7)}.
+                                                    {`${item?.start_date_time.slice(0, 4)}`} </small>
+                                                <Link href={item.slug}><strong>{item?.content[0]?.title}</strong></Link>
                                             </h3>
                                             <div className={s.image_wrapper_blog}>
-                                                <Link href={item.link}>
-                                                    <Image src={item.img} alt={item.title} width={200} height={100}/>
+                                                <Link href={item.slug}>
+                                                    <Image src={'https://cb.samwash.ua/storage/image/'
+                                                        + item.id + '/' + item.images[0]?.path} alt={item.title}
+                                                           width={200} height={100}/>
                                                 </Link>
                                             </div>
-                                            <p>{item.desc}</p>
+                                            <p dangerouslySetInnerHTML={{__html: item?.content[0]?.description.slice(0, 90)}}></p>
                                             <div className='center-btn'>
-                                                <Link href={item.link} className={`${s.red_text_btn} btn`}
+                                                <Link href={item.slug} className={`${s.red_text_btn} btn`}
                                                       style={{padding: '20px', transform: 'translateX(0)'}}>
                                                     {t("main109")}
                                                 </Link>
