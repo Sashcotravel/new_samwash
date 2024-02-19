@@ -1,0 +1,179 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/component/fixManu/fixManu.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.fixManu_menu_tab_section__btBa1{
+    padding: 30px 0 40px;
+}
+
+.fixManu_menu_tab__dHo1a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: max-content;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.fixManu_fixed2__7fW6w {
+    top: 108px;
+    border: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    transition: .3s;
+    padding-top: 15px;
+    z-index: 9999999999;
+    box-shadow: 0 2px 5px -2px rgb(0 0 0 / 75%);
+}
+
+.fixManu_fixed__SWXE5 {
+    position: fixed;
+    /*top: 102px;*/
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    transition: .3s;
+    padding-top: 15px;
+    z-index: 9999999999;
+    box-shadow: 0 2px 5px -2px rgb(0 0 0 / 75%);
+    top: 73px;
+    border: none;
+}
+
+.fixManu_menu_item__qDX5X{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 160px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    font-weight: 300;
+    font-size: 16px;
+    color: #3d3d3d;
+    padding: 0 15px 10px;
+    min-height: 34px;
+    white-space: nowrap;
+}
+
+.fixManu_menu_item__qDX5X:hover{
+    border-color: #ed1c24;
+    color: #ed1c24;
+    text-decoration: none;
+}
+
+.fixManu_currentItem__jFYjI{
+    color: #ed1c24;
+    font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width: 1325px) {
+    .fixManu_fixed2__7fW6w{
+        top: 98px;
+    }
+    .fixManu_fixed__SWXE5{
+        top: 72px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .fixManu_menu_item__qDX5X{
+        min-width: initial;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fixManu_menu_item__qDX5X{
+        min-width: 120px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .fixManu_fixed2__7fW6w{
+        top: 72px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fixManu_menu_tab__dHo1a{
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        justify-content: initial;
+    }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/[locale]/carwash-manager/carwashManager.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.carwashManager_main_container__M8NZL{
+    max-width: 1590px;
+    margin: 0 auto;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.carwashManager_main_container__M8NZL h1{
+    font-family: Ubuntu Light,sans-serif;
+    padding: 10px 0 0 45px;
+    font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 75px;
+    color: #fff;
+    align-self: baseline;
+    width: 100%;
+    margin-top: auto;
+}
+
+.carwashManager_main_container__M8NZL ul li{
+    position: relative;
+    margin: 15px 0 15px -20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a1a1a1;
+    text-transform: uppercase;
+}
+
+.carwashManager_main_container__M8NZL ul li a{
+    padding-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.carwashManager_main_container__M8NZL ul li a:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .carwashManager_main_container__M8NZL{
+        height: 200px;
+        padding: 0;
+    }
+    .carwashManager_main_container__M8NZL ul li {
+        padding-left: 20px;
+        position: relative;
+        margin: 15px 0;
+        font-family: Ubuntu,sans-serif;
+        font-weight: 300;
+        color: #a1a1a1;
+        font-size: 12px;
+        margin-left: -20px;
+    }
+}
+
