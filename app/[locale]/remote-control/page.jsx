@@ -1,10 +1,15 @@
+"use client"
+
 import s from './remoteControl.module.css';
 import {useTranslations} from "next-intl";
 import Image from "next/image";
 import Link from "next-intl/link";
 import FixManu from "@/app/component/fixManu/FixManu";
 import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
-
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import {Navigation} from 'swiper/modules'
 
 function RemoteControl() {
 
@@ -115,7 +120,58 @@ function RemoteControl() {
             </section>
 
             <section className={s.section_video}>
-
+                <div className="main-container">
+                    <Swiper
+                        rewind={true}
+                        navigation={true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide style={{background: 'transparent'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Управління освітленням автомийки</div>
+                                <div className={s.itemCenter}>Віддалений доступ, крок за кроком</div>
+                                <div className={s.itemSlider}>Інтернет на автомийці - як це починалося?</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Управління освітою автомийки" loading="lazy" className={s.frame}/>
+                            <p className={s.owl_stag_P}>
+                                Чому Samwash розвиває свої технології на світовому рівні? Послухайте Пйотра, нашого
+                                директора з розвитку. Подивіться, що таке віддалений доступ і як ним користуватися.
+                                Samwash – єдина компанія на ринку, яка дає вам справжню свободу. З нами ви отримуєте
+                                не тільки фінансову вигоду, але, перш за все, ви економите свій час, не втрачаючи
+                                контролю над своїм бізнесом.
+                            </p>
+                        </SwiperSlide>
+                        <SwiperSlide style={{background: 'transparent'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Віддалений доступ, крок за кроком</div>
+                                <div className={s.itemCenter}>Інтернет на автомийці - як це починалося?</div>
+                                <div className={s.itemSlider}>Управління освітленням автомийки</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Інтернет на автомийці - як це починалося?" loading="lazy" className={s.frame}/>
+                            <p className={s.owl_stag_P}>
+                                Почуйте про нашу стратегію, яка створювалася протягом багатьох років. Як так сталося, що
+                                інтернет на автомийці є просто необхідним? Чому BKF приділяє таку велику увагу якості та
+                                технологіям?
+                            </p>
+                        </SwiperSlide>
+                        <SwiperSlide style={{background: 'transparent'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Інтернет на автомийці - як це починалося?</div>
+                                <div className={s.itemCenter}>Управління освітленням автомийки</div>
+                                <div className={s.itemSlider}>Віддалений доступ, крок за кроком</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Управління освітленням автомийки" loading="lazy" className={s.frame}/>
+                            <p className={s.owl_stag_P}>Що можна зробити з віддаленим доступом?</p>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </section>
 
             <section className={s.section_bg_img}>
@@ -128,8 +184,8 @@ function RemoteControl() {
                         </h2>
                     </div>
                     <div className={s.play_icon_wrapper}>
-                            <video src={'/video/animation.mp4'} poster={'/video/mainVideo.mp4'} title='' preload="yes"
-                                   className={s.hover_video} autoPlay='no' playsInline muted loop/>
+                        <video src={'/video/animation.mp4'} poster={'/video/mainVideo.mp4'} title='' preload="yes"
+                               className={s.hover_video} autoPlay='no' playsInline muted loop/>
 
                     </div>
                     <div className={s.text_wrapper}>
