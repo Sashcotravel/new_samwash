@@ -67,47 +67,47 @@ function RemoteControl() {
                             <ul>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    перевірити технічний стан автомийки та периферійних пристроїв
+                                    <span>перевірити технічний стан автомийки та периферійних пристроїв</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    дізнатися, скільки ви заробили
+                                    <span>дізнатися, скільки ви заробили</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    встановити акції
+                                    <span>встановити акції</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    налаштувати облікові записи користувачів з різними рівнями доступу
+                                    <span>налаштувати облікові записи користувачів з різними рівнями доступу</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    підзарядка мийних станцій дистанційно
+                                    <span>підзарядка мийних станцій дистанційно</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    дистанційно поповнюйте карти постійного клієнта
+                                    <span> дистанційно поповнюйте карти постійного клієнта</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    з'ясуйте, чи є монети в розмінному автоматі, чи потрібно заправляти касети
+                                    <span>з'ясуйте, чи є монети в розмінному автоматі, чи потрібно заправляти касети</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    встановити освітлення для окремих станцій
+                                    <span>встановити освітлення для окремих станцій</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    увімкнути/вимкнути станції
+                                    <span>увімкнути/вимкнути станції</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    встановити дозування хімікату
+                                    <span> встановити дозування хімікату</span>
                                 </li>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    та багато інших!
+                                    <span>та багато інших!</span>
                                 </li>
                             </ul>
                             <ButtonRedArrowRight link={'/'} text={'manager'} clas={'programBut'}/>
@@ -127,7 +127,7 @@ function RemoteControl() {
                         modules={[Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide style={{background: 'transparent'}}>
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
                             <div className={s.owl_stag}>
                                 <div className={s.itemSlider}>Управління освітленням автомийки</div>
                                 <div className={s.itemCenter}>Віддалений доступ, крок за кроком</div>
@@ -144,7 +144,7 @@ function RemoteControl() {
                                 контролю над своїм бізнесом.
                             </p>
                         </SwiperSlide>
-                        <SwiperSlide style={{background: 'transparent'}}>
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
                             <div className={s.owl_stag}>
                                 <div className={s.itemSlider}>Віддалений доступ, крок за кроком</div>
                                 <div className={s.itemCenter}>Інтернет на автомийці - як це починалося?</div>
@@ -159,7 +159,7 @@ function RemoteControl() {
                                 технологіям?
                             </p>
                         </SwiperSlide>
-                        <SwiperSlide style={{background: 'transparent'}}>
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
                             <div className={s.owl_stag}>
                                 <div className={s.itemSlider}>Інтернет на автомийці - як це починалося?</div>
                                 <div className={s.itemCenter}>Управління освітленням автомийки</div>

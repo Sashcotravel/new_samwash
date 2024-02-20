@@ -62,7 +62,7 @@ function FixManu({active}) {
                     <Link href='/carwash-manager'
                           className={`${s.menu_item} ${active === 2 ? s.currentItem : undefined}`}>Менеджер
                         автомийки</Link>
-                    <Link href='/'
+                    <Link href='/beloyal-program'
                           className={`${s.menu_item} ${active === 3 ? s.currentItem : undefined}`}>BE LOYAL</Link>
                     <Link href='/remote-control'
                           className={`${s.menu_item} ${active === 4 ? s.currentItem : undefined}`}>Пульт</Link>

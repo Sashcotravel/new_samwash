@@ -1125,7 +1125,7 @@ export default function Home() {
                                     <div className={s.text_block_image}>
                                         <h3>{t("main88")}</h3>
                                         <p>{t("main95")}</p>
-                                        <Link href='/' className={s.formBtn + ' ' + s.add}>
+                                        <Link href='/beloyal-program' className={s.formBtn + ' ' + s.add}>
                                             BE LOYAL
                                             <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
                                                    height={5}/>
@@ -1146,7 +1146,7 @@ export default function Home() {
                                     <div className={s.text_block_image}>
                                         <h3>{t("main90")}</h3>
                                         <p>{t("main96")}</p>
-                                        <Link href='/' className={s.formBtn + ' ' + s.add}
+                                        <Link href='/carwash-manager' className={s.formBtn + ' ' + s.add}
                                               style={{padding: '22px 10px 20px'}}>
                                             {t("main91")}
                                             <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
@@ -1184,7 +1184,8 @@ export default function Home() {
                             <div className={s.box_wrapper2Box3}>
                                 <h3>{active2 === 1 ? t("main88") : active2 === 2 ? t("main90") : t("main93")}</h3>
                                 <p>{active2 === 1 ? t("main95") : active2 === 2 ? t("main96") : t("main97")}</p>
-                                <Link href={active2 === 1 ? '/' : active2 === 2 ? '/' : '/'}
+                                <Link href={active2 === 1 ? '/beloyal-program' : active2 === 2 ? '/carwash-manager'
+                                    : '/'}
                                       className={s.formBtn + ' ' + s.add}>
                                     {
                                         active2 === 1 ? 'BE LOYAL' : active2 === 2 ?

@@ -15,7 +15,7 @@
 }
 
 .fixed2 {
-    top: 108px;
+    top: 106px;
     border: none;
     position: fixed;
     left: 0;
@@ -23,7 +23,7 @@
     background-color: #ffffff;
     transition: .3s;
     padding-top: 15px;
-    z-index: 9999999999;
+    z-index: 2;
     box-shadow: 0 2px 5px -2px rgb(0 0 0 / 75%);
 }
 
@@ -35,9 +35,9 @@
     background-color: #ffffff;
     transition: .3s;
     padding-top: 15px;
-    z-index: 9999999999;
+    z-index: 2;
     box-shadow: 0 2px 5px -2px rgb(0 0 0 / 75%);
-    top: 73px;
+    top: 70px;
     border: none;
 }
 
@@ -74,10 +74,10 @@
 
 @media screen and (max-width: 1325px) {
     .fixed2{
-        top: 98px;
+        top: 96px;
     }
     .fixed{
-        top: 72px;
+        top: 70px;
     }
 }
 
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 770px) {
     .fixed2{
-        top: 72px;
+        top: 70px;
     }
 }
 

@@ -324,5 +324,11 @@
     "control1": "Пульт",
     "control2": ""
   },
+  "be-loyal": {
+    "home": "Головна",
+    "beLoyal1": "Be Loyal",
+    "beLoyal2": "Be Loyal мобільними платежами",
+    "beLoyal3": ""
+  },
   "": ""
 }

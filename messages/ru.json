@@ -324,5 +324,11 @@
     "manager1": "Пульт",
     "manager2": ""
   },
+  "be-loyal": {
+    "home": "Главная",
+    "beLoyal1": "Be Loyal",
+    "beLoyal2": "Be Loyal мобильными платежами",
+    "beLoyal3": ""
+  },
   "": ""
 }

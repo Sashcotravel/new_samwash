@@ -324,5 +324,11 @@
     "control1": "Remote control",
     "control2": ""
   },
+  "be-loyal": {
+    "home": "Main",
+    "beLoyal1": "Be Loyal",
+    "beLoyal2": "Be Loyal with mobile payments",
+    "beLoyal3": ""
+  },
   "": ""
 }

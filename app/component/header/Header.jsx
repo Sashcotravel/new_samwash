@@ -181,7 +181,7 @@ function Header() {
                                     <Link href="/">{t("header10")}</Link>
                                     <Link href="/">{t("header11")}</Link>
                                     <Link href="/">{t("header12")}</Link>
-                                    <Link href="/">BE LOYAL</Link>
+                                    <Link href="/beloyal-program">BE LOYAL</Link>
                                     <Link href="/carwash-manager">{t("header13")}</Link>
                                 </div>
                             </div>
