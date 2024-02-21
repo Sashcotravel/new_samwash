@@ -105,4 +105,7 @@
         overflow-y: auto;
         justify-content: initial;
     }
+    .menu_item{
+         min-width: auto;
+    }
 }

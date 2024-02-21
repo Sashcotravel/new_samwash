@@ -302,16 +302,16 @@ function Contact() {
                         <div className={s.configurator_body}>
                             {
                                 success && <div className={s.thanks_message}>
-                                <div className={s.thanks_message_service_form}>
-                                    <div className={s.message}>
-                                        <h2>
-                                            <small>{t("contact21")}</small>
-                                            <strong>{t("contact22")}</strong>
-                                        </h2>
-                                        <p></p>
-                                        <p>{t("contact23")}</p>
+                                    <div className={s.thanks_message_service_form}>
+                                        <div className={s.message}>
+                                            <h2>
+                                                <small>{t("contact21")}</small>
+                                                <strong>{t("contact22")}</strong>
+                                            </h2>
+                                            <p></p>
+                                            <p>{t("contact23")}</p>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             }
                             <h2 className={s.configurator_description} style={success ? {display: 'none'} : undefined}>
