@@ -477,6 +477,13 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   margin: 30px 0 0;
 }
 
+.addTrans img{
+  transform: translateX(532%)!important;
+}
+
+.addTrans{
+  margin-left: 0;
+}
 
 
 @media screen and (max-width: 1560px){
@@ -554,6 +561,10 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
     margin: 4px 0;
     font-size: 13px;
   }
+  .addTrans img {
+    transform: translateX(408%)!important;
+    padding: 15px 21px!important;
+  }
 }
 
 @media screen and (max-width: 990px){
@@ -621,6 +632,10 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   }
   .section-header h2 p{
     width: 100%!important;
+  }
+  .section-header p{
+    width: 100%;
+    margin: 30px auto 0;
   }
 }
 
