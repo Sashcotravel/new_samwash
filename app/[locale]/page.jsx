@@ -19,6 +19,20 @@ import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedAr
 import dynamic from "next/dynamic";
 import axios from "axios";
 
+import logo from '../../public/mainPage/sliderLogo/logo1.svg'
+import logo2 from '../../public/mainPage/sliderLogo/logo-2.svg'
+import logo3 from '../../public/mainPage/sliderLogo/logo-3.svg'
+import logo4 from '../../public/mainPage/sliderLogo/logo-4.svg'
+import logo5 from '../../public/mainPage/sliderLogo/logo-5.svg'
+import logo6 from '../../public/mainPage/sliderLogo/logo-6.svg'
+import logo7 from '../../public/mainPage/sliderLogo/logo-7.svg'
+import logo8 from '../../public/mainPage/sliderLogo/logo-8.svg'
+import logo9 from '../../public/mainPage/sliderLogo/logo-9.svg'
+import logo10 from '../../public/mainPage/sliderLogo/logo-10.svg'
+import logo11 from '../../public/mainPage/sliderLogo/logo-11.svg'
+import logo12 from '../../public/mainPage/sliderLogo/logo-12.svg'
+import logo13 from '../../public/mainPage/sliderLogo/logo-13.svg'
+
 const LazyLoadComponent = dynamic(() =>
     import("react-lazy-load-image-component").then((mod) => mod.LazyLoadComponent))
 
@@ -1291,64 +1305,146 @@ export default function Home() {
                             >
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo1.png' alt='' width={640} height={75} />*/}
+                                        <Image src={logo} alt='' width={640} height={75} />
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo2} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
+                                        <Image src={logo3} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo4} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo5} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo6} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-7.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo7} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-8.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo8} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-9.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo9} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-10.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo10} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-11.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo11} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className={s.divLogoImage}>
-                                        <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-12.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo12} alt='' width={200} height={100}/>
                                     </div>
                                 </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={s.divLogoImage}>
+                                        {/*<Image src='/mainPage/sliderLogo/logo-13.png' alt='' width={200} height={100}/>*/}
+                                        <Image src={logo13} alt='' width={200} height={100}/>
+                                    </div>
+                                </SwiperSlide>
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo1.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-2.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-3.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-4.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-5.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-6.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-7.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-8.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-9.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-10.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-11.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-12.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
+                                {/*<SwiperSlide>*/}
+                                {/*    <div className={s.divLogoImage}>*/}
+                                {/*        <Image src='/mainPage/sliderLogo/logo-13.png' alt='' width={200} height={100}/>*/}
+                                {/*    </div>*/}
+                                {/*</SwiperSlide>*/}
                             </Swiper>
                         </div>
                     </div>
