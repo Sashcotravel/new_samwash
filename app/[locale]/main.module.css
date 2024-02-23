@@ -935,7 +935,7 @@
 
 .boxImage{
     height: 400px;
-    filter: brightness(80%);
+    filter: brightness(96%);
     transition: .3s;
     width: 100%;
     /*object-fit: cover;*/

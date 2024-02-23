@@ -1229,7 +1229,7 @@ export default function Home() {
                             <div className={`${s.showreel} ${s.item_a}`}>
                                 <div className={s.showreel_left_img_right_text}>
                                     <div className={s.image_wrapper}>
-                                        <Image src='/mainPage/box6/image1.jpg' alt='' width={200} height={400}/>
+                                        <Image src='/mainPage/box6/image1.jpg' alt='' width={500} height={500}/>
                                     </div>
                                     <div className={s.text_wrapper}>
                                         <h3>Kiekrz/Rokietnica</h3>
@@ -1241,7 +1241,7 @@ export default function Home() {
                             <div className={`${s.showreel} ${s.item_b}`}>
                                 <div className={s.showreel_left_img_right_text}>
                                     <div className={s.image_wrapper}>
-                                        <Image src='/mainPage/box6/image2.jpg' alt='' width={200} height={600}/>
+                                        <Image src='/mainPage/box6/image2.jpg' alt='' width={300} height={600}/>
                                     </div>
                                     <div className={s.text_wrapper}>
                                         <h3>ЩЕЦИН, 10ТКА</h3>
