@@ -1265,7 +1265,7 @@ export default function Home() {
                             <div className={`${s.showreel} ${s.item_d}`}>
                                 <div className={s.showreel_top_img_bottom_text}>
                                     <div className={s.image_wrapper_text}>
-                                        <Image src='/mainPage/box6/image4.jpg' alt='' width={200} height={600}/>
+                                        <Image src='/mainPage/box6/image4.jpg' alt='' width={400} height={600}/>
                                     </div>
                                     <div className={s.text_wrapper_item}>
                                         <h3>нова сіль</h3>
