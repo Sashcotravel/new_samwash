@@ -6,11 +6,11 @@ import {useState} from "react";
 import {useTranslations} from "next-intl";
 import Link from "next-intl/link";
 
-function ManagerOffice() {
+function PasswordRecovery() {
 
     const t = useTranslations("contact");
 
-    const [formData, setFormData] = useState({ email: '', password: '' });
+    const [formData, setFormData] = useState({email: '', password: '', oldPass: ''});
 
 
     const handleChange = (e) => {
@@ -27,10 +27,11 @@ function ManagerOffice() {
 
         const email = document.getElementById('email')
         const password = document.getElementById('password')
+        const oldPass = document.getElementById('oldPass')
         const regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
         let testEmail = regExpEmail.test(formData.email)
 
-        if(formData.password.length >= 2 && testEmail){
+        if (formData.password.length >= 2 && testEmail) {
             password.style.border = '1px solid #ccc'
             email.style.border = '1px solid #ccc'
             console.log(formData)
@@ -48,16 +49,13 @@ function ManagerOffice() {
             //         },
             //       );
             // emailjs.send('service_qcggpom', 'template_dxf8e6l', templateParams, 'e8GXwhbbyk4tXovwB');
-        }
-        else if(formData.password.length < 2 && testEmail === false){
+        } else if (formData.password.length < 2 && testEmail === false) {
             email.style.border = '2px solid red'
             password.style.border = '2px solid red'
-        }
-        else if (!formData.password) {
+        } else if (!formData.password) {
             password.style.border = '2px solid red'
             email.style.border = '1px solid #ccc'
-        }
-        else if (testEmail === false) {
+        } else if (testEmail === false) {
             email.style.border = '2px solid red'
             password.style.border = '1px solid #ccc'
         }
@@ -73,28 +71,21 @@ function ManagerOffice() {
 
             <div className={s.redLine}>
                 <Image src='/managerOffice/2.svg' alt='' fill/>
-                <h1>Авторизуватися</h1>
-                <h2>Увійдіть, щоб продовжити</h2>
+                <h1>Відновлення паролю</h1>
+                <h2>Новий пароль</h2>
             </div>
 
             <form className={s.form} onSubmit={handleSubmit}>
-                <h3>Увійти</h3>
+                <h3>Відновлення паролю</h3>
+                <p>СТАРИЙ ПАРОЛЬ</p>
+                <input type="email" value={formData.oldPass} onChange={handleChange} id='oldPass' name='oldPass'/>
                 <p>ЕЛЕКТРОННА ПОШТА</p>
                 <input type="email" value={formData.email} onChange={handleChange} id='email' name='email'/>
-                <p>ПАРОЛЬ</p>
+                <p>НОВИЙ ПАРОЛЬ</p>
                 <input type="text" value={formData.password} onChange={handleChange} id='password' name='password'/>
 
-                <div className={s.divRedBut}>
-                    <button>
-                        <Image src='/managerOffice/checkbox.png' alt='' fill/>
-                        запам'ятати<br/> пароль
-                    </button>
-                    <Link href='/password-recovery'>Відновити пароль?</Link>
-                </div>
-
-                <button className={s.formBtn} type='submit'>ВХІД</button>
+                <button className={s.formBtn} type='submit'>Надсилати</button>
             </form>
-
 
             <div className={s.divShop}>
                 <Link href='/'>
@@ -107,8 +98,24 @@ function ManagerOffice() {
 
             <Image src='/managerOffice/3.svg' alt='' fill className={s.imageButton}/>
 
+            <div className={s.blackBlock}>
+                <p>Служби локації дають змогу Apple і стороннім програмам та вебсайтам збирати й використовувати
+                    інформацію, засновану на поточній геопозиції вашого компʼютера. Приблизна геопозиція визначається за
+                    допомогою інформації від локальних мереж Wi‑Fi та збирається Службами локації без ідентифікації
+                    особи користувача.</p>
+                <p>
+                    Коли ви користуєтесь Spotlight або Пропозиціями Safari в Safari, розташування вашого Mac на момент
+                    вашого пошукового запиту в Spotlight чи Safari надсилатиметься до Apple, щоб надавати доречніші
+                    Пропозиції Spotlight і Пропозиції Safari та вдосконалювати інші продукти й послуги Apple. Якщо ви
+                    вимкнете Служби локації для Пропозицій Spotlight і Пропозицій Safari, ваша точна геопозиція не
+                    надсилатиметься до Apple. Щоб надавати доречні пошукові пропозиції, Apple може використовувати
+                    IP‑адресу вашого інтернет‑зʼєднання для визначення вашої приблизної геопозиції через ототожнення її
+                    з географічним регіоном.
+                </p>
+            </div>
+
         </section>
     );
 }
 
-export default ManagerOffice;
+export default PasswordRecovery;

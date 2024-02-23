@@ -1,0 +1,429 @@
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    /*padding: 0 200px;*/
+    position: relative;
+    font-family: Ubuntu Light, sans-serif;
+    padding: 200px 0 0 60%;
+    overflow: hidden;
+}
+
+.backImage{
+    position: absolute;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    z-index: -1;
+    background-repeat: repeat;
+}
+
+.redLine{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    height: 100%;
+    width: 450px;
+    background-color: #b81919;
+    padding: 120px 30px 0;
+    color: white;
+}
+
+.redLine img{
+    width: 100px!important;
+    height: 100px!important;
+    left: auto!important;
+    right: 20px!important;
+    top: 10px!important;
+}
+
+.redLine h1{
+    font-family: Ubuntu Ubuntu Regular, sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.redLine h2{
+    font-weight: 800;
+    line-height: 1.4;
+    font-size: 1.4em;
+}
+
+.backLine{
+    position: absolute;
+    top: 50%!important;
+    width: 100px!important;
+    height: 50px!important;
+    object-fit: cover;
+    object-position: 50% 50%!important;
+    transform: translate(270%, -50%) rotate(0deg);
+}
+
+.form{
+    background-color: #a8a8a8c7;
+    color: black;
+    padding: 20px 50px 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.form h3{
+    font-weight: 800;
+    font-family: Ubuntu Regular, sans-serif;
+    font-size: 2.6em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form p{
+    font-weight: 600;
+    font-size: 1.07em;
+    line-height: 1.3;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #dedede;
+    margin-bottom: 20px;
+}
+
+.divRedBut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.divRedBut button{
+    width: 45%;
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: #ba2221;
+    color: white;
+    padding: 5px;
+    height: 36px;
+    font-size: 0.9em;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.divRedBut button img{
+    position: relative!important;
+    width: 25px!important;
+    height: auto!important;
+    margin: 1px 13px 0 1px;
+}
+
+.divRedBut a{
+    width: 45%;
+    background-color: #ba2221;
+    color: white;
+    padding: 5px;
+    height: 36px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBtn{
+    border: none;
+    outline: none;
+    background-color: #b71919;
+    color: #fafafa;
+    text-align: center;
+    font-size: 1.03em;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.imageButton{
+    z-index: -1;
+    bottom: -606px!important;
+    left: auto!important;
+    top: auto!important;
+    right: -200px!important;
+}
+
+.divShop{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.more{
+    margin-top: 50px;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: #191919;
+    font-weight: 600;
+    line-height: 1.431702em;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.section{
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Ubuntu Regular, sans-serif;
+
+}
+
+.block2{
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personRoom{
+    width: 600px;
+    height: 420px;
+    background-color: #e8e5e0;
+    padding: 55px;
+    margin: 0 10px;
+}
+
+.personRoom h3{
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.7em;
+    margin-bottom: 50px;
+}
+
+.personRoom p{
+    color: #000000;
+    font-size: 1.3em;
+}
+
+.divTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divTitle img{
+    position: relative!important;
+    width: 120px!important;
+    height: 120px!important;
+}
+
+.divTitle h4{
+    color: #a20e20;
+    font-weight: 700;
+    line-height: 1.18230481em;
+    text-align: right;
+    font-size: 2.7em;
+}
+
+.block3{
+    padding: 15px 200px;
+    display: flex;
+    background-color: #e8e5e0;
+}
+
+.block3 span:first-child{
+    color: #3d3d3d;
+    font-weight: 700;
+    line-height: 0.99708629em;
+    font-size: 3.9em;
+    margin-right: 120px;
+}
+
+.block3 span:last-child{
+    color: #990001;
+    font-weight: 400;
+    line-height: 0.99708629em;
+    font-size: 3.9em;
+}
+
+.lastBlock{
+    margin: 30px 200px;
+    padding: 15px;
+    display: flex;
+    background-color: #e8e5e0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divThree{
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.divThree p{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.divThree img{
+    position: relative!important;
+    width: 80px!important;
+    height: 80px!important;
+}
+
+.divTitle2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.divTitle2 h4{
+    color: #a20e20;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.04em;
+    margin: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.addClass{
+    text-align: end;
+    padding-left: 30%;
+}
+
+.more2{
+    margin-top: 50px;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: #191919;
+    font-weight: 600;
+    line-height: 1.431702em;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .redLine{
+        left: 200px;
+    }
+    .block2, .block3{
+        padding: 50px 100px;
+    }
+    .lastBlock{
+        margin: 30px 100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .redLine{
+        left: 100px;
+    }
+    .personRoom h3{
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+    .addClass{
+        text-align: start;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .block3 span:first-child{
+        font-size: 2.9em;
+    }
+    .block3 span:last-child{
+        font-size: 2.9em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .redLine, .backLine, .imageButton{
+        display: none;
+    }
+    .mainDiv{
+        padding: 50px 0;
+    }
+    .mainDiv img{
+        object-fit: cover;
+    }
+    .form, .divShop{
+        margin: 20px auto 0;
+    }
+    .form{
+        width: 330px;
+        padding: 20px 20px 30px;
+    }
+    .more2{
+        display: block;
+        margin: 50px auto;
+    }
+    .block2{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .block3{
+        padding: 20px;
+        justify-content: center;
+    }
+    .block3 span:first-child{
+        font-size: 1.9em;
+        margin-right: 20px;
+    }
+    .block3 span:last-child{
+        font-size: 1.9em;
+    }
+    .lastBlock{
+        flex-direction: column;
+        align-items: center;
+    }
+    .divThree{
+        width: fit-content;
+    }
+    .backImage{
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .personRoom{
+        width: fit-content;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .divTitle img{
+        position: relative!important;
+        width: 80px!important;
+        height: 80px!important;
+    }
+    .divTitle h4{
+        font-size: 2em;
+    }
+    .block3{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .lastBlock{
+        margin: 20px;
+    }
+    .divTitle2 h4{
+        font-size: 1.5em;
+    }
+    .divThree img{
+        position: relative!important;
+        width: 60px!important;
+        height: 60px!important;
+    }
+}

@@ -96,10 +96,10 @@ function Header() {
                                     <a href="/manager-office">{t("header37")}</a>
                                 </li>
                                 <li>
-                                    <a href="https://app.beloyal24.com/#/login">{t("header38")}</a>
+                                    <a href="/owner-office">{t("header38")}</a>
                                 </li>
                                 <li>
-                                    <a href="/zgloszenie-serwisowe">{t("header2")}</a>
+                                    <a href="/service-request">{t("header2")}</a>
                                 </li>
                             </ul>
                         </div>
@@ -241,13 +241,13 @@ function Header() {
                             </div>
                             <ul className={s.navbar_nav}>
                                 <li>
-                                    <a href="https://cm.bkf.pl/login">{t("header13")}</a>
+                                    <a href="/manager-office">{t("header37")}</a>
                                 </li>
                                 <li>
-                                    <a href="https://app.beloyal24.com/#/login">BeLOYAL</a>
+                                    <a href="/owner-office">{t("header38")}</a>
                                 </li>
                                 <li>
-                                    <a href="/zgloszenie-serwisowe">{t("header2")}</a>
+                                    <a href="/service-request">{t("header2")}</a>
                                 </li>
                             </ul>
                             <div className={s.language_selector2} id='lang'>

@@ -142,7 +142,7 @@ function Contact() {
                     <div className="section-header">
                         <h2>
                             <small>{t("contact4")}</small>
-                            <strong>{t("contact5")} БКФ</strong>
+                            <strong>{t("contact5")} Samwash</strong>
                         </h2>
                     </div>
                     <div className={s.contact_box}>
@@ -245,13 +245,13 @@ function Contact() {
                 <div className='main-container'>
                     <div className="section-header">
                         <h2>
-                            <strong>BKF Sp. z o. o</strong>
+                            <strong>Sam Wash</strong>
                         </h2>
                     </div>
                     <div className={s.text_block_center}>
                         <ul>
-                            <li>Скарбимежице 22</li>
-                            <li>72-002 Долує поблизу Щецина</li>
+                            <li>Україна, м. Львів</li>
+                            <li>вул. Кульпарківська 108</li>
                         </ul>
                         <ul>
                             <li>{t("contact18")}</li>
@@ -262,11 +262,11 @@ function Contact() {
                                 <a href="mailto:info@samwash.ua"><span>samwash.ua</span></a>
                             </li>
                         </ul>
-                        <p>
-                            NIP: 782-237-01-46, KRS: 0000262269 Окружний суд у Щецині, 13-й господарський
-                            відділ<br/>
-                            Національного судового реєстру; Розмір статутного капіталу: 300 000 злотих
-                        </p>
+                        {/*<p>*/}
+                        {/*    NIP: 782-237-01-46, KRS: 0000262269 Окружний суд у Щецині, 13-й господарський*/}
+                        {/*    відділ<br/>*/}
+                        {/*    Національного судового реєстру; Розмір статутного капіталу: 300 000 злотих*/}
+                        {/*</p>*/}
                     </div>
                 </div>
             </section>

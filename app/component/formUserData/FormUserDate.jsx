@@ -6,7 +6,7 @@ import Link from "next-intl/link";
 import Image from "next/image";
 import {useRef, useState, useEffect} from "react";
 
-function FormUserDate({textH2, threeInput}) {
+function FormUserDate({textH2, threeInput, block, firstInput}) {
 
     const t = useTranslations("be-loyal");
 
@@ -148,7 +148,7 @@ function FormUserDate({textH2, threeInput}) {
                                     <ul>
                                         <li>
                                             <span>1</span>
-                                            <span>{t("contact25")} </span>
+                                            <span>{t("contact25")}{firstInput} </span>
                                             <span> *</span>
                                             <input placeholder={t("contact26")} type='text'
                                                    name='name'
@@ -218,6 +218,7 @@ function FormUserDate({textH2, threeInput}) {
                                     </lable>
                                 </div>
                             </div>
+                            { block }
                             <div className={s.configurator_navigation}>
                                 <button className={s.formBtn} type='submit'>
                                     {t("contact35")}
