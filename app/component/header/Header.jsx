@@ -93,7 +93,7 @@ function Header() {
                         <div className={s.divisions}>
                             <ul>
                                 <li>
-                                    <a href="https://cm.bkf.pl/login">{t("header37")}</a>
+                                    <a href="/manager-office">{t("header37")}</a>
                                 </li>
                                 <li>
                                     <a href="https://app.beloyal24.com/#/login">{t("header38")}</a>
