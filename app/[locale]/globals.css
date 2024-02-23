@@ -486,6 +486,12 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
 }
 
 
+
+
+
+
+
+
 @media screen and (max-width: 1560px){
   .addBut{
     margin-bottom: 40px;
