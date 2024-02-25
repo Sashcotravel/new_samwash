@@ -110,7 +110,7 @@ function RemoteControl() {
                                     <span>та багато інших!</span>
                                 </li>
                             </ul>
-                            <ButtonRedArrowRight link={'/'} text={'manager'} clas={'programBut'}/>
+                            <ButtonRedArrowRight link={'/carwash-manager'} text={'manager'} clas={'programBut'}/>
                         </div>
                         <div className={s.image_wrapper}>
                             <Image src='/other/remote.jpg' alt='arrow' width={500} height={500}/>
@@ -222,7 +222,7 @@ function RemoteControl() {
                                     Витрата хімікатів і рівні.
                                 </li>
                             </ul>
-                            <ButtonRedArrowRight link={'/'} text={'program'} clas={'programBut'}/>
+                            <ButtonRedArrowRight link={'/carwash-manager'} text={'program'} clas={'programBut'}/>
                         </div>
                     </div>
                 </div>

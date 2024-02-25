@@ -125,6 +125,8 @@
     width: 50%;
     float: left;
     margin-bottom: 100px;
+    z-index: 2;
+    position: relative;
 }
 
 .text_block{

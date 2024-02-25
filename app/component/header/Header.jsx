@@ -29,12 +29,18 @@ function Header() {
 
     useEffect(() => {
         window.addEventListener('click', function (e) {
-            if (e.target.id !== 'lang') {
+            if (e.target.id === 'mozhna') {
+                let but = document.getElementById('button')
+                let but2 = document.getElementById('boxManu')
+                but.children[0].classList.remove(s['first_child'])
+                but.children[2].classList.remove(s['last_child'])
+                but.children[1].classList.remove(s['nth_child'])
+                but2.classList.remove(s['boxMenuWrapper2'])
+            }
+            else if (e.target.id !== 'lang') {
                 setToggleLang(false)
             }
-            else if (e.target.id === 'lang') {
-
-            }
+            else if (e.target.id === 'lang') {}
             else if (e.target.id !== 'button' && e.target.id !== 'button9') {
                 let but = document.getElementById('button')
                 let but2 = document.getElementById('boxManu')
@@ -166,10 +172,10 @@ function Header() {
                                     {t("header3")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/">{t("header4")}</Link>
-                                    <Link href="/">{t("header5")}</Link>
-                                    <Link href="/">{t("header6")}</Link>
-                                    <Link href="/">{t("header7")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header4")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header5")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header6")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header7")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -179,12 +185,12 @@ function Header() {
                                     {t("header8")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/">{t("header9")}</Link>
-                                    <Link href="/">{t("header10")}</Link>
-                                    <Link href="/">{t("header11")}</Link>
-                                    <Link href="/">{t("header12")}</Link>
-                                    <Link href="/beloyal-program">BE LOYAL</Link>
-                                    <Link href="/carwash-manager">{t("header13")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header9")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header10")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header11")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header12")}</Link>
+                                    <Link href="/beloyal-program" id='mozhna'>BE LOYAL</Link>
+                                    <Link href="/carwash-manager" id='mozhna'>{t("header13")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -194,13 +200,13 @@ function Header() {
                                     {t("header14")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/">{t("header15")}</Link>
-                                    <Link href="/">{t("header16")}</Link>
-                                    <Link href="/">{t("header17")} BKF</Link>
-                                    <Link href="/">{t("header18")}</Link>
-                                    <Link href="/">{t("header19")}</Link>
-                                    <Link href="/">{t("header20")}</Link>
-                                    <Link href="/">{t("header21")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header15")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header16")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header17")} BKF</Link>
+                                    <Link href="/" id='mozhna'>{t("header18")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header19")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header20")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header21")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -210,11 +216,11 @@ function Header() {
                                     {t("header22")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/">{t("header23")}</Link>
-                                    <Link href="/">{t("header24")}</Link>
-                                    <Link href="/">{t("header25")}</Link>
-                                    <Link href="/">{t("header26")}</Link>
-                                    <Link href="/">{t("header27")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header23")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header24")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header25")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header26")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header27")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -224,22 +230,22 @@ function Header() {
                                     {t("header28")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/">{t("header29")}</Link>
-                                    <Link href="/">{t("header30")}</Link>
-                                    <Link href="/">{t("header31")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header29")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header30")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header31")}</Link>
                                 </div>
                             </div>
-                            <div className={s.dropdown2}>
-                                <Link href='/blog'>{t("header32")}</Link>
+                            <div className={s.dropdown2} id='mozhna'>
+                                <Link href='/blog' id='mozhna'>{t("header32")}</Link>
                             </div>
-                            <div className={s.dropdown2}>
-                                <Link href='/'>{t("header33")}</Link>
+                            <div className={s.dropdown2} id='mozhna'>
+                                <Link href='/' id='mozhna'>{t("header33")}</Link>
                             </div>
-                            <div className={s.dropdown2}>
-                                <Link href='/contact'>{t("header34")}</Link>
+                            <div className={s.dropdown2} id='mozhna'>
+                                <Link href='/contact' id='mozhna'>{t("header34")}</Link>
                             </div>
-                            <div className={s.dropdown3}>
-                                <Link href='/' onClick={configWash}>{t("header35")}</Link>
+                            <div className={s.dropdown3} id='mozhna'>
+                                <Link href='/' onClick={configWash} id='mozhna'>{t("header35")}</Link>
                             </div>
                             <ul className={s.navbar_nav}>
                                 <li>

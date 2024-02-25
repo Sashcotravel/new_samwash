@@ -89,7 +89,7 @@ function ProgramForWash() {
                                     Витрата хімікатів і рівні.
                                 </li>
                             </ul>
-                            <ButtonRedArrowRight link={'/'} text={'program'} clas={'programBut'}/>
+                            <ButtonRedArrowRight link={'/carwash-manager'} text={'program'} clas={'programBut'}/>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ function ProgramForWash() {
                                     Система лояльності.
                                 </li>
                             </ul>
-                            <ButtonRedArrowRight link={'/'} text={'program2'} clas={'programBut'}/>
+                            <ButtonRedArrowRight link={'/beloyal-program'} text={'program2'} clas={'programBut'}/>
                         </div>
                     </div>
                 </div>
