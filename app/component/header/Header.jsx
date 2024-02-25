@@ -32,8 +32,10 @@ function Header() {
             if (e.target.id !== 'lang') {
                 setToggleLang(false)
             }
+            else if (e.target.id === 'lang') {
 
-            if (e.target.id !== 'button' && e.target.id !== 'button9') {
+            }
+            else if (e.target.id !== 'button' && e.target.id !== 'button9') {
                 let but = document.getElementById('button')
                 let but2 = document.getElementById('boxManu')
                 but.children[0].classList.remove(s['first_child'])
