@@ -46,6 +46,19 @@ function Footer() {
                 <div className={s.divInfoSoc}>
                     <font>Skarbimierzyce 22, 72-002 Dołuje k/Szczecin | NIP: 782-237-01-46, KRS: 0000262269</font>
                     <div className={s.soc}>
+                        <a href='https://wa.me/+380975794930' target='_blank'>
+                            <Image src='/header/soc/WhatsApp.webp' alt="What's up"
+                                   width={50} height={50}/>
+                        </a>
+                        <a href='https://t.me/+380 97 579 49 30' target='_blank'>
+                            <Image src='/header/soc/telegram.svg' alt="telegram"
+                                   width={40} height={40} style={{width: '40px'}} />
+                        </a>
+                        <a href='viber://chat?number=%2B380975794930' target='_blank'>
+                            <Image src='/header/soc/viber.png' alt="Viber"
+                                   width={50} height={50}/>
+                        </a>
+
                         <a href='https://www.facebook.com/samwashcarwash' target='_blank'>
                             <Image src='/header/soc/facebook.svg' alt="Facebook"
                                    width={10} height={10}/>
