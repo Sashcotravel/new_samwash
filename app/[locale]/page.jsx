@@ -32,6 +32,7 @@ import logo10 from '../../public/mainPage/sliderLogo/logo-10.svg'
 import logo11 from '../../public/mainPage/sliderLogo/logo-11.svg'
 import logo12 from '../../public/mainPage/sliderLogo/logo-12.svg'
 import logo13 from '../../public/mainPage/sliderLogo/logo-13.svg'
+import Davydov from "@/app/[locale]/realization/Davydov/page";
 
 const LazyLoadComponent = dynamic(() =>
     import("react-lazy-load-image-component").then((mod) => mod.LazyLoadComponent))
@@ -1234,7 +1235,7 @@ export default function Home() {
                                     <div className={s.text_wrapper}>
                                         <h3>Kiekrz/Rokietnica</h3>
                                         <p></p>
-                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                        <Link href='/realization/Davydov' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
                                     </div>
                                 </div>
                             </div>

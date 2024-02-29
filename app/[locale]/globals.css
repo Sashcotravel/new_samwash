@@ -83,6 +83,47 @@ body select {
   content: "/\00a0";
 }
 
+.bread-crumbs-project{
+  margin: 0;
+  padding: 0 0 0 45px;
+  list-style: none;
+
+}
+
+.bread-crumbs-project li{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+  position: relative;
+  font-weight: 300;
+  color: #a1a1a1;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.bread-crumbs-project li+li:before {
+  padding: 5px;
+  color: #fff;
+  content: "/\00a0";
+}
+
+.bread-crumbs-project li a{
+  padding-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.bread-crumbs-project li span{
+  padding-right: 20px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .main-container{
   max-width: 1590px;
   margin: 0 auto;
@@ -92,6 +133,37 @@ body select {
 .section-header{
   display: block;
   position: relative;
+  width: 100%;
+}
+
+.section-header h1{
+  padding: 10px 0 0;
+  font-size: 42px;
+  font-family: Ubuntu Light, sans-serif;
+  line-height: 1.2;
+  color: #3d3d3d;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.section-header h1 small{
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3d3d3d;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.section-header h1 strong{
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
   width: 100%;
 }
 
@@ -485,8 +557,27 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   margin-left: 0;
 }
 
+.hover-white{
+  width: 150px!important;
+}
 
+.hover-white:hover{
+  background-color: #d4d4d4!important;
+  color: #000!important;
+}
 
+.hover-white:hover img{
+  background-color: #d4d4d4!important;
+  color: #000!important;
+}
+
+.searchWash{
+  align-self: flex-end!important;
+  margin-bottom: 5px!important;
+  width: 280px!important;
+  margin-left: 50px!important;
+  transform: translate(-50px)!important;
+}
 
 
 
@@ -516,6 +607,15 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   body p {
     font-size: 14px;
     /*margin: 10px 0;*/
+  }
+  .section-header h1 small{
+    font-size: 11px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .section-header h1 strong{
+    font-size: 32px;
+    margin-bottom: 10px;
   }
   .section-header h2 {
     font-size: 16px;
@@ -571,11 +671,25 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
     transform: translateX(408%)!important;
     padding: 15px 21px!important;
   }
+  .bread-crumbs-project{
+    padding: 0 0 0 30px;
+  }
+  .searchWash{
+    margin-bottom: 0!important;
+    height: 40px!important;
+    padding: 16px 40px!important;
+  }
 }
 
 @media screen and (max-width: 990px){
   .section_header {
     padding: 0 30px;
+  }
+  .section-header h1 small{
+    font-size: 14px;
+  }
+  .section-header h1 strong{
+    font-size: 30px;
   }
   .section-header h2 {
     font-size: 42px;
@@ -643,6 +757,11 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
     width: 100%;
     margin: 30px auto 0;
   }
+  .searchWash{
+    margin-bottom: 0!important;
+    width: auto!important;
+    margin-top: 20px!important;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -651,6 +770,12 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   }
   .section-header {
     padding: 0 15px;
+  }
+  .section-header h1 small{
+    font-size: 11px;
+  }
+  .section-header h1 strong{
+    font-size: 28px;
   }
   .section-header h2 small{
     font-size: 11px;
@@ -661,7 +786,7 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   .btn {
     font-size: 9px;
   }
-  .bread-crumbs {
+  .bread-crumbs, .bread-crumbs-project {
     display: none!important;
   }
   .main-container{

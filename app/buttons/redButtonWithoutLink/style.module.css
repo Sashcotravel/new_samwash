@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 990px){
     .formBtn{
-        width: calc(100% - 49px);
+        width: calc(50% - 49px);
         text-align: center;
         margin: 0;
         padding: 15px 30px 13px;
