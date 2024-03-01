@@ -102,18 +102,19 @@
     position: relative;
     width: 100%;
     min-height: 500px;
+    z-index: 1;
 }
 
 .image_wrapper img{
     height: 500px;
-    width: auto;
+    width: 123%;
     min-width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     align-self: center;
-    object-fit: cover;
-    transform: translate(-50%,-50%);
+    object-fit: contain;
+    transform: translate(-50%, -50%);
 }
 
 .list_reverse{
@@ -458,7 +459,7 @@
 
 .gradient_background{
     height: 610px;
-    background: linear-gradient(90deg,#666 0,#333);
+    background: linear-gradient(90deg, #a6a6a6 0, #ffffff);
     overflow: hidden;
     position: relative;
 }

@@ -41,10 +41,10 @@ function CarwashManager() {
                             <Link href='/'>{t("home")}</Link>
                         </li>
                         <li>
-                            {t("manager1")}
+                            Віддалений доступ до автомийки
                         </li>
                     </ul>
-                    <h1>{t("manager1")}</h1>
+                    <h1>Віддалений доступ до автомийки</h1>
                 </div>
             </section>
 
@@ -57,7 +57,8 @@ function CarwashManager() {
                             <small>БЕЗПЕКА ТА КОМФОРТ</small>
                             <strong>Керуйте автомийкою віддалено</strong>
                         </h2>
-                        <h4>Керувати автомийкою та реагувати на різні види аварій ще ніколи не було так просто.</h4>
+                        <h4>Будьте в курсі подій, пов’язаних із роботою автомийки, коли вас там фізично немає.
+                            Моніторинг і контроль системи самообслуговування, а також оцінка бізнесу</h4>
                         <p>За допомогою телефону або комп'ютера з будь-якого місця і в зручний для вас час ви отримаєте
                             необхідну інформацію про вашу автомийку. Ви дізнаєтеся, скільки заробила ваша мийка, і
                             перевірите, чи справно працюють найважливіші технічні елементи. Зручно і швидко, коли вам це
@@ -67,7 +68,7 @@ function CarwashManager() {
                         <div className={s.third_column}>
                             <ul className={s.list_features}>
                                 <li>
-                                    <Image src='/managerCarwash/ico-gray-carwash-manager.svg' alt=''
+                                    <Image src='/managerCarwash/test.svg' alt=''
                                            width={50} height={50}/>
                                     <span>Віддалене управління</span>
                                 </li>
@@ -79,13 +80,13 @@ function CarwashManager() {
                                 <li>
                                     <Image src='/managerCarwash/ico-gray-service.svg' alt=''
                                            width={50} height={50}/>
-                                    <span>Ефективний сервіс</span>
+                                    <span>Сервіс</span>
                                 </li>
                             </ul>
                         </div>
                         <div className={s.third_column}>
                             <div className={s.image_wrapper}>
-                                <Image src='/managerCarwash/carwashManager.png' alt='' width={200} height={500}/>
+                                <Image src='/managerCarwash/managerAutoWash.svg' alt='' width={1000} height={1000}/>
                             </div>
                         </div>
                         <div className={s.third_column}>
@@ -93,12 +94,12 @@ function CarwashManager() {
                                 <li>
                                     <Image src='/managerCarwash/ico-сірі-люди.svg' alt=''
                                            width={50} height={50}/>
-                                    <span>Обслуговування клієнтів автопарку</span>
+                                    <span>Обслуговування автомийки</span>
                                 </li>
                                 <li>
                                     <Image src='/managerCarwash/ico-gray-analysis.svg' alt=''
                                            width={50} height={50}/>
-                                    <span>Моніторинг параметрів</span>
+                                    <span>Моніторинг системних параметрів</span>
                                 </li>
                                 <li>
                                     <Image src='/managerCarwash/ico-gray-alarm.svg' alt=''
@@ -115,13 +116,13 @@ function CarwashManager() {
                 <div className="main-container">
                     <div className="section-header">
                         <h2>
-                            <small></small>
-                            <strong style={{color: 'white'}}>З Менеджер Автомийки ви отримуєте переваги</strong>
+                            <small style={{color: 'white'}}>ВАША АВТОМИЙКА ЛИШЕ В ОДНОМУ КЛІЦІ</small>
+                            <strong style={{color: 'white'}}>З SamWash Watch ви отримуєте унікальні переваги</strong>
                         </h2>
                     </div>
                     <div className={s.img_wrapper}>
-                        <a data-fancybox="gallery" href={'/video/mainVideo.mp4'}>
-                            <video src={'/video/mainVideo.mp4'} poster={'/video/mainVideo.mp4'}
+                        <a data-fancybox="gallery" href={'/video/videoManager.mp4'}>
+                            <video src={'/video/videoManager.mp4'} poster={'/video/videoManager.mp4'}
                                    title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
@@ -293,7 +294,7 @@ function CarwashManager() {
                             </p>
                         </div>
                         <div className={s.blockImage}>
-                            <Image src='/managerCarwash/svgexport-3.svg' alt='' width={1000} height={640}/>
+                            <Image src='/managerCarwash/image2.svg' alt='' width={1000} height={640}/>
                         </div>
                         <table className={s.tech}>
                             <thead>
@@ -364,7 +365,7 @@ function CarwashManager() {
                 <div className="main-container">
                     <div className={s.half_column}>
                         <div className={s.image_wrapper}>
-                            <Image src='/managerCarwash/lead.png' alt='' width={750} height={640}/>
+                            <Image src='/managerCarwash/13.svg' alt='' width={750} height={640}/>
                         </div>
                     </div>
                     <div className={s.half_column}>
@@ -406,6 +407,14 @@ function CarwashManager() {
                         <h2>{t("manager5")}</h2>
                         <p>{t("manager6")}</p>
                         <p>{t("manager7")}</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className={s.section} style={{background: 'white'}}>
+                <div className="main-container">
+                    <div className={s.text_block} style={{color: 'black'}}>
+
                     </div>
                 </div>
             </section>

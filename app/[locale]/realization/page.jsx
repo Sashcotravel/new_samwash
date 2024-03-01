@@ -247,7 +247,7 @@ function Realization() {
                                                     <li>ЗОВНІШНЄ ПОЛОЖЕННЯ</li>
                                                     <li>TAK</li>
                                                 </ul>
-                                                <Link href={`/realization/` + item.car_washes_content[0].city}
+                                                <Link href={`/realization/` + item.slug}
                                                       className={`${s.red_text_btn} btn`}>{t("realization2")}</Link>
                                             </div>
                                         </div>
