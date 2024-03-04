@@ -123,12 +123,8 @@ function CarwashManager() {
                         </h2>
                     </div>
                     <div className={s.img_wrapper}>
-                        {/*<a data-fancybox="gallery" href={'/video/new_video.mp4'}>*/}
-                        {/*    <video src={'/video/new_video.mp4'} poster={'/video/new_video.mp4'}*/}
-                        {/*           title='' preload="yes" autoPlay='no' playsInline muted loop/>*/}
-                        {/*</a>*/}
-                        <a data-fancybox="gallery" href={'/video/new_video.mp4'}>
-                            <video src={'/video/new_video.mp4'} poster={'/video/new_video.mp4'} controls={true}
+                        <a data-fancybox="gallery" href={'/video/new_video.MP4'}>
+                            <video src={'/video/new_video.MP4'} poster={'/video/new_video.MP4'} controls={true}
                                    title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
