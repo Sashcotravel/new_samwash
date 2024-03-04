@@ -124,8 +124,8 @@ function CarwashManager() {
                         <a data-fancybox="gallery" href={'/video/videoManager.mp4'}>
                             {/*<video src={'/video/videoManager.mp4'} poster={'/video/videoManager.mp4'}*/}
                             {/*       title='' preload="yes" autoPlay='no' playsInline muted loop/>*/}
-                            <iframe src={'/video/videoManager.mp4'}
-                                   title='' />
+                            <iframe src={'/video/videoManager.mp4'} allow="accelerometer; autoplay;
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                         </a>
                     </div>
                     <div className={s.half_column}>
