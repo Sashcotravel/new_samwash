@@ -1233,7 +1233,7 @@ export default function Home() {
                                         <Image src='/mainPage/box6/image1.jpg' alt='' width={500} height={500}/>
                                     </div>
                                     <div className={s.text_wrapper}>
-                                        <h3>Kiekrz/Rokietnica</h3>
+                                        <h3>Davidiv</h3>
                                         <p></p>
                                         <Link href='/realization/Davydov' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
                                     </div>
@@ -1277,7 +1277,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className='center-btn'>
-                            <ButtonRedArrowRight link={'/'} text={'main104'}/>
+                            <ButtonRedArrowRight link={'/realization'} text={'main104'}/>
                         </div>
                     </div>
                 </section>
@@ -1470,10 +1470,11 @@ export default function Home() {
                                                 <small>{item?.start_date_time.slice(8, 10)}.
                                                     {item?.start_date_time.slice(5, 7)}.
                                                     {`${item?.start_date_time.slice(0, 4)}`} </small>
-                                                <Link href={item.slug}><strong>{item?.content[0]?.title}</strong></Link>
+                                                <Link href={'/blog/' + item.type  + '/' + item.slug}>
+                                                    <strong>{item?.content[0]?.title}</strong></Link>
                                             </h3>
                                             <div className={s.image_wrapper_blog}>
-                                                <Link href={item.slug}>
+                                                <Link href={'/blog/' + item.type  + '/' + item.slug}>
                                                     <Image src={'https://cb.samwash.ua/storage/image/'
                                                         + item.id + '/' + item.images[0]?.path} alt={item.title}
                                                            width={200} height={100}/>
@@ -1481,7 +1482,7 @@ export default function Home() {
                                             </div>
                                             <p dangerouslySetInnerHTML={{__html: item?.content[0]?.description.slice(0, 90)}}></p>
                                             <div className='center-btn'>
-                                                <Link href={item.slug} className={`${s.red_text_btn} btn`}
+                                                <Link href={'/blog/' + item.type  + '/' + item.slug} className={`${s.red_text_btn} btn`}
                                                       style={{padding: '20px', transform: 'translateX(0)'}}>
                                                     {t("main109")}
                                                 </Link>
@@ -1492,7 +1493,7 @@ export default function Home() {
                             }
                         </div>
                         <div className='center-btn'>
-                            <ButtonWhiteArrowRight link={'/'} text={'mainBlog'}/>
+                            <ButtonWhiteArrowRight link={'/blog'} text={'mainBlog'}/>
                         </div>
                     </div>
                 </section>
