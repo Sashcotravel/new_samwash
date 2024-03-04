@@ -68,7 +68,7 @@ function CarwashManager() {
                         <div className={s.third_column}>
                             <ul className={s.list_features}>
                                 <li>
-                                    <Image src='/managerCarwash/test.svg' alt=''
+                                    <Image src='/managerCarwash/19.svg' alt=''
                                            width={50} height={50}/>
                                     <span>Віддалене управління</span>
                                 </li>
