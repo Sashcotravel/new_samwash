@@ -34,7 +34,9 @@ function OneWash() {
 
     const [listWash, setListWash] = useState([])
     const [openForm, setOpenForm] = useState(false)
-    const [active, setActive] = useState(1)
+    const [active, setActive] = useState({
+        first: true, second: false, three: false, four: false, five: false, six: false
+    })
 
     Fancybox.bind('[data-fancybox="gallery"]', {
         Thumbs: {Carousel: {fill: false, center: true,},},
@@ -54,15 +56,14 @@ function OneWash() {
     }
 
     const setList = (position) => {
-        // setActive({
-        //     first: position === 1,
-        //     second: position === 2,
-        //     three: position === 3,
-        //     four: position === 4,
-        //     five: position === 5,
-        //     six: position === 6
-        // });
-        setActive(position)
+        setActive({
+            first: position === 1,
+            second: position === 2,
+            three: position === 3,
+            four: position === 4,
+            five: position === 5,
+            six: position === 6
+        });
     }
 
     return (
@@ -113,8 +114,7 @@ function OneWash() {
                                         <Image src='/project/davydov/3.svg' alt='' width={200} height={200}/>
                                         <span>
                                     <small>БУДІВНИЦТВО</small>
-                                    <strong>{listWash?.car_washes_design_relations[0]?.car_washes_design?.
-                                        car_washes_design_content[0]?.title}</strong>
+                                    <strong>{listWash?.car_washes_design_relations[0]?.car_washes_design?.car_washes_design_content[0]?.title}</strong>
                                 </span>
                                     </div>
                                     <div className={s.panel_box}>
@@ -138,80 +138,204 @@ function OneWash() {
                                 </h2>
                             </div>
                             <div className={s.one_column_list_with_tabs}>
-                                {
-                                    listWash.car_washes_service_relations.map((item, index) => {
-                                         return (
-                                             <div>
-                                                 <div
-                                                     className={`${s.tabs_list_wrapper} ${active.first ? s.ui_active : undefined}`}
-                                                     onClick={() => setList(index + 1)}>
+                                <div className={`${s.tabs_list_wrapper} ${active.first ? s.ui_active : undefined}`}
+                                     onClick={() => setList(1)}>
                                                      <span className={`${s.tabs_number} 
-                                                     ${active === index + 1 ? s.flex_active : undefined}`}>{index + 1}</span>
-                                                     <span className={`${s.tabs_description} 
-                                                     ${active === index + 1 ? s.active_desc : undefined}`}>
-                                                        {item.car_washes_services.car_washes_services_content[0].title}
-                                                     </span>
-                                                 </div>
-                                                 <div className={s.tabs_content_wrapper}
-                                                      style={active === index + 1 ? undefined : {display: 'none'}}>
-                                                     <div className={s.half_column}>
-                                                         <div className={s.image_wrapper}>
-                                                             <Image src='/project/davydov/1D.jpg' alt='' fill/>
-                                                         </div>
-                                                     </div>
-                                                     <div className={s.half_column}>
-                                                         <div className='section-header'>
-                                                             <h3>{item.car_washes_services.car_washes_services_content[0].title}</h3>
-                                                         </div>
-                                                         <ul>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Конструкція з оцинкованої сталі відповідає стандарту EN
-                                                                 ISO 1461.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Плоский дах з трапецієвидного листового металу.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Мансарда, висота 90 см, пофарбована порошковою фарбою в
-                                                                 обраний колір
-                                                                 RAL, 3D
-                                                                 логотип, тиснення, підсвічування написів.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Світлодіодне підсвічування по всій довжині мансарди.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 6 світлових точок для кожної мийки.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Корпус крайніх, передніх і задніх стовпів.
-                                                             </li>
-                                                             <li>
-                                                                 <Image src='/program/arrow.png' alt='arrow' width={10}
-                                                                        height={10}/>
-                                                                 Станційні перегородки - рекламні банери ПВХ з
-                                                                 інструкцією по
-                                                                 експлуатації.
-                                                             </li>
-                                                         </ul>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         )
-                                    })
-                                }
+                                                     ${active.first ? s.flex_active : undefined}`}>{1}</span>
+                                    <span className={`${s.tabs_description} 
+                                                     ${active.first ? s.active_desc : undefined}`}>
+                                        СЕРВІСИ НА АВТОМИЙЦІ
+                                    </span>
+                                </div>
+                                <div className={s.tabs_content_wrapper}
+                                     style={active.first ? undefined : {display: 'none'}}>
+                                    <div className={s.half_column}>
+                                        <div className={s.image_wrapper}>
+                                            <Image src={'https://cb.samwash.ua/storage/'
+                                                + listWash.car_washes_images[0].path} alt='' fill/>
+                                        </div>
+                                    </div>
+                                    <div className={s.half_column}>
+                                        <div className='section-header'>
+                                            <h3>СЕРВІСИ НА АВТОМИЙЦІ</h3>
+                                        </div>
+                                        <ul>
+                                            {
+                                                listWash.car_washes_service_relations.map(item => {
+                                                    return (
+                                                        <li key={item.id}>
+                                                            <Image src='/program/arrow.png' alt='arrow'
+                                                                   width={10}
+                                                                   height={10}/>
+                                                            {item
+                                                                .car_washes_services
+                                                                .car_washes_services_content[0].title
+                                                            }
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className={`${s.tabs_list_wrapper} ${active.second ? s.ui_active : undefined}`}
+                                     onClick={() => setList(2)}>
+                                                     <span className={`${s.tabs_number} 
+                                                     ${active.second ? s.flex_active : undefined}`}>{2}</span>
+                                    <span className={`${s.tabs_description} 
+                                                     ${active.second ? s.active_desc : undefined}`}>
+                                        ДОПОМІЖНІ ПОСЛУГИ
+                                    </span>
+                                </div>
+                                <div className={s.tabs_content_wrapper}
+                                     style={active.second ? undefined : {display: 'none'}}>
+                                    <div className={s.half_column}>
+                                        <div className={s.image_wrapper}>
+                                            <Image src={'https://cb.samwash.ua/storage/'
+                                                + listWash.car_washes_images[1].path} alt='' fill/>
+                                        </div>
+                                    </div>
+                                    <div className={s.half_column}>
+                                        <div className='section-header'>
+                                            <h3>ДОПОМІЖНІ ПОСЛУГИ</h3>
+                                        </div>
+                                        <ul>
+                                            {
+                                                listWash.car_washes_additional_services_relations
+                                                    .map(item => {
+                                                        return (
+                                                            <li key={item.id}>
+                                                                <Image src='/program/arrow.png'
+                                                                       alt='arrow' width={10}
+                                                                       height={10}/>
+                                                                {item
+                                                                    .car_washes_additional_services
+                                                                    .car_washes_additional_services_content[0]
+                                                                    .title
+                                                                }
+                                                            </li>
+                                                        )
+                                                    })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className={`${s.tabs_list_wrapper} ${active.three ? s.ui_active : undefined}`}
+                                     onClick={() => setList(3)}>
+                                                     <span className={`${s.tabs_number} 
+                                                     ${active.three ? s.flex_active : undefined}`}>{3}</span>
+                                    <span className={`${s.tabs_description} 
+                                                     ${active.three ? s.active_desc : undefined}`}>
+                                        СПОСОБИ ОПЛАТИ
+                                    </span>
+                                </div>
+                                <div className={s.tabs_content_wrapper}
+                                     style={active.three ? undefined : {display: 'none'}}>
+                                    <div className={s.half_column}>
+                                        <div className={s.image_wrapper}>
+                                            <Image src={'https://cb.samwash.ua/storage/'
+                                                + listWash.car_washes_images[2].path} alt='' fill/>
+                                        </div>
+                                    </div>
+                                    <div className={s.half_column}>
+                                        <div className='section-header'>
+                                            <h3>СПОСОБИ ОПЛАТИ</h3>
+                                        </div>
+                                        <ul>
+                                            {
+                                                listWash.car_washes_payment_relations
+                                                    .map(item => {
+                                                        return (
+                                                            <li key={item.id}>
+                                                                <Image src='/program/arrow.png'
+                                                                       alt='arrow' width={10}
+                                                                       height={10}/>
+                                                                {item
+                                                                    .car_washes_payment
+                                                                    .car_washes_payment_content[0]
+                                                                    .title
+                                                                }
+                                                            </li>
+                                                        )
+                                                    })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className={`${s.tabs_list_wrapper} ${active.four ? s.ui_active : undefined}`}
+                                     onClick={() => setList(4)}>
+                                                     <span className={`${s.tabs_number} 
+                                                     ${active.four ? s.flex_active : undefined}`}>{4}</span>
+                                    <span className={`${s.tabs_description} 
+                                                     ${active.four ? s.active_desc : undefined}`}>
+                                        ДИЗАЙН АВТОМИЙКИ
+                                    </span>
+                                </div>
+                                <div className={s.tabs_content_wrapper}
+                                     style={active.four ? undefined : {display: 'none'}}>
+                                    <div className={s.half_column}>
+                                        <div className={s.image_wrapper}>
+                                            <Image src={'https://cb.samwash.ua/storage/'
+                                                + listWash?.car_washes_images[3]?.path} alt='' fill/>
+                                        </div>
+                                    </div>
+                                    <div className={s.half_column}>
+                                        <div className='section-header'>
+                                            <h3>ДИЗАЙН АВТОМИЙКИ</h3>
+                                        </div>
+                                        <ul>
+                                            {
+                                                listWash.car_washes_design_relations.map(item => {
+                                                    return (
+                                                        <li>
+                                                            <Image src='/program/arrow.png' alt='arrow'
+                                                                   width={10}
+                                                                   height={10}/>
+                                                            {
+                                                                item.car_washes_design
+                                                                    .car_washes_design_content[0].title
+                                                            }
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className={`${s.tabs_list_wrapper} ${active.five ? s.ui_active : undefined}`}
+                                     onClick={() => setList(5)}>
+                                                     <span className={`${s.tabs_number} 
+                                                     ${active.five ? s.flex_active : undefined}`}>{5}</span>
+                                    <span className={`${s.tabs_description} 
+                                                     ${active.five ? s.active_desc : undefined}`}>
+                                        ДАТА ВІДКРИТТЯ
+                                    </span>
+                                </div>
+                                <div className={s.tabs_content_wrapper}
+                                     style={active.five ? undefined : {display: 'none'}}>
+                                    <div className={s.half_column}>
+                                        <div className={s.image_wrapper}>
+                                            <Image src={'https://cb.samwash.ua/storage/'
+                                                + listWash?.car_washes_images[4]?.path} alt='' fill/>
+                                        </div>
+                                    </div>
+                                    <div className={s.half_column}>
+                                        <div className='section-header'>
+                                            <h3>ДАТА ВІДКРИТТЯ</h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <Image src='/program/arrow.png' alt='arrow'
+                                                       width={10} height={10}/>
+                                                {listWash.date}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

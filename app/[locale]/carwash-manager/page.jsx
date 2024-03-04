@@ -10,6 +10,8 @@ import {Fancybox} from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import FormUserDate from "@/app/component/formUserData/FormUserDate";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation} from "swiper/modules";
 
 
 function CarwashManager() {
@@ -121,8 +123,8 @@ function CarwashManager() {
                         </h2>
                     </div>
                     <div className={s.img_wrapper}>
-                        <a data-fancybox="gallery" href={'/video/2023-07-10 19-56-50.mp4'}>
-                            <video src={'/video/2023-07-10 19-56-50.mp4'} poster={'/video/2023-07-10 19-56-50.mp4'}
+                        <a data-fancybox="gallery" href={'/video/new_video.mp4'}>
+                            <video src={'/video/new_video.mp4'} poster={'/video/new_video.mp4'}
                                    title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
@@ -254,6 +256,48 @@ function CarwashManager() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className={s.navy_background}>
+                <div className="main-container">
+                    <Swiper
+                        rewind={true}
+                        navigation={true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Як здійснити збір на автомийці?</div>
+                                <div className={s.itemCenter}>Як керувати автомийкою онлайн</div>
+                                <div className={s.itemSlider}>Керівник автомийки покрокова частина 1</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Управління освітою автомийки" loading="lazy" className={s.frame}/>
+                        </SwiperSlide>
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Як керувати автомийкою онлайн</div>
+                                <div className={s.itemCenter}>Керівник автомийки покрокова частина 1</div>
+                                <div className={s.itemSlider}>Що нового в Carwash Manager</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Інтернет на автомийці - як це починалося?" loading="lazy" className={s.frame}/>
+                        </SwiperSlide>
+                        <SwiperSlide style={{background: 'transparent', flexDirection: 'column'}}>
+                            <div className={s.owl_stag}>
+                                <div className={s.itemSlider}>Керівник автомийки покрокова частина 1</div>
+                                <div className={s.itemCenter}>Що нового в Carwash Manager</div>
+                                <div className={s.itemSlider}>Збір автомийки у менеджера автомийки</div>
+                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
+                                title="Управління освітленням автомийки" loading="lazy" className={s.frame}/>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </section>
 
