@@ -122,8 +122,10 @@ function CarwashManager() {
                     </div>
                     <div className={s.img_wrapper}>
                         <a data-fancybox="gallery" href={'/video/videoManager.mp4'}>
-                            <video src={'/video/videoManager.mp4'} poster={'/video/videoManager.mp4'}
-                                   title='' preload="yes" autoPlay='no' playsInline muted loop/>
+                            {/*<video src={'/video/videoManager.mp4'} poster={'/video/videoManager.mp4'}*/}
+                            {/*       title='' preload="yes" autoPlay='no' playsInline muted loop/>*/}
+                            <iframe src={'/video/videoManager.mp4'}
+                                   title='' />
                         </a>
                     </div>
                     <div className={s.half_column}>
