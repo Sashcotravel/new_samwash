@@ -184,7 +184,7 @@
     object-fit: cover;
 }
 
-.img_wrapper a frame{
+.img_wrapper a iframe{
     height: 100%;
     width: 100%;
     object-fit: cover;
