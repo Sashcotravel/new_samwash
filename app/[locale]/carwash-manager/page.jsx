@@ -122,7 +122,7 @@ function CarwashManager() {
                     </div>
                     <div className={s.img_wrapper}>
                         <a data-fancybox="gallery" href={'/video/2023-07-10 19-56-50.mp4'}>
-                            <video src={'/video/2023-07-10 19-56-50.mp4'} poster={'/video/videoManager.mp4'}
+                            <video src={'/video/2023-07-10 19-56-50.mp4'} poster={'/video/2023-07-10 19-56-50.mp4'}
                                    title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
