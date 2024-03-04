@@ -122,10 +122,8 @@ function CarwashManager() {
                     </div>
                     <div className={s.img_wrapper}>
                         <a data-fancybox="gallery" href={'/video/videoManager.mp4'}>
-                            {/*<video src={'/video/videoManager.mp4'} poster={'/video/videoManager.mp4'}*/}
-                            {/*       title='' preload="yes" autoPlay='no' playsInline muted loop/>*/}
-                            <iframe src={'/video/videoManager.mp4'} allow="accelerometer; autoplay;
-                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                            <video src={'video/videoManager.mp4'} poster={'/video/videoManager.mp4'}
+                                   title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
                     <div className={s.half_column}>
@@ -166,6 +164,94 @@ function CarwashManager() {
                                     Уміння визначати тенденції.
                                 </li>
                             </ul>
+                            <p className={s.addP}>Доступні такі області вибору:</p>
+                            <ul>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Системи
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Налаштування
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Фінанси
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Параметри
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Програмне забезпечення
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Сервіс Доступ до даних можна отримати з будь-якого місця.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Дистанційно-оперативна статистики з вашого ПК, планшета та смартфона.
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Графічний і текстовий огляд робочих процесів
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Графічний і текстовий звіт про помилки на автомийці
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Окремо рахує кожен пост, порохотях та жетони та система знижо SamWash group
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Зашифровані дані доступні лише вам
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Надає інформа про стан технологічного обладнання у реальному часі
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Виведення показників у таблиці та періодичні таблиці
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Сповіщання аварійних ситуацій з рекомендаціями послідовності дій
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Створення архіву та поведінки процесів в діафрагмах з часом події
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Захист даних методом наскрізного шифрування.
+                                </li>
+                            </ul>
+                            <p className={s.addP}>Також відстежуються такі дані:</p>
+                            <ul>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Тиск прісної води
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Тиск промивного середовища
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Осмос тиску води
+                                </li>
+                                <li>
+                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                    Тиск у антифризі. Монітори тиску постійно контролюють тиск системи на вході свіжої
+                                    води, осмосу, антифризу та промивної води. Датчики миттєво повідомляють про дефект
+                                    або несправність системи, дату й час зберігають у пам’яті помилок.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -182,7 +268,8 @@ function CarwashManager() {
                                 <strong className={s.strong}>Отримайте 3 місяці CM безкоштовно!</strong>
                             </h2>
                             <p></p>
-                            <p style={{color: 'white'}} className={s.gt}>Якщо ваша автомийка підключена до Інтернету, зв’яжіться з нами
+                            <p style={{color: 'white'}} className={s.gt}>Якщо ваша автомийка підключена до Інтернету,
+                                зв’яжіться з нами
                                 та отримайте <b>3 місяці підписки Carwash Manager безкоштовно.</b></p>
                             <p className={s.rule}>
                                 <Link href='https://drive.google.com/file/d/13_CZLXOT_UzE-fRHfKzjreeRwJaB7ArY/view'
@@ -416,7 +503,215 @@ function CarwashManager() {
             <section className={s.section} style={{background: 'white'}}>
                 <div className="main-container">
                     <div className={s.text_block} style={{color: 'black'}}>
-
+                        <h2>ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ</h2>
+                        <p>Программное обеспечение ALLES – это не просто отображение работы всех дозаторов и ключевых
+                            узлов систем. Это дистанционное управление оборудованием
+                            (любой системой – от списка программ на сенсоре до
+                            настройки давления для каждой программ) с возможностью изменения в том числе
+                            технических параметров. Рассмотрим подробнее, какие возможности управления мойкой ALLES
+                            доступны владельцу благодаря полной автоматизации системы с помощью промышленного компьютера
+                            B&R (Австрия).</p>
+                        <p>Вместе с оборудованием владелец получает и настроенный удалённый круглосуточный доступ
+                            к своей мойке с любого телефона, планшета, компьютера.</p>
+                        <h2>ГЛАВНЫЙ ЭКРАН</h2>
+                        <p>Главный экран – отображение того, что
+                            в данный момент происходит на мойке. Его видит оператор (для контроля и быстрого
+                            реагирования) и владелец МСО. Все датчики связанны с системой аварий и предупреждений.
+                            При надлежащем контроле можно избежать большинства аварий и поломок. Если показатели
+                            химии или осмоса доходят до критической отметки, то соответствующая программа
+                            исчезает из меню на посту. </p>
+                        <p className={s.addP} style={{color: 'black!important'}}>НА ГЛАВНОМ ЭКРАНЕ ОТОБРАЖАЮТСЯ:</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                уровни химии, топлива, омывайки (при наличии) – до 1 см;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                датчики давления (входное, сетевое, антифрост) – бар;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                параметры работы системы осмоса –л/мин;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                параметры работы буферной системы (при наличии) – литры, бар;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                датчики температуры (внешняя, тёплые полы (подача и обратная температура),
+                                горячая вода) – градус;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                показатели напряжения по фазам – индикаторы;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                диагностика по различным параметрам (свет, насос, байпас и т.д.);
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                аварии и предупреждения (текущие, архив) – описание;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                отображение работы постов (моечная/ сухая зоны) в режиме онлайн.
+                            </li>
+                        </ul>
+                        <p>Эти показатели отвечают за защиту и безопасность оборудования. Соответственно,
+                            продлевают жизнеспособность основных узлов и агрегатов и минимизируют простои
+                            в пиковые нагрузки.</p>
+                        <h2>УДАЛЁННОЕ УПРАВЛЕНИЕ МСО С ПОМОЩЬЮ ПО.</h2>
+                        <p className={s.addP} style={{color: 'black!important'}}>ПОСТЫ (МОЕЧНАЯ/ СУХАЯ ЗОНЫ):</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                включение/ выключение
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                давление
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                баланс
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                моточасы
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                открытие сенсорной панели с помощью электронного замка
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                запуск/ корректировка программ
+                            </li>
+                        </ul>
+                        <p className={s.addP} style={{color: 'black!important'}}>ДИАГНОСТИКА</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                предупреждение напряжения;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                активация системы защиты;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                показатели температуры/ влажности внутри сенсорных панелей на постах;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                контроль замены масла и уплотнений, сроков ТО в зависимости от моточасов на
+                                каждом посту;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                контроль систем дозации химии: промывка, прокачка воздуха;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление котельным оборудованием;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление дозаторами: подача химии для каждой программы, выбор
+                                температурного режима, мультивпрыск;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление давлением для каждой программы с помощью частотных преобразователей;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление программами на постах: вкл./выкл;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление резервным постом (включается на период ТО или поломки);
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление функцией «Антифрост»: от сети, от колодца, система подмешивания.
+                            </li>
+                        </ul>
+                        <p className={s.addP} style={{color: 'black!important'}}>НАСТРОЙКИ</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                выбор цен для каждой программы и режима (для моечных постов и сухой зоны – отдельно);
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                управление техническими параметрами поста: кнопки стоп/пауза, режим
+                                ожидания, выбор языка, и расширенные настройки;
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                настройки онлайн-кассы.
+                            </li>
+                        </ul>
+                        <h2>ПО СТАТИСТИКА. </h2>
+                        <p className={s.addP} style={{color: 'black!important'}}>СТАТИСТИКА</p>
+                        <p className={s.addP} style={{color: 'black!important'}}>Можно просматривать любой пост
+                            или суммарно по мойке и задать
+                            любой временной промежуток. </p>
+                        <p className={s.addP} style={{color: 'black!important'}}>ПАРАМЕТРЫ:</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                соотношение наличного/ безналичного расчёта,
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                количество оплат по бонусам,
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                количество автомобилей,
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                средний чек,
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                график выручки МСО по часам/ дням (полезно для анализа местоположения объекта),
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                график популярности программ (полезно при внедрении новых опций),
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                статистика по принятым финансам: инкассация по каждому посту, купюры и монеты в штуках
+                                и по номиналам, наполненность и время последней инкассации, история инкассаций.
+                            </li>
+                        </ul>
+                        <p className={s.addP} style={{color: 'black!important'}}>АПГРЕЙД ПО.  В 2021 ГОДУ
+                            ALLES ПЛАНИРУЕТ:</p>
+                        <ul>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                апгрейд ПО (сенсорные панели и компьютер). В дальнейшем такие системные обновления
+                                будут приходить автоматически аналогично тому, как обновляется ПО в вашем смартфоне
+                                или на компьютере.
+                            </li>
+                            <li>
+                                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                переход ПО на систему облачного контроля (в режиме одного окна появится возможность
+                                управлять любым количеством объектов, бонусным приложением и т.д.; появятся расширенные
+                                параметры статистики и аналитики для сети объектов; новые сервисы – в том числе
+                                привязка к 1С (!), по многочисленным просьбам клиентов).
+                            </li>
+                        </ul>
+                        <Image src='/managerCarwash/fotImage.jpg' alt='' width={2000} height={500} className={s.fotI} />
+                        <Image src='/managerCarwash/fotImage1.jpg' alt='' width={2000} height={500} className={s.fotI} />
                     </div>
                 </div>
             </section>
