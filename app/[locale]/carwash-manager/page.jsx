@@ -12,7 +12,6 @@ import FormUserDate from "@/app/component/formUserData/FormUserDate";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
-import video from '../../../public/video/new_video.mp4'
 
 
 function CarwashManager() {
@@ -124,8 +123,8 @@ function CarwashManager() {
                         </h2>
                     </div>
                     <div className={s.img_wrapper}>
-                        <a data-fancybox="gallery" href={video}>
-                            <video src={video} poster={video} controls={true}
+                        <a data-fancybox="gallery" href={'/video/animation.mp4'}>
+                            <video src={'/video/animation.mp4'} poster={'/video/animation.mp4'} controls={true}
                                    title='' preload="yes" autoPlay='no' playsInline muted loop/>
                         </a>
                     </div>
