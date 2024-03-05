@@ -11,6 +11,11 @@
   "program": "more about the car wash manager",
   "program2": "Learn more about BE LOYAL",
   "manager": "Car wash manager",
+  "vacuumeText": "vacuum cleaners",
+  "payTerminal": "PAYMENT TERMINAL",
+  "distributor": "distributor",
+  "chemicals": "chemicals for washing",
+  "programs-washing": "additional washing programs",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -374,6 +379,12 @@
     "vacuume1": "Vacuum cleaners",
     "vacuume2": "",
     "vacuume3": ""
+  },
+  "accessories-for-wash": {
+    "home": "Main",
+    "accessories1": "Accessories for car washes",
+    "accessories2": "",
+    "accessories3": ""
   },
   "": ""
 }

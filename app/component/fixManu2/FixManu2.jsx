@@ -3,6 +3,7 @@
 import s from './fixManu2.module.css';
 import Link from "next-intl/link";
 import {useEffect, useState} from "react";
+import AccessoriesForWash from "@/app/[locale]/accessories-for-wash/page";
 
 function FixManu2({active}) {
 
@@ -57,7 +58,7 @@ function FixManu2({active}) {
         <section className={s.menu_tab_section}>
             <div className='main-container'>
                 <div className={`${s.menu_tab} ${fixHeader ? s.fixed : ''} ${fixHeader2 ? s.fixed2 : ''}`}>
-                    <Link href='/'
+                    <Link href='/accessories-for-wash'
                           className={`${s.menu_item} ${active === 1 ? s.currentItem : undefined}`}>
                         Аксесуари для автомийки</Link>
                     <Link href='/vacuume-for-car'

@@ -11,6 +11,11 @@
   "program": "докладніше про менеджер автомийки",
   "program2": "Докладніше про BE LOYAL",
   "manager": "Менеджер автомийки",
+  "vacuumeText": "пилососи",
+  "payTerminal": "ПЛАТІЖНИЙ ТЕРМІНАЛ",
+  "distributor": "дистриб'ютор",
+  "chemicals": "хімікати для миття",
+  "programs-washing": "додаткові програми прання",
   "header": {
     "header1": "Менеджер автомийки",
     "header2": "Запит на обслуговування",
@@ -374,6 +379,12 @@
     "vacuume1": "Пилососи",
     "vacuume2": "",
     "vacuume3": ""
+  },
+  "accessories-for-wash": {
+    "home": "Головна",
+    "accessories1": "Аксесуари для автомийки",
+    "accessories2": "",
+    "accessories3": ""
   },
   "": ""
 }

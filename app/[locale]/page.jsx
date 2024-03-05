@@ -954,7 +954,7 @@ export default function Home() {
 
                                 </picture>
                             </Link>
-                            <Link href='/' className={s.features_box_select_item}>
+                            <Link href='/accessories-for-wash' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main62")}</p>
                                     <h4>{t("main63")}</h4>
