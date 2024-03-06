@@ -14,7 +14,6 @@ function AccessoriesForWash() {
 
     const t = useTranslations("accessories-for-wash");
 
-
     return (
         <div>
 
@@ -44,7 +43,7 @@ function AccessoriesForWash() {
                             </p>
                             <div className={s.divInfo}>
                                 <p>Пристрої для миття салонів транспортних засобів.</p>
-                                <div>
+                                <div className={s.divFlex}>
                                     <ButtonRedArrowRight text={'vacuumeText'} link={'/vacuume-for-car'}/>
                                 </div>
                             </div>
@@ -56,8 +55,8 @@ function AccessoriesForWash() {
                             <div className={s.divInfo}>
                                 <p>Багатофункціональні пристрої для обміну грошей, продажу та поповнення
                                     карт лояльності та ін.</p>
-                                <div>
-                                    <ButtonRedArrowRight text={'payTerminal'} link={'/'}/>
+                                <div className={s.divFlex}>
+                                    <ButtonRedArrowRight text={'payTerminal'} link={'/payment-terminal'}/>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +66,7 @@ function AccessoriesForWash() {
                             </p>
                             <div className={s.divInfo}>
                                 <p>Пристрій для самозаправки склоомивача.</p>
-                                <div>
+                                <div className={s.divFlex}>
                                     <ButtonRedArrowRight text={'distributor'} link={'/'}/>
                                 </div>
                             </div>
@@ -79,7 +78,7 @@ function AccessoriesForWash() {
                             <div className={s.divInfo}>
                                 <p>Повний асортимент спеціальної хімії для безконтактної
                                     та портальної мийки автомобілів.</p>
-                                <div>
+                                <div className={s.divFlex}>
                                     <ButtonRedArrowRight text={'chemicals'} link={'/'}/>
                                 </div>
                             </div>
@@ -181,7 +180,7 @@ function AccessoriesForWash() {
                 </div>
             </section>
 
-            <section>
+            <section className={s.section_with_image}>
                 <div className={s.half_column}>
                     <div className="section-header">
                         <h2>
@@ -220,7 +219,7 @@ function AccessoriesForWash() {
                 </div>
             </section>
 
-            <section style={{overflow: 'hidden'}}>
+            <section className={s.section_with_image2}>
                 <div className={s.half_column2}>
                     <div className="section-header">
                         <h2>
@@ -232,7 +231,7 @@ function AccessoriesForWash() {
                             додатковими програмами мийки.
                         </p>
                     </div>
-                    <div>
+                    <div className={s.divFlex}>
                         <ButtonRedArrowRight text={'programs-washing'} link={'/'}/>
                     </div>
                 </div>

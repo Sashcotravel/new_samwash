@@ -28,7 +28,7 @@
     "header9": "Chemical means for washing the car",
     "header10": "Washer dispenser",
     "header11": "Vacuum cleaners",
-    "header12": "Change cars",
+    "header12": "Payment terminal",
     "header13": "Car wash manager",
     "header14": "I want a car wash",
     "header15": "First steps",
@@ -385,6 +385,12 @@
     "accessories1": "Accessories for car washes",
     "accessories2": "",
     "accessories3": ""
+  },
+  "payment-terminal": {
+    "home": "Main",
+    "terminal1": "Payment terminal",
+    "terminal2": "",
+    "terminal3": ""
   },
   "": ""
 }

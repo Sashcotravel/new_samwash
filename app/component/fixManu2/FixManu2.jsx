@@ -63,8 +63,8 @@ function FixManu2({active}) {
                         Аксесуари для автомийки</Link>
                     <Link href='/vacuume-for-car'
                           className={`${s.menu_item} ${active === 2 ? s.currentItem : undefined}`}>Пилососи</Link>
-                    <Link href='/'
-                          className={`${s.menu_item} ${active === 3 ? s.currentItem : undefined}`}>Змінні машини</Link>
+                    <Link href='/payment-terminal'
+                          className={`${s.menu_item} ${active === 3 ? s.currentItem : undefined}`}>Платіжний термінал</Link>
                     <Link href='/'
                           className={`${s.menu_item} ${active === 4 ? s.currentItem : undefined}`}>
                         Розподільник рідини</Link>

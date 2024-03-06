@@ -6,10 +6,10 @@ function WrapperClick({children}) {
 
     function showForm() {
         document.getElementById('form1').style.display = 'block'
-        document.getElementById('form1').scrollIntoView({block: "center", behavior: 'smooth'});
+        document.getElementById('form1').scrollIntoView({block: "start", behavior: 'smooth'});
     }
 
-    return <div onClick={showForm}>{children}</div>
+    return <div className='divWrapperClick' onClick={showForm}>{children}</div>
 }
 
 export default WrapperClick;

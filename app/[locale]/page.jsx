@@ -112,6 +112,7 @@ export default function Home() {
             .get(`https://cb.samwash.ua/api/v1/blog/${locale === "en" ? "en" : locale === "ru" ? "ru" : "ua"}/truck-washer-21181311`)
             .then(res => {
                 const data = res.data.data
+                blogArr = []
                 blogArr.push(data)
                 axios
                     .get(`https://cb.samwash.ua/api/v1/blog/${locale === "en" ? "en" : locale === "ru" ? "ru" : "ua"}/state-lending-5-7-9-14040948`)
@@ -1183,7 +1184,7 @@ export default function Home() {
                                     <div className={s.text_block_image}>
                                         <h3>{t("main93")}</h3>
                                         <p>{t("main97")}</p>
-                                        <Link href='/' className={s.formBtn + ' ' + s.add}>
+                                        <Link href='/payment-terminal' className={s.formBtn + ' ' + s.add}>
                                             {t("main94")} Samwash
                                             <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5}
                                                    height={5}/>
@@ -1200,7 +1201,7 @@ export default function Home() {
                                 <h3>{active2 === 1 ? t("main88") : active2 === 2 ? t("main90") : t("main93")}</h3>
                                 <p>{active2 === 1 ? t("main95") : active2 === 2 ? t("main96") : t("main97")}</p>
                                 <Link href={active2 === 1 ? '/beloyal-program' : active2 === 2 ? '/carwash-manager'
-                                    : '/'}
+                                    : '/payment-terminal'}
                                       className={s.formBtn + ' ' + s.add}>
                                     {
                                         active2 === 1 ? 'BE LOYAL' : active2 === 2 ?

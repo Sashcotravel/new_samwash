@@ -620,6 +620,12 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
   .section-header h2 {
     font-size: 16px;
   }
+  .section-header p {
+    font-size: 13px;
+  }
+  .section-header p {
+    font-size: 13px!important;
+  }
   .section-header h2 small{
     font-size: 11px;
     margin-bottom: 10px;
@@ -678,6 +684,12 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
     margin-bottom: 0!important;
     height: 40px!important;
     padding: 16px 40px!important;
+  }
+  .divWrapperClick{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
   }
 }
 
