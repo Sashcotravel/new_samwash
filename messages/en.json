@@ -392,5 +392,11 @@
     "terminal2": "",
     "terminal3": ""
   },
+  "dispenser": {
+    "home": "Main",
+    "dispenser1": "Washer dispenser",
+    "dispenser2": "",
+    "dispenser3": ""
+  },
   "": ""
 }

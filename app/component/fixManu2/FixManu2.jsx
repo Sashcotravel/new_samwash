@@ -65,7 +65,7 @@ function FixManu2({active}) {
                           className={`${s.menu_item} ${active === 2 ? s.currentItem : undefined}`}>Пилососи</Link>
                     <Link href='/payment-terminal'
                           className={`${s.menu_item} ${active === 3 ? s.currentItem : undefined}`}>Платіжний термінал</Link>
-                    <Link href='/'
+                    <Link href='/dispenser'
                           className={`${s.menu_item} ${active === 4 ? s.currentItem : undefined}`}>
                         Розподільник рідини</Link>
                     <Link href='/'

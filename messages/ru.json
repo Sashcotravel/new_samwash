@@ -392,5 +392,11 @@
     "terminal2": "",
     "terminal3": ""
   },
+  "dispenser": {
+    "home": "Главная",
+    "dispenser1": "Распределитель стеклоомывателя",
+    "dispenser2": "",
+    "dispenser3": ""
+  },
   "": ""
 }

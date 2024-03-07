@@ -392,5 +392,11 @@
     "terminal2": "",
     "terminal3": ""
   },
+  "dispenser": {
+    "home": "Головна",
+    "dispenser1": "Розподільник склоомивача",
+    "dispenser2": "",
+    "dispenser3": ""
+  },
   "": ""
 }
