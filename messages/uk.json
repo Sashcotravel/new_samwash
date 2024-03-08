@@ -16,6 +16,7 @@
   "distributor": "дистриб'ютор",
   "chemicals": "хімікати для миття",
   "programs-washing": "додаткові програми прання",
+  "shopShampoos": "Магазин SAMWASH - Шампуні",
   "header": {
     "header1": "Менеджер автомийки",
     "header2": "Запит на обслуговування",
@@ -397,6 +398,12 @@
     "dispenser1": "Розподільник склоомивача",
     "dispenser2": "",
     "dispenser3": ""
+  },
+  "chemistry": {
+    "home": "Головна",
+    "chemistry1": "Хімічні засоби для автомийок",
+    "chemistry2": "",
+    "chemistry3": ""
   },
   "": ""
 }

@@ -16,6 +16,7 @@
   "distributor": "distributor",
   "chemicals": "chemicals for washing",
   "programs-washing": "additional washing programs",
+  "shopShampoos": "SAMWASH store - Shampoos",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -397,6 +398,12 @@
     "dispenser1": "Washer dispenser",
     "dispenser2": "",
     "dispenser3": ""
+  },
+  "chemistry": {
+    "home": "Main",
+    "chemistry1": "Chemicals for car washes",
+    "chemistry2": "",
+    "chemistry3": ""
   },
   "": ""
 }

@@ -16,6 +16,7 @@
   "distributor": "дистрибьютор",
   "chemicals": "химикаты для мытья",
   "programs-washing": "дополнительные программы стирки",
+  "shopShampoos": "Магазин SAMWASH - Шампуни",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -397,6 +398,12 @@
     "dispenser1": "Распределитель стеклоомывателя",
     "dispenser2": "",
     "dispenser3": ""
+  },
+  "chemistry": {
+    "home": "Главная",
+    "chemistry1": "Химические средства для автомоек",
+    "chemistry2": "",
+    "chemistry3": ""
   },
   "": ""
 }

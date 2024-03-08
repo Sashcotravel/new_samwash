@@ -4,6 +4,7 @@ import s from './fixManu2.module.css';
 import Link from "next-intl/link";
 import {useEffect, useState} from "react";
 import AccessoriesForWash from "@/app/[locale]/accessories-for-wash/page";
+import Chemistry from "@/app/[locale]/chemistry/page";
 
 function FixManu2({active}) {
 
@@ -68,7 +69,7 @@ function FixManu2({active}) {
                     <Link href='/dispenser'
                           className={`${s.menu_item} ${active === 4 ? s.currentItem : undefined}`}>
                         Розподільник рідини</Link>
-                    <Link href='/'
+                    <Link href='/chemistry'
                           className={`${s.menu_item} ${active === 5 ? s.currentItem : undefined}`}>
                         Хімікати для миття автомобіля
                     </Link>
