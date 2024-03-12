@@ -16,7 +16,14 @@
   "distributor": "distributor",
   "chemicals": "chemicals for washing",
   "programs-washing": "additional washing programs",
+  "programs-washing2": "more about washing programs",
   "shopShampoos": "SAMWASH store - Shampoos",
+  "autowash": "Autowash SAMWASH",
+  "structures": "structures",
+  "seeProjects": "see projects",
+  "washingPrograms": "Washing programs",
+  "checkOtherApps": "check other apps",
+  "accessories": "View car wash accessories",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -404,6 +411,30 @@
     "chemistry1": "Chemicals for car washes",
     "chemistry2": "",
     "chemistry3": ""
+  },
+  "first-steps": {
+    "home": "Main",
+    "step1": "First steps",
+    "step2": "",
+    "step": ""
+  },
+  "phased-construction": {
+    "home": "Main",
+    "phased1": "Construction of the car wash in stages",
+    "phased2": "",
+    "phased3": ""
+  },
+  "opportunities": {
+    "home": "Main",
+    "opportunities1": "Build a car wash with SAMWASH",
+    "opportunities2": "Opportunities with SAMWASH",
+    "opportunities3": ""
+  },
+  "profitability-calculator": {
+    "home": "Головна",
+    "calculator1": "Profitability calculator",
+    "calculator2": "",
+    "calculator3": ""
   },
   "": ""
 }

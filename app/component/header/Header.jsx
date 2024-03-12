@@ -200,13 +200,13 @@ function Header() {
                                     {t("header14")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/" id='mozhna'>{t("header15")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header16")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header17")} BKF</Link>
-                                    <Link href="/" id='mozhna'>{t("header18")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header19")}</Link>
+                                    <Link href="/first-steps" id='mozhna'>{t("header15")}</Link>
+                                    <Link href="/phased-construction" id='mozhna'>{t("header16")}</Link>
+                                    <Link href="/opportunities" id='mozhna'>{t("header17")} SAMWASH</Link>
+                                    <Link href="/profitability-calculator" id='mozhna'>{t("header18")}</Link>
+                                    <Link onClick={configWash} href="/" id='mozhna'>{t("header19")}</Link>
                                     <Link href="/" id='mozhna'>{t("header20")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header21")}</Link>
+                                    <Link href="/realization" id='mozhna'>{t("header21")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -216,11 +216,10 @@ function Header() {
                                     {t("header22")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/" id='mozhna'>{t("header23")}</Link>
                                     <Link href="/" id='mozhna'>{t("header24")}</Link>
                                     <Link href="/" id='mozhna'>{t("header25")}</Link>
                                     <Link href="/" id='mozhna'>{t("header26")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header27")}</Link>
+                                    <Link href="/service-request" id='mozhna'>{t("header27")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
@@ -231,7 +230,6 @@ function Header() {
                                 </button>
                                 <div className={s.dropdown_content}>
                                     <Link href="/" id='mozhna'>{t("header29")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header30")}</Link>
                                     <Link href="/" id='mozhna'>{t("header31")}</Link>
                                 </div>
                             </div>

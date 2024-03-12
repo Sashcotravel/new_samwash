@@ -1,0 +1,1000 @@
+.box1{
+    background-color: #f2f2f2;
+    padding: 50px 0 100px;
+    width: 100%;
+}
+
+.main_containerBox1{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.top_arrow{
+    position: relative;
+    width: 100%;
+}
+
+.top_arrow::before {
+    content: url('../../../public/mainPage/mainSlider/arrow-top-section.png');
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-100%);
+}
+
+.section_header{
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.section_headerH1{
+    padding: 10px 0 0;
+    font-size: 42px;
+    color: #3d3d3d;
+    margin: 15px 0;
+}
+
+.section_headerH3{
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+
+.section_headerH1P1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3d3d3d;
+}
+
+.section_headerH1P2{
+    font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: Ubuntu Light, sans-serif;
+}
+
+.configurator_body{
+    background: #fff;
+    width: 100%;
+    padding: 60px 2%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.half_colum{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    flex: 0 50%;
+}
+
+.washer_image{
+    margin-right: 60px;
+    text-align: center;
+}
+
+.washer_image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wash_type_box{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px 0 15px;
+    margin-left: 0;
+}
+
+.select_wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 35px;
+}
+
+.formBtn{
+    margin-left: 40px;
+    background-color: #ed1c24;
+    color: #fff;
+    /*transition: all .2s ease-in-out;*/
+    font-family: Poppins,sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    padding: 22px 50px 20px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+
+/* form */
+
+.formMain{
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*padding: 0 60px 0 15px;*/
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.select_wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 35px;
+}
+
+.select_wrapper select{
+    color: #525252;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    font-family: Ubuntu,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #fff url('../../../public/mainPage/mainCalc/select-arrow.png') no-repeat;
+    background-size: 15px;
+    background-position: right 10px center;
+    -webkit-border-radius: 0;
+    appearance: none;
+}
+
+.select_wrapper lable{
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.select_wrapper lable span{
+    height: 25px;
+    width: 25px;
+    background: #7e8895;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ebebeb;
+    font-size: 12px;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.input_wrapper{
+    width: 50%;
+    display: flex;
+    padding: 0 15px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.input-wrapper .container{
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input_wrapper lable{
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-family: Ubuntu,sans-serif;
+    display: block;
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.input_wrapper lable span{
+    height: 25px;
+    width: 25px;
+    background: #7e8895;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ebebeb;
+    font-size: 12px;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container::before{
+    content: " ";
+    display: table;
+}
+
+.container::after{
+    clear: both;
+}
+
+.input_wrapper .container:hover input~.checkmark, .input_wrapper .container input:checked~.checkmark {
+    background-color: #fff!important;
+}
+
+.input_wrapper .container input:checked~.checkmark:after {
+    display: block;
+}
+
+.input_wrapper .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.input_wrapper .container .checkmark{
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #fff!important;
+}
+
+.checkmark::after{
+    display: none;
+    left: 18px;
+    top: 11px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(1.8);
+    content: " ";
+    position: absolute;
+}
+
+/* end form */
+
+.selected_washer_details{
+    display: none;
+}
+
+.selected_washer_details ul{
+    margin-top: 40px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-flow: row;
+    padding: 0 30px;
+}
+
+.selected_washer_details ul li{
+    flex: 0 25%;
+    margin-right: 30px;
+}
+
+.selected_washer_details ul li span:first-of-type{
+    display: inline-flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #7e8895;
+    color: #fff;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.selected_washer_details ul li span:last-of-type{
+    font-family: Ubuntu,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.selected_washer_details ul li div{
+    width: 100%;
+    background: #fff;
+    padding: 25px 20px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.configurator_body h2{
+    font-family: Ubuntu Light,sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    background: #7e8895;
+    display: block;
+    float: left;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    flex: 0 70%;
+    margin: 0 auto 20px;
+}
+
+.inline_item_user_data{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+.inline_description{
+    width: 50%;
+}
+
+.inline_description span:first-of-type {
+    display: inline-flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #7e8895;
+    color: #fff;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.inline_description span:nth-of-type(2) {
+    font-family: Ubuntu,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+}
+
+.inline_description span:nth-of-type(3) {
+    color: #ed1c24;
+    font-size: 18px;
+}
+
+.inline_inputs{
+    width: 50%;
+    padding-left: 20px;
+}
+
+.inline_inputs .container{
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+    width: auto;
+    font-family: Ubuntu Light,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.inline_item_user_data .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inline_item_user_data .checkmark {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.inline_item_user_data .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.inline_item_user_data .container .checkmark:after {
+    left: 16px;
+    top: 12px;
+    width: 6px;
+    height: 11px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) scale(1.5);
+}
+
+.inline_item_user_data .container input:checked~.checkmark:after {
+    display: block;
+}
+
+.select_wrapper2{
+    width: auto;
+}
+
+.input_step2{
+    width: calc(100% - 42px);
+    height: 60px;
+    margin-left: 15px;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    font-family: Ubuntu Light,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+    background-size: 15px;
+    background-position: right 10px center;
+    transform: translateY(-30%);
+    -webkit-border-radius: 0!important;
+    -webkit-appearance: none;
+}
+
+.configurator_navigation{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    height: auto;
+    margin-top: 40px;
+}
+
+.configurator_navigation ul{
+    width: 255px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px auto 0;
+    transform: translateX(-1px);
+}
+
+.configurator_navigation ul li:last-of-type{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333;
+}
+
+.configurator_navigation ul li:first-of-type{
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.configurator_navigation ul li:first-of-type:before {
+    content: url('../../../public/mainPage/mainCalc/arrow-before-conf.png');
+    margin-right: 10px;
+}
+
+.reguired_fields{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+.reguired_fields span:first-of-type {
+    color: #ed1c24;
+}
+
+.reguired_fields span:last-of-type {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 400;
+}
+
+.personal_configurator_data{
+    display: flex;
+    flex: 0 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.personal_configurator_data ul{
+    display: flex;
+    flex-flow: row;
+    padding: 0 30px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.personal_configurator_data ul li {
+    flex: 0 33.3333%;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.personal_configurator_data ul li:last-of-type {
+    margin-right: 0;
+}
+
+.personal_configurator_data ul li span:first-of-type {
+    display: inline-flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #7e8895;
+    color: #fff;
+    font-family: Ubuntu Light,sans-serif;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.personal_configurator_data ul li span:nth-of-type(2) {
+    font-family: Ubuntu Light,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.personal_configurator_data ul li span:nth-of-type(3) {
+    font-size: 14px;
+    color: #ed1c24;
+}
+
+.personal_configurator_data ul li input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family: Ubuntu,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+
+.required_acceptance{
+    width: 100%;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.container{
+    text-align: left;
+    margin: 0;
+    padding-left: 60px;
+    font-family: Ubuntu Light,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.form_group_input_wrapper {
+    margin-bottom: 40px;
+}
+
+.form_group_link {
+    font-size: inherit;
+    line-height: inherit;
+    color: #e2001a;
+    margin-left: 0.35em;
+    margin-right: 0.35em;
+}
+
+.required_acceptance .form_group_input_wrapper .container .checkmark {
+    top: 5px;
+    border: 1px solid #ccc;
+}
+
+.form_group_input_wrapper .container .checkmark:after {
+    left: 20px;
+    top: 13px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(1.8);
+}
+
+.form_group_input_wrapper .container input:checked~.checkmark:after {
+    display: block;
+}
+
+.form_group_input_wrapper .checkmark {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+}
+
+.form_group_input_wrapper .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form_group_input_wrapper .container:hover input~.checkmark, .form_group_input_wrapper .container input:checked~.checkmark {
+    background-color: #fff;
+}
+
+.redButCenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 3;
+}
+
+.paddingBut{
+    padding: 60px 0 0;
+}
+
+
+@media screen and (max-width: 1280px){
+    .section_header{
+        margin-bottom: 30px;
+    }
+    .section_headerH1{
+        font-size: 16px;
+    }
+    .section_headerH1P1{
+        font-size: 11px;
+        margin-top: 0;
+    }
+    .section_headerH1P2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .section_headerP{
+        font-size: 13px;
+        width: 60%;
+        margin: 40px auto 0;
+    }
+    .selected_washer_details ul {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        padding: 0 20px;
+    }
+    .selected_washer_details ul li span:first-of-type {
+        font-size: 11px;
+    }
+    .selected_washer_details ul li span:last-of-type {
+        font-size: 12px;
+    }
+    .selected_washer_details ul li div {
+        padding: 15px 20px;
+    }
+    .configurator_body h2{
+        font-size: 16px;
+        flex: 0 80%;
+    }
+    .personal_configurator_data ul li span:first-of-type {
+        font-size: 11px;
+    }
+    .personal_configurator_data ul li span:nth-of-type(2) {
+        font-size: 12px;
+    }
+    .personal_configurator_data ul li span:nth-of-type(3) {
+        font-size: 12px;
+    }
+    .personal_configurator_data ul li input {
+        font-size: 11px;
+    }
+    .container {
+        font-size: 12px;
+    }
+    .configurator_navigation{
+        margin-top: 30px;
+    }
+    .configurator_navigation ul{
+        width: 227px;
+        margin: 20px auto 0;
+        transform: translateX(0);
+    }
+    .configurator_navigation ul li{
+        font-size: 14px;
+    }
+    .half_colum{
+        height: auto;
+    }
+    .inline_item_user_data {
+        padding-left: 20px;
+    }
+    .inline_item_user_data .inline_description span:first-of-type {
+        font-size: 11px;
+    }
+    .inline_item_user_data .inline_description span:nth-of-type(2) {
+        font-size: 13px;
+    }
+    .inline_item_user_data .inline_description span:nth-of-type(3) {
+        font-size: 13px;
+    }
+    .inline_item_user_data .container {
+        font-size: 13px;
+    }
+    .inline_item_user_data .checkmark {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .input_step2 {
+        font-size: 12px;
+    }
+    .inline_item_user_data .inline_inputs .select_wrapper select {
+        font-size: 11px;
+    }
+    .select_wrapper{
+        padding: 0 15px;
+    }
+    .select_wrapper lable span{
+        font-size: 11px;
+    }
+    .select_wrapper lable{
+        font-size: 11px;
+    }
+    .input_wrapper lable{
+        font-size: 11px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .section_header{
+        padding: 0 30px;
+    }
+    .section_headerH1{
+        font-size: 42px;
+    }
+    .section_headerH1P1{
+        font-size: 14px;
+    }
+    .section_headerH1P2{
+        font-size: 30px;
+    }
+    .configurator_body2{
+        padding: 20px 2%;
+    }
+    .paddingBut{
+        padding: 0;
+    }
+    .box1{
+        padding: 20px 0 30px;
+    }
+    .selected_washer_details ul {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .selected_washer_details ul li {
+        flex: 0 calc(50% - 15px);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .selected_washer_details ul li:last-of-type, .selected_washer_details ul li:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .configurator_body {
+        padding: 10px 0 30px;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+    }
+    .configurator_body h2{
+        width: calc(100% - 30px);
+        font-size: 15px;
+        flex: 0 100%;
+    }
+    .required_acceptance .form_group_input_wrapper .container .checkmark {
+        top: 0;
+        border: 1px solid #ccc;
+    }
+    .half_colum{
+        width: 100%;
+    }
+    .formMain{
+        flex-direction: column;
+    }
+    .inline_item_user_data {
+        flex-flow: column;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .inline_description {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inline_inputs{
+        width: 100%;
+        padding-left: 0;
+    }
+    .inline_item_user_data .container {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-left: 0;
+        padding-right: 15px;
+    }
+    .input_step2 {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .inline_item_user_data .inline_inputs .select_wrapper select{
+        height: 45px;
+    }
+    .select_wrapper2{
+        padding: 0;
+    }
+    .washer_image {
+        margin: 20px;
+    }
+    .washer_image img {
+        width: 100%;
+    }
+    .select_wrapperPage{
+        flex: 0 100%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .select_wrapperPage lable{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .select_wrapperPage lable span{
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+    .select_wrapperPage select{
+        font-size: 16px;
+        height: 45px;
+    }
+    .input-wrapper{
+        height: 40px;
+        flex: 0 100%;
+        width: 100%;
+    }
+    .redDivFirst{
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .main_container{
+        margin: 0 auto;
+    }
+    .section_header{
+        padding: 0 15px;
+    }
+    .section_headerH1P1{
+        font-size: 11px;
+    }
+    .section_headerH1P2{
+        font-size: 28px;
+    }
+    .box1{
+        padding: 10px 10px 15px;
+    }
+    .selected_washer_details ul {
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+    .selected_washer_details ul li {
+        flex: 0 48%;
+        margin: 0 1% 20px;
+    }
+    .selected_washer_details ul li span:last-of-type {
+        font-size: 10px;
+    }
+    .selected_washer_details ul li:last-of-type, .selected_washer_details ul li:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .configurator_body h2{
+        width: calc(100% - 30px);
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .personal_configurator_data ul{
+        flex-flow: column;
+        padding: 0 15px;
+    }
+    .personal_configurator_data ul li{
+        flex: 0 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .personal_configurator_data ul li input{
+        padding: 15px 20px;
+    }
+    .required_acceptance{
+        padding: 0 15px;
+    }
+    .configurator_navigation{
+        padding: 0 15px;
+        height: 130px;
+    }
+    .configurator_navigation ul{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        transform: translateX(0);
+        position: relative;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .configurator_navigation ul li:first-of-type {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    .configurator_navigation ul li:last-of-type {
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-transform: uppercase;
+        font-family: Ubuntu,sans-serif;
+        font-weight: 400;
+    }
+    .redButCenter{
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        margin-right: 40px;
+        transform: translate(-25px,50%);
+        justify-content: flex-end;
+    }
+    .reguired_fields{
+        padding: 0 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .inline_item_user_data .inline_inputs .select_wrapper select{
+        font-size: 13px;
+    }
+}

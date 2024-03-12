@@ -713,7 +713,7 @@ export default function Home() {
                                         </lable> : ''}
                                     </div>
                                     <div onClick={setStageNext} className={s.redDivFirst}>
-                                        <ButtonRedWithoutLink text={'mainButNext'}/>
+                                        <ButtonRedWithoutLink text={'mainButNext'} />
                                     </div>
                                 </form>
                             </div>
@@ -1248,7 +1248,7 @@ export default function Home() {
                                     <div className={s.text_wrapper}>
                                         <h3>ЩЕЦИН, 10ТКА</h3>
                                         <p></p>
-                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                        <Link href='/realization' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -1260,7 +1260,7 @@ export default function Home() {
                                     <div className={s.text_wrapper}>
                                         <h3>{t("main103")}</h3>
                                         <p></p>
-                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                        <Link href='/realization' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -1272,7 +1272,7 @@ export default function Home() {
                                     <div className={s.text_wrapper_item}>
                                         <h3>нова сіль</h3>
                                         <p>Історія успіху - 15 років співпраці з BKF</p>
-                                        <Link href='/' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
+                                        <Link href='/realization' className={`${s.red_text_btn} btn`}>{t("main102")}</Link>
                                     </div>
                                 </div>
                             </div>

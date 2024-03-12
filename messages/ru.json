@@ -16,7 +16,14 @@
   "distributor": "дистрибьютор",
   "chemicals": "химикаты для мытья",
   "programs-washing": "дополнительные программы стирки",
+  "programs-washing2": "подробнее о программах стирки",
   "shopShampoos": "Магазин SAMWASH - Шампуни",
+  "autowash": "Автомойки SAMWASH",
+  "structures": "конструкции",
+  "seeProjects": "увидеть проекты",
+  "washingPrograms": "Программы стирки",
+  "checkOtherApps": "проверьте другие приложения",
+  "accessories": "Просмотрите аксессуары для автомойки",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -404,6 +411,30 @@
     "chemistry1": "Химические средства для автомоек",
     "chemistry2": "",
     "chemistry3": ""
+  },
+  "first-steps": {
+    "home": "Главная",
+    "step1": "Первые шаги",
+    "step2": "",
+    "step3": ""
+  },
+  "phased-construction": {
+    "home": "Главная",
+    "phased1": "Строительство автомойки поэтапно",
+    "phased2": "",
+    "phased3": ""
+  },
+  "opportunities": {
+    "home": "Главная",
+    "opportunities1": "Построить автомойку из SAMWASH",
+    "opportunities2": "Возможности с SAMWASH",
+    "opportunities3": ""
+  },
+  "profitability-calculator": {
+    "home": "Головна",
+    "calculator1": "Калькулятор рентабельности",
+    "calculator2": "",
+    "calculator3": ""
   },
   "": ""
 }
