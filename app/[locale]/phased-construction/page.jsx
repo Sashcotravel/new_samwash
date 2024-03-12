@@ -40,7 +40,6 @@ function PhasedConstruction() {
                 .then(res => {
                     const data = res.data.data
                     setBlog1(data)
-                    console.log(data)
                 })
         }
         setFirstBlock(true)
