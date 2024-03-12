@@ -23,7 +23,7 @@ function ProgramForWash() {
         <div>
 
             <section className='head-image'>
-                <Image src='/managerCarwash/head-carwash-manager.jpg' alt='' width={1900} height={300}/>
+                <Image src='/managerCarwash/head.jpg' alt='' width={1900} height={300}/>
                 <div className={s.main_container}>
                     <ul className='bread-crumbs'>
                         <li>
