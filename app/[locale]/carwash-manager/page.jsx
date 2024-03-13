@@ -12,6 +12,7 @@ import FormUserDate from "@/app/component/formUserData/FormUserDate";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
+import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 
 
 function CarwashManager() {
@@ -19,6 +20,11 @@ function CarwashManager() {
     const t = useTranslations("carwash-manager");
     const ref = useRef(null)
     const [form, setForm] = useState(false)
+
+    const [active, setActive] = useState({
+        first: true, second: false, three: false, four: false, five: false,
+        six: false, seven: false, eight: false, ninth: false
+    })
 
     Fancybox.bind('[data-fancybox="gallery"]', {
         Thumbs: {Carousel: {fill: false, center: true,},},
@@ -31,12 +37,34 @@ function CarwashManager() {
         }, 200)
     }
 
+    const setList = (position) => {
+        setActive({
+            first: position === 1,
+            second: position === 2,
+            three: position === 3,
+            four: position === 4,
+            five: position === 5,
+            six: position === 6,
+            seven: position === 7,
+            eight: position === 8,
+            ninth: position === 9
+        });
+    }
+
 
     return (
         <div>
 
             <section className='head-image'>
-                <Image src='/managerCarwash/head-carwash-manager.jpg' alt='' width={1900} height={300}/>
+                <picture>
+
+                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
+
+                    <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>
+
+                    <Image src='/managerCarwash/head.jpg' alt='' width={1900} height={300} />
+
+                </picture>
                 <div className={s.main_container}>
                     <ul className='bread-crumbs'>
                         <li>
@@ -122,140 +150,415 @@ function CarwashManager() {
                             <strong style={{color: 'white'}}>З SamWash Watch ви отримуєте унікальні переваги</strong>
                         </h2>
                     </div>
-                    <div className={s.img_wrapper}>
-                        <a data-fancybox="gallery" href={'/video/animation.mp4'}>
-                            <video src={'/video/animation.mp4'} poster={'/video/animation.mp4'} controls={true}
-                                   title='' preload="yes" autoPlay='no' playsInline muted loop/>
-                        </a>
-                    </div>
-                    <div className={s.half_column}>
-                        <div className={s.text_block}>
-                            <ul>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Економія часу та грошей (керування з одного місця, не потрібно їздити на автомийку).
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Простота управління автомийкою (конфігурація налаштувань, програми мийки). Це
-                                    повністю масштабоване рішення, яке має особливий вплив, якщо у вас більше однієї
-                                    автомийки.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Сервісна підтримка – клієнт може повідомити про потреби.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Автоматизація процесів звітності та сигналізації.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Подивіться ситуацію на автомийці.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Обслуговування бізнес-клієнтів.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Оцінка доходів на основі аналізу обороту.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Уміння визначати тенденції.
-                                </li>
-                            </ul>
-                            <p className={s.addP}>Доступні такі області вибору:</p>
-                            <ul>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Системи
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Налаштування
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Фінанси
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Параметри
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Програмне забезпечення
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Сервіс Доступ до даних можна отримати з будь-якого місця.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Дистанційно-оперативна статистики з вашого ПК, планшета та смартфона.
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Графічний і текстовий огляд робочих процесів
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Графічний і текстовий звіт про помилки на автомийці
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Окремо рахує кожен пост, порохотях та жетони та система знижо SamWash group
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Зашифровані дані доступні лише вам
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Надає інформа про стан технологічного обладнання у реальному часі
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Виведення показників у таблиці та періодичні таблиці
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Сповіщання аварійних ситуацій з рекомендаціями послідовності дій
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Створення архіву та поведінки процесів в діафрагмах з часом події
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Захист даних методом наскрізного шифрування.
-                                </li>
-                            </ul>
-                            <p className={s.addP}>Також відстежуються такі дані:</p>
-                            <ul>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Тиск прісної води
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Тиск промивного середовища
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Осмос тиску води
-                                </li>
-                                <li>
-                                    <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
-                                    Тиск у антифризі. Монітори тиску постійно контролюють тиск системи на вході свіжої
-                                    води, осмосу, антифризу та промивної води. Датчики миттєво повідомляють про дефект
-                                    або несправність системи, дату й час зберігають у пам’яті помилок.
-                                </li>
-                            </ul>
+                    <div className={s.one_column_list_with_tabs}>
+                        <div className={`${s.tabs_list_wrapper} ${active.first ? s.ui_active : undefined}`}
+                             onClick={() => setList(1)}>
+                            <span className={`${s.tabs_number} ${active.first ? s.flex_active : undefined}`}>1</span>
+                            <span className={`${s.tabs_description} ${active.first ? s.active_desc : undefined}`}>
+                                ТЕХНІКА ПРАННЯ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.first ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Техніка прання</h3>
+                                </div>
+                                <p>
+                                    У SAMWASH ми використовуємо лише <b>надійні компоненти</b> для рішень, які
+                                    відповідатимуть очікуванням найвибагливіших клієнтів. Ми пропонуємо як автомийки
+                                    на основі перевіреної та високоефективної системи <b>порошкового миття</b>
+                                    (безконтактні мийки SAMWASH CarWash), так і автомийки, обладнані системою рідкого
+                                    хімічного миття (безконтактні мийки SAMWASH SelfWash, портальні мийки).
+                                    Техніка автомийки SAMWASH — це технологічно передове рішення, створене з
+                                    компонентів найвищої якості, які ми можемо адаптувати
+                                    до <b>індивідуальних потреб клієнта</b>.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        безконтактна контейнерна мийка (технологія на рамі в технічному контейнері)
+                                    </li>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        модульна безконтактна мийка (технологія в модулі з нержавіючої сталі)
+                                    </li>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        автоматична портальна мийка (щітка)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.second ? s.ui_active : undefined}`}
+                             onClick={() => setList(2)}>
+                            <span className={`${s.tabs_number} ${active.second ? s.flex_active : undefined}`}>2</span>
+                            <span className={`${s.tabs_description} ${active.second ? s.active_desc : undefined}`}>
+                                БУДІВНИЦТВО</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.second ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Будівництво</h3>
+                                </div>
+                                <p>
+                                    Зовнішній вигляд автомийки має особливе значення, і <b>вибір автомийки часто
+                                    залежить від її зовнішнього вигляду</b>. В процесі інвестування ви можете вибрати
+                                    тип конструкції та підібрати додаткові візуальні елементи та освітлення, які
+                                    впливають на привабливість вашої мийки. Ми також допоможемо вам вирішити, чи
+                                    варто інвестувати у <b>відкриту станцію</b>, яка полегшить мийку автобусів і
+                                    транспортних засобів доставки.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.three ? s.ui_active : undefined}`}
+                             onClick={() => setList(3)}>
+                            <span className={`${s.tabs_number} ${active.three ? s.flex_active : undefined}`}>3</span>
+                            <span className={`${s.tabs_description} ${active.three ? s.active_desc : undefined}`}>
+                                ПЕРСОНАЛІЗАЦІЯ ЗОВНІШНЬОГО ВИГЛЯДУ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.three ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Персоналізація зовнішнього вигляду</h3>
+                                </div>
+                                <p>
+                                    У SAMWASH ви повністю впливаєте на зовнішній вигляд вашої майбутньої мийки. Ми
+                                    пропонуємо величезний вибір візуальної ідентифікації для автомийок - <b>від
+                                    розміщення логотипу вашої компанії на горищі до повної зміни кольорів і графічного
+                                    оформлення пристроїв і елементів конструкції</b>. Вибір за вами - ви можете
+                                    скористатися впізнаваністю бренду BKF або створити власний бренд.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.four ? s.ui_active : undefined}`}
+                             onClick={() => setList(4)}>
+                            <span className={`${s.tabs_number} ${active.four ? s.flex_active : undefined}`}>4</span>
+                            <span className={`${s.tabs_description} ${active.four ? s.active_desc : undefined}`}>
+                                ПРОГРАМИ ПРАННЯ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.four ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Програми прання</h3>
+                                </div>
+                                <p>
+                                    Крім стандартних програм мийки, ми також пропонуємо додаткові опції, які підвищать
+                                    конкурентоспроможність вашої мийки та в поєднанні з
+                                    <Link href='/blog' style={{color: 'red', fontWeight: '700'}}> професійною
+                                        хімією SAMWASH </Link> здивують ваших клієнтів кінцевим ефектом мийки.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.five ? s.ui_active : undefined}`}
+                             onClick={() => setList(5)}>
+                            <span className={`${s.tabs_number} ${active.five ? s.flex_active : undefined}`}>5</span>
+                            <span className={`${s.tabs_description} ${active.five ? s.active_desc : undefined}`}>
+                                СУЧАСНІ ПЛАТІЖНІ СИСТЕМИ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.five ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Сучасні платіжні системи</h3>
+                                </div>
+                                <p>
+                                    Чи знаєте ви, що понад 80% клієнтів відвідують автомийку залежно від наявності в
+                                    гаманці дрібних грошей? Переважна більшість водіїв заявляють про більш часте та
+                                    виправдане використання автомийок, коли є можливість здійснювати безготівковий
+                                    розрахунок. <b>Найзручнішою формою є безконтактна картка Visa або Mastercard,
+                                    додаток на телефоні та спеціальне рішення Be Loyal</b>. Тому, щоб виправдати
+                                    очікування користувачів автомийки, ми запровадили сучасні системи оплати. Ми
+                                    пропонуємо зчитувачі карток PayPass і можливість оплачувати прання через додаток
+                                    на телефоні, завдяки чому ви можете отримати нових клієнтів.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.six ? s.ui_active : undefined}`}
+                             onClick={() => setList(6)}>
+                            <span className={`${s.tabs_number} ${active.six ? s.flex_active : undefined}`}>6</span>
+                            <span className={`${s.tabs_description} ${active.six ? s.active_desc : undefined}`}>
+                                ДОДАТКОВІ ПРИСТРОЇ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.six ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Додаткові пристрої</h3>
+                                </div>
+                                <p>
+                                    До безконтактної мийки відмінно доповнять додаткові пристрої від SAMWASH. Створіть
+                                    центр комплексного очищення транспортних засобів, який задовольнить водіїв.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        Пристрій для обміну банкнот <br/>який став стандартом на автомийці, що полегшує
+                                        використання автомийки. Тому змінний автомат SAMWASH є одним з найважливіших
+                                        додаткових пристроїв для автомийки, який значно збільшує прибуток.
+                                    </li>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        Пилососи<br/>
+                                        Більшість клієнтів очікують, що автомийка також матиме пилосос для очищення
+                                        салону щойно вимитого автомобіля. Ідеальним доповненням до пилососа є вибивачка
+                                        для килимів з нержавіючої сталі.
+                                    </li>
+                                    <li>
+                                        <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
+                                        Дозатор склоомивача DPS<br/>
+                                        - це додатковий пристрій, який доповнює пропозицію таких підприємств, як:
+                                        автомийки, автозаправні станції та станції вулканізації транспортних засобів.
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.seven ? s.ui_active : undefined}`}
+                             onClick={() => setList(7)}>
+                            <span className={`${s.tabs_number} ${active.seven ? s.flex_active : undefined}`}>7</span>
+                            <span className={`${s.tabs_description} ${active.seven ? s.active_desc : undefined}`}>
+                                АКСЕСУАРИ ДЛЯ АВТОМИЙКИ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.seven ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Аксесуари для автомийки</h3>
+                                </div>
+                                <p>
+                                    У SAMWASH ми пропонуємо аксесуари для автомийки, які допомагають зменшити витрати
+                                    бізнесу. Завдяки їм вкладення в автомийку окупляться швидше. Ви можете вибрати
+                                    з ряду унікальних рішень, які зменшують витрати на технічне обслуговування
+                                    об’єктів і усувають простої автомийки внаслідок випадкових ситуацій. Ми
+                                    пропонуємо, серед іншого: <b>зимовий пакет, конденсаційну піч, інтелектуальне
+                                    опалення підлоги, регулювання системи високого тиску</b> та багато інших
+                                    інноваційних рішень.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.eight ? s.ui_active : undefined}`}
+                             onClick={() => setList(8)}>
+                            <span className={`${s.tabs_number} ${active.eight ? s.flex_active : undefined}`}>8</span>
+                            <span className={`${s.tabs_description} ${active.eight ? s.active_desc : undefined}`}>
+                                ПРОГРАМА ЛОЯЛЬНОСТІ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.eight ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Програма лояльності</h3>
+                                </div>
+                                <p>
+                                    Хочете запропонувати своїм клієнтам програму лояльності? У SAMWASH у нас є для вас
+                                    готовий проект. <b>Ми пропонуємо як класичні картки лояльності, так і додаток
+                                    для смартфона BE LOYAL</b>. Завдяки нашій програмі лояльності ви отримаєте
+                                    постійних клієнтів.
+                                </p>
+                                <p>
+                                    Додаток допоможе вам обслуговувати індивідуальних та автопаркових клієнтів!
+                                    Найбільшу незадіяну групу водіїв складають власники службових автомобілів, які в
+                                    першу чергу хочуть отримати рахунок зручно та швидко. Скористайтеся цим, збагативши
+                                    свою автомийку системою лояльності BE LOYAL.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={`${s.tabs_list_wrapper} ${active.eight ? s.ui_active : undefined}`}
+                             onClick={() => setList(9)}>
+                            <span className={`${s.tabs_number} ${active.ninth ? s.flex_active : undefined}`}>9</span>
+                            <span className={`${s.tabs_description} ${active.ninth ? s.active_desc : undefined}`}>
+                                ДИСТАНЦІЙНЕ УПРАВЛІННЯ АВТОМИЙКОЮ</span>
+                        </div>
+                        <div className={s.tabs_content_wrapper} style={active.ninth ? undefined : {display: 'none'}}>
+                            <div className={s.half_column2}>
+                                <div className={s.image_wrapper2}>
+                                    <Image src='/opportunities/image.jpg' alt='' fill/>
+                                </div>
+                            </div>
+                            <div className={s.half_column2+' '+s.half_column3}>
+                                <div className='section-header'>
+                                    <h3>Дистанційне управління автомийкою</h3>
+                                </div>
+                                <p>
+                                    Керувати автомийкою та реагувати на різні типи несправностей ще ніколи не було
+                                    так просто. <b>Через свій смартфон або ноутбук з будь-якого місця і в будь-який
+                                    час ви отримаєте необхідну інформацію про свою автомийку</b>. Ви дізнаєтеся,
+                                    скільки заробила ваша безконтактна мийка, і перевірите, чи справно працюють
+                                    найважливіші технічні елементи. Легко, зручно та швидко, коли вам це потрібно.
+                                    SAMWASH Carwash Manager – це сучасне рішення, яке принесе вам ряд переваг для
+                                    бізнесу.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    {/*<div className={s.img_wrapper}>*/}
+                    {/*    <a data-fancybox="gallery" href={'/video/animation.mp4'}>*/}
+                    {/*        <video src={'/video/animation.mp4'} poster={'/video/animation.mp4'} controls={true}*/}
+                    {/*               title='' preload="yes" autoPlay='no' playsInline muted loop/>*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
+                    {/*<div className={s.half_column}>*/}
+                    {/*    <div className={s.text_block}>*/}
+                    {/*        <ul>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Економія часу та грошей (керування з одного місця, не потрібно їздити на автомийку).*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Простота управління автомийкою (конфігурація налаштувань, програми мийки). Це*/}
+                    {/*                повністю масштабоване рішення, яке має особливий вплив, якщо у вас більше однієї*/}
+                    {/*                автомийки.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Сервісна підтримка – клієнт може повідомити про потреби.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Автоматизація процесів звітності та сигналізації.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Подивіться ситуацію на автомийці.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Обслуговування бізнес-клієнтів.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Оцінка доходів на основі аналізу обороту.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Уміння визначати тенденції.*/}
+                    {/*            </li>*/}
+                    {/*        </ul>*/}
+                    {/*        <p className={s.addP}>Доступні такі області вибору:</p>*/}
+                    {/*        <ul>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Системи*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Налаштування*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Фінанси*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Параметри*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Програмне забезпечення*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Сервіс Доступ до даних можна отримати з будь-якого місця.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Дистанційно-оперативна статистики з вашого ПК, планшета та смартфона.*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Графічний і текстовий огляд робочих процесів*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Графічний і текстовий звіт про помилки на автомийці*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Окремо рахує кожен пост, порохотях та жетони та система знижо SamWash group*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Зашифровані дані доступні лише вам*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Надає інформа про стан технологічного обладнання у реальному часі*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Виведення показників у таблиці та періодичні таблиці*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Сповіщання аварійних ситуацій з рекомендаціями послідовності дій*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Створення архіву та поведінки процесів в діафрагмах з часом події*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Захист даних методом наскрізного шифрування.*/}
+                    {/*            </li>*/}
+                    {/*        </ul>*/}
+                    {/*        <p className={s.addP}>Також відстежуються такі дані:</p>*/}
+                    {/*        <ul>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Тиск прісної води*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Тиск промивного середовища*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Осмос тиску води*/}
+                    {/*            </li>*/}
+                    {/*            <li>*/}
+                    {/*                <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>*/}
+                    {/*                Тиск у антифризі. Монітори тиску постійно контролюють тиск системи на вході свіжої*/}
+                    {/*                води, осмосу, антифризу та промивної води. Датчики миттєво повідомляють про дефект*/}
+                    {/*                або несправність системи, дату й час зберігають у пам’яті помилок.*/}
+                    {/*            </li>*/}
+                    {/*        </ul>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </section>
 

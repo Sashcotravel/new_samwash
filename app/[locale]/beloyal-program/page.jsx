@@ -130,7 +130,15 @@ function BeLoyalProgram() {
         <div>
 
             <section className='head-image'>
-                <Image src='/managerCarwash/head-carwash-manager.jpg' alt='' width={1900} height={300}/>
+                <picture>
+
+                    {/*<source media="(max-width: 450px)" srcSet='/mainPage/box2/box2_1.jpg'/>*/}
+
+                    <source media="(max-width: 1440px)" srcSet='/managerCarwash/head.jpg'/>
+
+                    <Image src='/managerCarwash/head.jpg' alt='' width={1900} height={300}/>
+
+                </picture>
                 <div className={s.main_container}>
                     <ul className='bread-crumbs'>
                         <li>
@@ -150,7 +158,7 @@ function BeLoyalProgram() {
                 <div className="main-container">
                     <div className={s.half_column}>
                         <Image src='/beloyal/staff.jpg' alt='' width={500} height={500}
-                               className={s.image_wrapper+' '+s.image_wstep} />
+                               className={s.image_wrapper + ' '+s.image_wstep} />
                     </div>
                     <div className={s.half_column}>
                         <div className={s.text_wrapper}>

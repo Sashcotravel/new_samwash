@@ -206,7 +206,8 @@ function Header() {
                                     <Link href="/profitability-calculator" id='mozhna'>{t("header18")}</Link>
                                     <Link onClick={configWash} href="/" id='mozhna'>{t("header19")}</Link>
                                     <Link href="/" id='mozhna'>{t("header20")}</Link>
-                                    <Link href="/realization" id='mozhna'>{t("header21")}</Link>
+                                    <Link href="/" id='mozhna'>{t("header21")}</Link>
+                                    <Link href="/realization" id='mozhna'>{t("header21_2")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>

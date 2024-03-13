@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next-intl/link";
 import FixManu3 from "@/app/component/fixManu3/FixManu3";
 import {useTranslations} from "next-intl";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import {Fancybox} from "@fancyapps/ui";
@@ -42,6 +42,7 @@ function Opportunities() {
     const rollDown = () => {
         document.getElementById('wash').scrollIntoView({block: "center", behavior: 'smooth'});
     }
+
 
 
     return (
