@@ -917,7 +917,7 @@ export default function Home() {
                                 <b> {t("main54")}</b> , {t("main55")} <b>{t("main56")}</b>, {t("main57")}</p>
                         </div>
                         <div className={s.list_box_v2}>
-                            <Link href='/' className={s.features_box_select_item}>
+                            <Link href='/first-steps' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main58")}</p>
                                     <h4>{t("main59")}</h4>
@@ -932,10 +932,10 @@ export default function Home() {
                                     <source media="(max-width: 1440px)" srcSet='/mainPage/box2/box2_1.jpg'/>
 
                                     <Image src='/mainPage/box2/box2_1Main.jpg' className={s.boxImage}
-                                           width={500} height={500} alt='' />
+                                           width={500} height={500} alt=''/>
 
                                 </picture>
-                        </Link>
+                            </Link>
                             <Link href='/' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main60")}</p>
@@ -1023,7 +1023,7 @@ export default function Home() {
                             <h2>{t("main68")} Samwash</h2>
                             <p>{t("main69")}</p>
                             <p>{t("main70")}</p>
-                            <Link href='/' className={s.formBtn2}>
+                            <Link href='/first-steps' className={s.formBtn2}>
                                 {t("main71")}
                                 <Image src='/mainPage/mainSlider/rightArrow.svg' alt='' width={5} height={5}/>
                             </Link>

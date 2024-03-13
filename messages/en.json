@@ -432,10 +432,22 @@
     "opportunities3": ""
   },
   "profitability-calculator": {
-    "home": "Головна",
+    "home": "Main",
     "calculator1": "Profitability calculator",
     "calculator2": "",
     "calculator3": ""
+  },
+  "OEM-kits": {
+    "home": "Main",
+    "kits1": "OEM kits",
+    "kits2": "",
+    "kits3": ""
+  },
+  "modernizations-and-expansions": {
+    "home": "Main",
+    "expansions1": "Modernizations and expansions",
+    "expansions2": "",
+    "expansions3": ""
   },
   "": ""
 }
