@@ -218,8 +218,8 @@ function Header() {
                                 </button>
                                 <div className={s.dropdown_content}>
                                     <Link href="/modernizations-and-expansions" id='mozhna'>{t("header24")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header25")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header26")}</Link>
+                                    <Link href="/fiscalization" id='mozhna'>{t("header25")}</Link>
+                                    <Link href="/service" id='mozhna'>{t("header26")}</Link>
                                     <Link href="/service-request" id='mozhna'>{t("header27")}</Link>
                                 </div>
                             </div>

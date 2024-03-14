@@ -26,6 +26,7 @@
   "accessories": "Перегляньте аксесуари для автомийки",
   "aboutOpportunities": "запитати про можливості",
   "car-wash-designs": "конструкції автомийки",
+  "ordered": "Замовити",
   "header": {
     "header1": "Менеджер автомийки",
     "header2": "Запит на обслуговування",
@@ -450,6 +451,12 @@
     "technique1": "Техніка миття автомобіля",
     "technique2": "",
     "technique3": ""
+  },
+  "fiscalization": {
+    "home": "Головна",
+    "fiscalization1": "Фіскалізація",
+    "fiscalization2": "Фіскалізація автомийок",
+    "fiscalization3": ""
   },
   "": ""
 }

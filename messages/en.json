@@ -26,6 +26,7 @@
   "accessories": "View car wash accessories",
   "aboutOpportunities": "ask about opportunities",
   "car-wash-designs": "car wash designs",
+  "ordered": "Order",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -456,6 +457,12 @@
     "technique1": "Car washing technique",
     "technique2": "",
     "technique3": ""
+  },
+  "fiscalization": {
+    "home": "Main",
+    "fiscalization1": "Fiscalization",
+    "fiscalization2": "Fiscalization of car washes",
+    "fiscalization3": ""
   },
   "": ""
 }
