@@ -27,6 +27,8 @@
   "aboutOpportunities": "спросить о возможностях",
   "car-wash-designs": "конструкции автомойки",
   "ordered": "Заказать",
+  "service-repair-order": "Заказ на сервисный ремонт",
+  "B2B": "B2B панель",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -463,6 +465,12 @@
     "fiscalization1": "Фискализация",
     "fiscalization2": "Фискализация автомоек",
     "fiscalization3": ""
+  },
+  "service": {
+    "home": "Главная",
+    "service1": "Сервис",
+    "service2": "",
+    "service3": ""
   },
   "": ""
 }

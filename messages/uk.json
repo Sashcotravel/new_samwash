@@ -27,6 +27,8 @@
   "aboutOpportunities": "запитати про можливості",
   "car-wash-designs": "конструкції автомийки",
   "ordered": "Замовити",
+  "service-repair-order": "Замовлення на сервісний ремонт",
+  "B2B": "B2B панель",
   "header": {
     "header1": "Менеджер автомийки",
     "header2": "Запит на обслуговування",
@@ -457,6 +459,18 @@
     "fiscalization1": "Фіскалізація",
     "fiscalization2": "Фіскалізація автомийок",
     "fiscalization3": ""
+  },
+  "service": {
+    "home": "Головна",
+    "service1": "Сервіс",
+    "service2": "",
+    "service3": ""
+  },
+  "OEM-kits": {
+    "home": "Головна",
+    "kits1": "OEM комплекти",
+    "kits2": "",
+    "kits3": ""
   },
   "": ""
 }

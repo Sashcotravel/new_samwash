@@ -27,6 +27,8 @@
   "aboutOpportunities": "ask about opportunities",
   "car-wash-designs": "car wash designs",
   "ordered": "Order",
+  "service-repair-order": "Service repair order",
+  "B2B": "B2B panel",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -463,6 +465,12 @@
     "fiscalization1": "Fiscalization",
     "fiscalization2": "Fiscalization of car washes",
     "fiscalization3": ""
+  },
+  "service": {
+    "home": "Main",
+    "service1": "Service",
+    "service2": "",
+    "service3": ""
   },
   "": ""
 }
