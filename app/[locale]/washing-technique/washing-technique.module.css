@@ -1,0 +1,306 @@
+.main_container {
+    max-width: 1590px;
+    margin: 0 auto;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_container h1 {
+    font-family: Ubuntu Light, sans-serif;
+    padding: 10px 0 0 45px;
+    font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 75px;
+    color: #fff;
+    align-self: baseline;
+    width: 100%;
+    margin-top: auto;
+}
+
+.main_container ul li {
+    position: relative;
+    margin: 15px 0 15px -20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a1a1a1;
+    text-transform: uppercase;
+}
+
+.main_container ul li a {
+    padding-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.main_container ul li a:hover {
+    color: #fff;
+}
+
+.section{
+    padding: 50px 0 80px;
+}
+
+.text_box{
+    padding: 20px 30px;
+}
+
+.text_box p{
+    text-align: center;
+    font-size: 18px;
+    color: #3d3d3d;
+    margin: 10px 0;
+    line-height: 145%;
+}
+
+.section2{
+    padding: 50px 0 80px;
+    background: #f2f2f2;
+    overflow: hidden;
+    position: relative;
+}
+
+.section_brown{
+    padding: 50px 0 80px;
+    background: #3d3d3d;
+    overflow: hidden;
+    position: relative;
+}
+
+.section_blue{
+    padding: 50px 0 80px;
+    background: #364267;
+    overflow: hidden;
+    position: relative;
+}
+
+.box_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+}
+
+.box_div li{
+    flex: 0 0 33%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 15px 0;
+    font-weight: 300;
+    color: #a1a1a1;
+    font-size: 16px;
+}
+
+.white_back{
+    display: block;
+    position: relative;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.white_back img{
+    display: block;
+    position: absolute;
+    max-width: 60%;
+    max-height: 60%;
+    width: 64px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box_div li h3{
+    font-size: 22px;
+    margin: 30px 0 25px;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+
+.box_div li p{
+    color: #525252;
+    font-size: 15px;
+}
+
+.text_block{
+    padding: 20px 30px;
+    color: white;
+    width: 50%;
+    float: left;
+    font-family: Ubuntu Light, sans-serif;
+}
+
+.image1{
+    text-align: center;
+}
+
+.name_company{
+    text-align: center;
+    font-size: 18px;
+    font-family: Ubuntu Light, sans-serif;
+    color: #3d3d3d;
+}
+
+.hr{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-top: 1px solid #a1a1a1;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.hr img{
+    margin: 0 0 0 10px;
+}
+
+.box_images{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 0 30px;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.item{
+    width: 23%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.back_image{
+    position: relative;
+    background: #3d3d3d;
+}
+
+.image_box{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 450px;
+}
+
+.image_box img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-self: center;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+
+.text_box2{
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+
+.link_but{
+    margin: 40px 0 0 -80px;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+    .main_container {
+        height: 200px;
+        padding: 0;
+    }
+    .main_container ul li {
+        padding-left: 20px;
+        position: relative;
+        margin: 15px 0;
+        font-family: Ubuntu, sans-serif;
+        font-weight: 300;
+        color: #a1a1a1;
+        font-size: 12px;
+        margin-left: -20px;
+    }
+    .section, .section2{
+        padding: 20px 10px 25px;
+    }
+    .box_div li{
+        font-size: 14px;
+    }
+    .box_div li p{
+        font-size: 13px;
+    }
+    .white_back{
+        width: 90px;
+        height: 90px;
+    }
+    .text_box{
+        padding: 20px;
+    }
+    .image1 img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .image_box img{
+        display: none;
+    }
+    .image_box{
+        height: auto;
+    }
+    .text_box2{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .link_but{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .box_div{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .box_div li{
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .white_back{
+        width: 70px;
+        height: 70px;
+    }
+    .item{
+        width: 100%;
+        height: 250px;
+    }
+}

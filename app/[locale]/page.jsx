@@ -993,7 +993,7 @@ export default function Home() {
 
                                 </picture>
                             </Link>
-                            <Link href='/' className={s.features_box_select_item}>
+                            <Link href='/washing-technique' className={s.features_box_select_item}>
                                 <div className={s.box}>
                                     <p>{t("main66")}</p>
                                     <h4>{t("main67")}</h4>

@@ -60,7 +60,7 @@ function FixManu4({active}) {
         <section className={s.menu_tab_section}>
             <div className='main-container'>
                 <div className={`${s.menu_tab} ${fixHeader ? s.fixed : ''} ${fixHeader2 ? s.fixed2 : ''}`}>
-                    <Link href='/'
+                    <Link href='/washing-technique'
                           className={`${s.menu_item} ${active === 1 ? s.currentItem : undefined}`}>
                         Техніки автомийки
                     </Link>
