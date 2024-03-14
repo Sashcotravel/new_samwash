@@ -316,7 +316,7 @@ function Service() {
                                 <strong>Сервісна підтримка</strong>
                             </h2>
                         </div>
-                        <div className={s.between}>
+                        <div className={s.between2}>
                             <Link href='/service-request'>
                                 <ButtonRedWithoutLink text={'service-repair-order'}/>
                             </Link>
