@@ -472,5 +472,17 @@
     "service2": "",
     "service3": ""
   },
+  "quality-policy": {
+    "home": "Главная",
+    "quality1": "Политика качества",
+    "quality2": "",
+    "quality3": ""
+  },
+  "presentation": {
+    "home": "Главная",
+    "presentation1": "Презентация",
+    "presentation2": "",
+    "presentation3": ""
+  },
   "": ""
 }

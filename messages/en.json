@@ -472,5 +472,17 @@
     "service2": "",
     "service3": ""
   },
+  "quality-policy": {
+    "home": "Main",
+    "quality1": "Quality policy",
+    "quality2": "",
+    "quality3": ""
+  },
+  "presentation": {
+    "home": "Main",
+    "presentation1": "Presentation",
+    "presentation2": "",
+    "presentation3": ""
+  },
   "": ""
 }

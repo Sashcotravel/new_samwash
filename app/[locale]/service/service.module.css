@@ -422,6 +422,70 @@
     height: 610px;
 }
 
+.chemistry_div{
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    margin-top: 60px;
+    padding: 0 0 0 30px;
+}
+
+.text_div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 50px 0 0;
+    width: 33%;
+    float: left;
+    font-family: Ubuntu Light, sans-serif;
+}
+
+.text_div h2{
+    margin: 15px 0;
+    font-size: 42px;
+    color: #3d3d3d;
+}
+
+.text_div p{
+    font-size: 18px;
+    line-height: 145%;
+    margin: 10px 0;
+}
+
+.text_div div{
+    margin-top: 10px;
+}
+
+.imageDiv{
+    width: 66.6666%;
+    float: left;
+}
+
+.image_box_wrapper{
+    width: 45%;
+    float: left;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.image_box_wrapper img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-self: center;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
 
 
 
@@ -465,18 +529,8 @@
     .section_header p {
         font-size: 13px;
     }
-    .description_wrapper {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
-        margin-top: 40px;
-        padding: 0 0 0 20px;
-    }
     .between{
         flex-direction: column;
-    }
-    .phoneDiv{
-        margin: 20px auto 10px;
     }
     .phoneDiv img{
         height: auto;
@@ -488,6 +542,45 @@
     }
     .div_but{
         margin-top: 30px;
+    }
+    .img_box{
+        height: 300px;
+    }
+    .icon_box{
+        padding: 20px;
+    }
+    .back_white{
+        width: 90px;
+        height: 90px;
+    }
+    .item h2{
+        font-size: 38px;
+    }
+    .item span{
+        font-size: 14px;
+        display: block;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .image_person{
+        display: none;
+    }
+    .serv_block, .text_sold{
+        padding: 20px;
+    }
+    .chemistry_div{
+        margin-top: 40px;
+        padding: 0 0 0 20px;
+    }
+    .text_div h2{
+        font-size: 32px;
+    }
+    .text_div p{
+        font-size: 13px;
+    }
+    .image_box_wrapper{
+        height: 400px;
+        width: 44%;
     }
 }
 
@@ -520,12 +613,15 @@
     .section_header p {
         font-size: 12px;
     }
-    .description_wrapper {
-        display: flex;
+    .between2{
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        flex-flow: column;
-        margin-top: 0;
-        padding: 0;
+        gap: 20px;
+        margin: 30px 0 0 0;
+    }
+    .between2 a p{
+        width: 200px!important;
     }
     .two_div{
         width: 100%;
@@ -537,14 +633,64 @@
     .text_block3{
         height: auto;
     }
-    .image_div{
+    .image_div, .image_person2{
         display: none;
+    }
+    .img_box, .icon_box{
+        width: 100%;
+    }
+    .frame{
+        margin-top: 20px;
+    }
+    .ul_icon{
+        margin-top: 50px;
+    }
+    .image_box img{
+        height: 40px;
+    }
+    .item h2{
+        font-size: 32px;
+    }
+    .item span{
+        font-size: 11px;
+        display: block;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .text_sold{
+        width: 100%;
+        height: auto;
+    }
+    .div_but{
+        margin: 35px 0 35px 225px;
+    }
+    .div_but2{
+        margin: 35px 0;
+    }
+    .chemistry_div{
+        margin: 0;
+        padding: 0;
+        flex-flow: column;
+    }
+    .text_div, .imageDiv{
+        width: 100%;
+    }
+    .text_div h2{
+        font-size: 30px;
+    }
+    .image_box_wrapper{
+        height: 300px;
+        width: 100%;
+        margin: 0 0 20px 0;
     }
 }
 
 @media screen and (max-width: 770px) {
     .section_bg_img, .section2, .blue_section {
         padding: 10px 10px 15px;
+    }
+    .text_div h2{
+        font-size: 28px;
     }
     .play_icon_wrapper {
         height: 250px;
@@ -555,5 +701,59 @@
     }
     .text_block3 p {
         margin-bottom: 20px;
+    }
+    .frame{
+        height: 200px;
+    }
+    .icon_box{
+        padding: 20px 10px;
+    }
+    .img_box{
+        height: 200px;
+    }
+    .ul_icon{
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ul_icon li{
+       font-size: 18px!important;
+    }
+    .back_white{
+        width: 70px;
+        height: 70px;
+    }
+    .item{
+        flex: 0 50%;
+        margin-bottom: 30px;
+    }
+    .item h2{
+        margin: 20px 0 5px;
+    }
+    .item:nth-of-type(2n){
+       border: none;
+    }
+    .item:last-child{
+        border-right: 1px solid #e2e2e2!important;
+    }
+    .serv_block, .text_sold{
+        padding: 20px 10px;
+    }
+    .div_but{
+        margin: 0;
+    }
+    .between{
+        width: 100%;
+        gap: 20px;
+        margin: 30px 0 0 0;
+    }
+    .between div p{
+        width: 200px!important;
+    }
+    .between div{
+        display: flex;
+        justify-content: center;
     }
 }

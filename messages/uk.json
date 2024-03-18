@@ -472,5 +472,17 @@
     "kits2": "",
     "kits3": ""
   },
+  "quality-policy": {
+    "home": "Головна",
+    "quality1": "Політика якості",
+    "quality2": "",
+    "quality3": ""
+  },
+  "presentation": {
+    "home": "Головна",
+    "presentation1": "Презентація",
+    "presentation2": "",
+    "presentation3": ""
+  },
   "": ""
 }

@@ -449,8 +449,39 @@ function Service() {
                                     <a style={{color: 'red'}} href="mailto:info@samwash.ua"><span>samwash.ua</span></a>
                                 </p>
                             </div>
-                            <div className={s.div_but}>
+                            <div className={s.div_but+' '+s.div_but2}>
                                 <ButtonRedArrowRight text={'B2B'} link={'/'}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={s.section2}>
+                <div className="main-container">
+                    <div className={s.chemistry_div}>
+                        <div className={s.text_div}>
+                            <h2>Професійні миючі засоби</h2>
+                            <p>Повний асортимент хімікатів для безконтактних і портальних мийок автомобілів є
+                                ідеальним доповненням до комплексної пропозиції SAMWASH.</p>
+                            <p>
+                                Серія висококласних хімікатів, створених спеціально для потреб автомийок SAMWASH,
+                                забезпечить відмінну якість мийки на Вашій автомийці. Якісна підготовка дозволить Вам
+                                підтримувати високий рівень послуг, а в результаті Ваші клієнти будуть більше задоволені
+                                користуванням закладом. Засоби для чищення, доступні в BKF, не пошкодять кузов і
+                                ретельно очистять його. Адже хороша автомийка – це та, яка дозволить вам легко та якісно
+                                помити автомобіль.
+                            </p>
+                            <div>
+                                <ButtonRedArrowRight text='chemicals' link='/chemistry' />
+                            </div>
+                        </div>
+                        <div className={s.imageDiv}>
+                            <div className={s.image_box_wrapper}>
+                                <Image src='/service/bak.png' alt='' width={500} height={500}/>
+                            </div>
+                            <div className={s.image_box_wrapper}>
+                                <Image src='/service/bak.png' alt='' width={500} height={500}/>
                             </div>
                         </div>
                     </div>

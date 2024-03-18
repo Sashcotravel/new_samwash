@@ -205,7 +205,7 @@ function Header() {
                                     <Link href="/opportunities" id='mozhna'>{t("header17")} SAMWASH</Link>
                                     <Link href="/profitability-calculator" id='mozhna'>{t("header18")}</Link>
                                     <Link onClick={configWash} href="/" id='mozhna'>{t("header19")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header20")}</Link>
+                                    <Link href="/gallery-of-project" id='mozhna'>{t("header20")}</Link>
                                     <Link href="/" id='mozhna'>{t("header21")}</Link>
                                     <Link href="/realization" id='mozhna'>{t("header21_2")}</Link>
                                 </div>
@@ -230,8 +230,8 @@ function Header() {
                                     {t("header28")}
                                 </button>
                                 <div className={s.dropdown_content}>
-                                    <Link href="/" id='mozhna'>{t("header29")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header31")}</Link>
+                                    <Link href="/presentation" id='mozhna'>{t("header29")}</Link>
+                                    <Link href="/quality-policy" id='mozhna'>{t("header31")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown2} id='mozhna'>
