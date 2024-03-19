@@ -232,7 +232,7 @@ function AccessoriesForWash() {
                         </p>
                     </div>
                     <div className={s.divFlex}>
-                        <ButtonRedArrowRight text={'programs-washing'} link={'/'}/>
+                        <ButtonRedArrowRight text={'programs-washing'} link={'/washing-programs'}/>
                     </div>
                 </div>
                 <div className={s.image_back2}>

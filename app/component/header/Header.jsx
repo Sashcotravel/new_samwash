@@ -174,8 +174,8 @@ function Header() {
                                 <div className={s.dropdown_content}>
                                     <Link href="/" id='mozhna'>{t("header4")}</Link>
                                     <Link href="/" id='mozhna'>{t("header5")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header6")}</Link>
-                                    <Link href="/" id='mozhna'>{t("header7")}</Link>
+                                    <Link href="/washing-technique" id='mozhna'>{t("header6")}</Link>
+                                    <Link href="/constructions-of-car-washes" id='mozhna'>{t("header7")}</Link>
                                 </div>
                             </div>
                             <div className={s.dropdown}>
