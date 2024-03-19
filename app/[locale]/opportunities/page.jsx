@@ -402,7 +402,7 @@ function Opportunities() {
                             автомобілем.
                         </p>
                         <p className={s.div_center}>
-                            <ButtonRedArrowRight text='programs-washing2' link='/'/>
+                            <ButtonRedArrowRight text='programs-washing2' link='/washing-programs'/>
                         </p>
                     </div>
                     <div className={s.half_div}>

@@ -31,6 +31,7 @@
   "B2B": "B2B панель",
   "cooperation": "Преимущества сотрудничества с SAMWASH",
   "building-car": "строительство автомойки – с чего начать",
+  "cleaning-products": "Чистящие средства",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -491,6 +492,12 @@
     "cooperation1": "Сотрудничество с SAMWASH",
     "cooperation2": "",
     "cooperation3": ""
+  },
+  "washing-programs": {
+    "home": "Главная",
+    "programs1": "Программы стирки",
+    "programs2": "",
+    "programs3": ""
   },
   "": ""
 }

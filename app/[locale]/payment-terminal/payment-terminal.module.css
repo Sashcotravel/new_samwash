@@ -67,7 +67,7 @@
     object-fit: cover;
 }
 
-.section_gray{
+.section2{
     background: #f2f2f2;
     padding: 50px 0 80px;
 }
@@ -554,7 +554,7 @@
         color: #a1a1a1;
         font-size: 12px;
     }
-    .section_gray, .section, .section_gray{
+    .section2, .section, .section2{
         padding: 20px 10px 30px;
     }
     .divItems{
@@ -749,7 +749,7 @@
         padding: 0 20px;
         font-size: 30px;
     }
-    .section_gray, .section, .section_gray{
+    .section2, .section, .section2{
         padding: 10px 10px 15px;
     }
     .divItems{

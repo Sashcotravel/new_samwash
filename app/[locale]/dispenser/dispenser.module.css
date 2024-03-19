@@ -66,7 +66,7 @@
     border: none;
 }
 
-.section_gray{
+.section2{
     background: #f2f2f2;
     padding: 50px 0 80px;
 }
@@ -315,7 +315,7 @@
     .div_frame{
         text-align: center;
     }
-    .section_gray, .section2, .section, .blur_section{
+    .section2, .section2, .section, .blur_section{
         padding: 20px 10px 25px;
     }
     .divItems{
@@ -411,7 +411,7 @@
         height: 240px;
         padding: 0 20px;
     }
-    .section_gray, .section2, .section{
+    .section2, .section2, .section{
         padding: 10px 10px 15px;
     }
     .divItems{
