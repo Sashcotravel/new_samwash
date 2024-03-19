@@ -239,7 +239,7 @@ function Opportunities() {
                                     на телефоні, завдяки чому ви можете отримати нових клієнтів.
                                 </p>
                                 <div style={{margin: '40px 0'}}>
-                                    <ButtonRedArrowRight text='program2' link='/http://localhost:3000/beloyal-program'/>
+                                    <ButtonRedArrowRight text='program2' link='/beloyal-program'/>
                                 </div>
                             </div>
                         </div>

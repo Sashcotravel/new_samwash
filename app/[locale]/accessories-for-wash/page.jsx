@@ -67,7 +67,7 @@ function AccessoriesForWash() {
                             <div className={s.divInfo}>
                                 <p>Пристрій для самозаправки склоомивача.</p>
                                 <div className={s.divFlex}>
-                                    <ButtonRedArrowRight text={'distributor'} link={'/'}/>
+                                    <ButtonRedArrowRight text={'distributor'} link={'/dispenser'}/>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ function AccessoriesForWash() {
                                 <p>Повний асортимент спеціальної хімії для безконтактної
                                     та портальної мийки автомобілів.</p>
                                 <div className={s.divFlex}>
-                                    <ButtonRedArrowRight text={'chemicals'} link={'/'}/>
+                                    <ButtonRedArrowRight text={'chemicals'} link={'/chemistry'}/>
                                 </div>
                             </div>
                         </div>

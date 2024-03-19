@@ -258,11 +258,11 @@ function Fiscalization() {
                             <div>&nbsp;</div>
                             <div>
                                 <ButtonRedArrowRight text='ordered'
-                                                     link='/https://docs.google.com/forms/d/e/1FAIpQLSc2Uy5fiy5VTlN88aiHwR6LDhfP1xOOiFhQtAh2p2Z-6HXt6A/viewform'/>
+                                                     link='https://docs.google.com/forms/d/e/1FAIpQLSc2Uy5fiy5VTlN88aiHwR6LDhfP1xOOiFhQtAh2p2Z-6HXt6A/viewform'/>
                             </div>
                             <div>
                                 <ButtonRedArrowRight text='ordered'
-                                                     link='/https://docs.google.com/forms/d/e/1FAIpQLSc2Uy5fiy5VTlN88aiHwR6LDhfP1xOOiFhQtAh2p2Z-6HXt6A/viewform'/>
+                                                     link='https://docs.google.com/forms/d/e/1FAIpQLSc2Uy5fiy5VTlN88aiHwR6LDhfP1xOOiFhQtAh2p2Z-6HXt6A/viewform'/>
                             </div>
                         </div>
                         <div className={s.div_info}>
