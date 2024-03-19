@@ -29,6 +29,8 @@
   "ordered": "Замовити",
   "service-repair-order": "Замовлення на сервісний ремонт",
   "B2B": "B2B панель",
+  "cooperation": "Переваги співпраці з SAMWASH",
+  "building-car": "будівництво автомийки - з чого почати",
   "header": {
     "header1": "Менеджер автомийки",
     "header2": "Запит на обслуговування",
@@ -483,6 +485,12 @@
     "presentation1": "Презентація",
     "presentation2": "",
     "presentation3": ""
+  },
+  "cooperation-with-samwash": {
+    "home": "Головна",
+    "cooperation1": "Співпраця з SAMWASH",
+    "cooperation2": "",
+    "cooperation3": ""
   },
   "": ""
 }

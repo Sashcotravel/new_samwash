@@ -29,6 +29,8 @@
   "ordered": "Заказать",
   "service-repair-order": "Заказ на сервисный ремонт",
   "B2B": "B2B панель",
+  "cooperation": "Преимущества сотрудничества с SAMWASH",
+  "building-car": "строительство автомойки – с чего начать",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
@@ -483,6 +485,12 @@
     "presentation1": "Презентация",
     "presentation2": "",
     "presentation3": ""
+  },
+  "cooperation-with-samwash": {
+    "home": "Главная",
+    "cooperation1": "Сотрудничество с SAMWASH",
+    "cooperation2": "",
+    "cooperation3": ""
   },
   "": ""
 }

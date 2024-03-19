@@ -5,6 +5,7 @@ import {useTranslations} from "next-intl";
 import Image from "next/image";
 import Link from "next-intl/link";
 import {useEffect, useState} from "react";
+import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 
 function Service() {
 
@@ -343,7 +344,7 @@ function Service() {
                                 відрізняються найвищою якістю, надійністю та низьким рівнем відмов.
                             </p>
                             <h3>Ми пропонуємо повний пакет послуг за допомогою:</h3>
-                            <ul>
+                            <ul style={{marginBottom: '20px'}}>
                                 <li>
                                     <Image src='/program/arrow.png' alt='arrow' width={10} height={10}/>
                                     консультації щодо вибору автомийки та супутнього обладнання,
@@ -386,6 +387,7 @@ function Service() {
                                     розвиток і розширення.
                                 </li>
                             </ul>
+                            <ButtonRedArrowRight link='/cooperation-with-samwash' text='cooperation' />
                         </div>
                     </div>
                 </div>

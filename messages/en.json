@@ -29,6 +29,8 @@
   "ordered": "Order",
   "service-repair-order": "Service repair order",
   "B2B": "B2B panel",
+  "cooperation": "Advantages of cooperation with SAMWASH",
+  "building-car": "building a car wash - where to start",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
@@ -483,6 +485,12 @@
     "presentation1": "Presentation",
     "presentation2": "",
     "presentation3": ""
+  },
+  "cooperation-with-samwash": {
+    "home": "Main",
+    "cooperation1": "Cooperation with SAMWASH",
+    "cooperation2": "",
+    "cooperation3": ""
   },
   "": ""
 }
