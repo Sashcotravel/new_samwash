@@ -9,6 +9,7 @@ import {Fancybox} from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 import {usePathname} from "next/navigation";
+import {useEffect} from "react";
 
 function WashingTechnique() {
 
@@ -20,8 +21,28 @@ function WashingTechnique() {
     });
 
     const configWash = () => {
-            localStorage.setItem("configModern", "true");
+        localStorage.setItem("configModern", "true");
     }
+
+    useEffect(() => {
+        let loc = localStorage.getItem("tech");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('tech')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("tech");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("tech2");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('tech2')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("tech2");
+        }
+    }, []);
 
 
     return (
@@ -95,7 +116,7 @@ function WashingTechnique() {
                 </div>
             </section>
 
-            <section className={s.section}>
+            <section className={s.section} id='tech'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -161,7 +182,7 @@ function WashingTechnique() {
                 </div>
             </section>
 
-            <section className={s.section2}>
+            <section className={s.section2} id='tech2'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">

@@ -57,11 +57,11 @@ function FixManu5({active}) {
         <section className={s.menu_tab_section}>
             <div className='main-container'>
                 <div className={`${s.menu_tab} ${fixHeader ? s.fixed : ''} ${fixHeader2 ? s.fixed2 : ''}`}>
-                    <Link href='/'
+                    <Link href='/self-service-car-wash'
                           className={`${s.menu_item} ${active === 1 ? s.currentItem : undefined}`}>
                         Автомийки
                     </Link>
-                    <Link href='/'
+                    <Link href='/contactless-self-service-car-washes'
                           className={`${s.menu_item} ${active === 2 ? s.currentItem : undefined}`}>
                         Безконтактні мийки
                     </Link>

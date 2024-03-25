@@ -29,15 +29,23 @@
   "ordered": "Order",
   "service-repair-order": "Service repair order",
   "B2B": "B2B panel",
+  "container-car-washes": "container car washes",
+  "modular-car-washes": "modular car washes",
   "cooperation": "Advantages of cooperation with SAMWASH",
   "building-car": "building a car wash - where to start",
   "cleaning-products": "Cleaning products",
+  "configuration": "configuration options",
+  "gallery": "Realization gallery",
+  "modular-technology": "construction of modular technology",
+  "construction-technology": "container construction technology",
+  "container": "container car washes",
+  "modular": "modular car washes",
   "header": {
     "header1": "Car wash manager",
     "header2": "Service request",
     "header3": "Car washes",
     "header4": "Contactless sinks",
-    "header5": "Car wash ",
+    "header5": "Car washes",
     "header6": "Car washing technique",
     "header7": "Constructions",
     "header8": "Accessories",
@@ -504,6 +512,18 @@
     "constructions1": "Constructions",
     "constructions2": "",
     "constructions3": ""
+  },
+  "self-service-car-wash": {
+    "home": "Main",
+    "self-service1": "Car washes",
+    "self-service2": "",
+    "self-service3": ""
+  },
+  "contactless-self-service-car-washes": {
+    "home": "Main",
+    "contactless1": "Contactless self-service car washes",
+    "contactless2": "",
+    "contactless3": ""
   },
   "": ""
 }

@@ -9,6 +9,7 @@ import {Fancybox} from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ButtonRedArrowRight from "@/app/buttons/redButton/buttonRedArrowRight";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
+import {useEffect} from "react";
 
 
 function Constructions() {
@@ -22,6 +23,66 @@ function Constructions() {
     const configWash = () => {
         localStorage.setItem("configModern", "true");
     }
+
+    useEffect(() => {
+        let loc = localStorage.getItem("Smart");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('Smart')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("Smart");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("Pixel");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('Pixel')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("Pixel");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("MarcoBanner");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('MarcoBanner')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("MarcoBanner");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("MarcoGlass");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('MarcoGlass')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("MarcoGlass");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("Marchello");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('Marchello')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("Marchello");
+        }
+    }, []);
+
+    useEffect(() => {
+        let loc = localStorage.getItem("Ufo");
+
+        if(loc === 'true'){
+            const wash = document.getElementById('Ufo')
+            wash.scrollIntoView({block: "nearest", behavior: 'smooth'});
+            localStorage.removeItem("Ufo");
+        }
+    }, []);
 
 
     return (
@@ -44,7 +105,7 @@ function Constructions() {
 
             <FixManu5 active={3}/>
 
-            <section className={s.section_gray}>
+            <section className={s.section_gray} id='Smart'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -158,7 +219,7 @@ function Constructions() {
                 </div>
             </section>
 
-            <section className={s.section}>
+            <section className={s.section} id='Pixel'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -272,7 +333,7 @@ function Constructions() {
                 </div>
             </section>
 
-            <section className={s.section_gray}>
+            <section className={s.section_gray} id='MarcoBanner'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -386,7 +447,7 @@ function Constructions() {
                 </div>
             </section>
 
-            <section className={s.section}>
+            <section className={s.section} id='MarcoGlass'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -500,7 +561,7 @@ function Constructions() {
                 </div>
             </section>
 
-            <section className={s.section_gray}>
+            <section className={s.section_gray} id='Marchello'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">
@@ -614,7 +675,7 @@ function Constructions() {
                 </div>
             </section>
 
-            <section className={s.section}>
+            <section className={s.section} id='Ufo'>
                 <div className="main-container">
                     <div className={s.text_box}>
                         <div className="section-header">

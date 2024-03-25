@@ -29,15 +29,23 @@
   "ordered": "Заказать",
   "service-repair-order": "Заказ на сервисный ремонт",
   "B2B": "B2B панель",
+  "container-car-washes": "контейнерные автомойки",
+  "modular-car-washes": "модульные автомойки",
   "cooperation": "Преимущества сотрудничества с SAMWASH",
   "building-car": "строительство автомойки – с чего начать",
   "cleaning-products": "Чистящие средства",
+  "configuration": "параметры конфигурации",
+  "gallery": "галерея реализ",
+  "modular-technology": "построение модульной технологии",
+  "construction-technology": "технология строительства контейнеров",
+  "container": "контейнерные автомойки",
+  "modular": "модульные автомойки",
   "header": {
     "header1": "Менеджер автомойки",
     "header2": "Запрос на обслуживание",
     "header3": "Автомойки",
     "header4": "Бесконтактные мойки",
-    "header5": "Мойка ",
+    "header5": "Мойки",
     "header6": "Техника мойки автомобиля",
     "header7": "Конструкции",
     "header8": "Аксессуары",
@@ -504,6 +512,18 @@
     "constructions1": "Конструкции",
     "constructions2": "",
     "constructions3": ""
+  },
+  "self-service-car-wash": {
+    "home": "Главная",
+    "self-service1": "Мойки",
+    "self-service2": "",
+    "self-service3": ""
+  },
+  "contactless-self-service-car-washes": {
+    "home": "Главная",
+    "contactless1": "Бесконтактные автомойки самообслуживания",
+    "contactless2": "",
+    "contactless3": ""
   },
   "": ""
 }
