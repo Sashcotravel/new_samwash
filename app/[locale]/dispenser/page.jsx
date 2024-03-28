@@ -45,7 +45,7 @@ function Dispenser() {
                     <p className={s.titleP}>Вежа детайлінгу</p>
                     <p className={s.titleP2}>Підкачка коліс + парфуми + омивач скла</p>
                     <div className={s.div_frame}>
-                        <video src={'/video/DJI_0160.mp4'} poster={'/video/mainVideo.mp4'} title='' preload="yes"
+                        <video src={'/video/videoDespenser.mp4'} poster={'/video/mainVideo.MP4'} title='' preload="yes"
                                className={s.frame} autoPlay='no' playsInline muted loop />
 
                         {/*<iframe*/}
@@ -167,18 +167,18 @@ function Dispenser() {
                 <div className="main-container">
                     <div className={s.image_wrapper}>
                         <div className={s.photo}>
-                            <a data-fancybox="gallery" href={'/dispenser/dispenser-photo-1.jpg'}>
-                                <Image src='/dispenser/dispenser-photo-1.jpg' alt='' width={1900} height={1000}/>
+                            <a data-fancybox="gallery" href={'/dispenser/image1.svg'}>
+                                <Image src='/dispenser/image1.svg' alt='' width={1900} height={1000}/>
                             </a>
                         </div>
                         <div className={s.photo}>
-                            <a data-fancybox="gallery" href={'/dispenser/dispenser-photo-2.jpg'}>
-                                <Image src='/dispenser/dispenser-photo-2.jpg' alt='' width={1900} height={1000}/>
+                            <a data-fancybox="gallery" href={'/dispenser/image2.svg'}>
+                                <Image src='/dispenser/image2.svg' alt='' width={1900} height={1000}/>
                             </a>
                         </div>
                         <div className={s.photo}>
-                            <a data-fancybox="gallery" href={'/dispenser/dispenser-photo-3.jpg'}>
-                                <Image src='/dispenser/dispenser-photo-3.jpg' alt='' width={1900} height={1000}/>
+                            <a data-fancybox="gallery" href={'/dispenser/image3.svg'}>
+                                <Image src='/dispenser/image3.svg' alt='' width={1900} height={1000}/>
                             </a>
                         </div>
                     </div>
