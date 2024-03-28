@@ -68,7 +68,7 @@ function FixManu2({active}) {
                           className={`${s.menu_item} ${active === 3 ? s.currentItem : undefined}`}>Платіжний термінал</Link>
                     <Link href='/dispenser'
                           className={`${s.menu_item} ${active === 4 ? s.currentItem : undefined}`}>
-                        Розподільник рідини</Link>
+                        Вежа детайлінгу</Link>
                     <Link href='/chemistry'
                           className={`${s.menu_item} ${active === 5 ? s.currentItem : undefined}`}>
                         Хімікати для миття автомобіля

@@ -12,7 +12,6 @@ import WrapperClick from "@/app/component/wrapper_click/WrapperClick";
 import ButtonRedWithoutLink from "@/app/buttons/redButtonWithoutLink/buttonRedArrowRight";
 
 
-
 function Dispenser() {
 
     const t = useTranslations("dispenser");
@@ -43,11 +42,15 @@ function Dispenser() {
 
             <section className={s.section}>
                 <div className="main-container">
-                    <p className={s.titleP}>Розподільник склоомивача</p>
+                    <p className={s.titleP}>Вежа детайлінгу</p>
+                    <p className={s.titleP2}>Підкачка коліс + парфуми + омивач скла</p>
                     <div className={s.div_frame}>
-                        <iframe
-                            src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"
-                            title="Управління освітою автомийки" loading="lazy" className={s.frame}/>
+                        <video src={'/video/DJI_0160.mp4'} poster={'/video/mainVideo.mp4'} title='' preload="yes"
+                               className={s.frame} autoPlay='no' playsInline muted loop />
+
+                        {/*<iframe*/}
+                        {/*    src="https://www.youtube.com/embed/OJv67JG7QRo?autoplay=0&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0"*/}
+                        {/*    title="Управління освітою автомийки" loading="lazy" className={s.frame}/>*/}
                     </div>
                 </div>
             </section>
@@ -57,7 +60,7 @@ function Dispenser() {
                     <div className="section-header">
                         <h2>
                             <small>КОМПЛЕКСНЕ ОБСЛУГОВУВАННЯ КЛІЄНТІВ НА ВАШІЙ АВТОМИЙЦІ</small>
-                            <strong>Переваги розподільника склоомивача</strong>
+                            <strong>Переваги вежі 3 в 1</strong>
                         </h2>
                     </div>
                     <div className={s.divItems}>
@@ -66,8 +69,8 @@ function Dispenser() {
                                 <li>
                                     <span><b>Чітка інформація для клієнта</b></span>
                                     <p>
-                                        РК-дисплей є інформативним: на ньому вказується тип рідини (зимова чи літня),
-                                        ціна за літр і поточна кількість рідини, яку потрібно використати.
+                                        розроблена для видачі 3 різних продуктів: стиснене повітря, антибактеріальний
+                                        парфум, омивач скла.
                                     </p>
                                 </li>
                                 <li>
@@ -87,7 +90,9 @@ function Dispenser() {
                                 <li>
                                     <span><b>Зручна експлуатація</b></span>
                                     <p>
-                                        Великий бак об'ємом 220 літрів дозволить обслужити приблизно 40-50 клієнтів.
+                                        Рідкі продукти проштовхуються насосом по рукаву, який закінчується соплом,
+                                        розміщеним на рукоятці пістолета. Так само розпилює парфум що дає можливість
+                                        отримати рівномірний результат
                                     </p>
                                 </li>
                             </ul>
@@ -107,7 +112,7 @@ function Dispenser() {
                                     </p>
                                 </li>
                                 <li>
-                                    <span><b>Зручне онлайн-управління за допомогою Carwash Manager</b></span>
+                                    <span><b>Зручне онлайн-управління за допомогою MySamWash</b></span>
                                     <p>
                                         Підключивши пристрій до автомийки SAMWASH, ви отримаєте детальні фінансові дані
                                         та повну діагностику пристрою. Таким чином ви отримаєте важливу інформацію
@@ -115,10 +120,10 @@ function Dispenser() {
                                     </p>
                                 </li>
                                 <li>
-                                    <span><b>Електронне вимірювання рідини</b></span>
+                                    <span><b>Ідеальне розташування</b></span>
                                     <p>
-                                        Витратомір точно вимірює рідину, показуючи на дисплеї поточну кількість,
-                                        яку потрібно використати.
+                                        Поруч з пилососами, що дозволяє виконувати оздоблювальні роботи після аспірації
+                                        салону.
                                     </p>
                                 </li>
                             </ul>
