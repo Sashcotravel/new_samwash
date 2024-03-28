@@ -136,7 +136,7 @@ function BeLoyalProgram() {
 
                     <source media="(max-width: 1440px)" srcSet='/managerCarwash/head.jpg'/>
 
-                    <Image src='/managerCarwash/head.jpg' alt='' width={1900} height={300}/>
+                    <Image src='/managerCarwash/backPgone.svg' alt='' width={1900} height={300}/>
 
                 </picture>
                 <div className={s.main_container}>
