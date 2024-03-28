@@ -177,7 +177,7 @@ function Dispenser() {
                             </a>
                         </div>
                         <div className={s.photo}>
-                            <a data-fancybox="gallery" href={'/dispenser/image3.svg'}>
+                            <a data-fancybox="gallery" href={'/dispenser/image4.svg'}>
                                 <Image src='/dispenser/image4.svg' alt='' width={1900} height={1000}/>
                             </a>
                         </div>
