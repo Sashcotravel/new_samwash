@@ -99,7 +99,7 @@ function Dispenser() {
                         </div>
                         <div className={s.third_column}>
                             <div className={s.image_box}>
-                                <Image src='/dispenser/dispenser-photo.png' alt='' width={600} height={500}/>
+                                <Image src='/dispenser/image3.svg' alt='' width={600} height={500}/>
                             </div>
                         </div>
                         <div className={s.third_column}>
@@ -178,7 +178,7 @@ function Dispenser() {
                         </div>
                         <div className={s.photo}>
                             <a data-fancybox="gallery" href={'/dispenser/image3.svg'}>
-                                <Image src='/dispenser/image3.svg' alt='' width={1900} height={1000}/>
+                                <Image src='/dispenser/image4.svg' alt='' width={1900} height={1000}/>
                             </a>
                         </div>
                     </div>
